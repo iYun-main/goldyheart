@@ -548,34 +548,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FANCY_BUTTON)));
 
 //Food Crafting
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.MARSHMELLOWSTICK, 1)
-                .input(ModItems.MARSHMELLOW,1)
-                .input(Items.STICK,1)
-                .criterion(hasItem(Items.STICK), conditionsFromItem(ModItems.MARSHMELLOWSTICK))
-                .criterion(hasItem(ModItems.MARSHMELLOW), conditionsFromItem(ModItems.MARSHMELLOWSTICK))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.MARSHMELLOWSTICK)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SLIGHTLYCOOKEDMARSHMELLOWSTICK, 1)
-                .input(ModItems.SLIGHTLYCOOKEDMARSHMELLOW,1)
-                .input(Items.STICK,1)
-                .criterion(hasItem(Items.STICK), conditionsFromItem(ModItems.SLIGHTLYCOOKEDMARSHMELLOW))
-                .criterion(hasItem(ModItems.SLIGHTLYCOOKEDMARSHMELLOW), conditionsFromItem(ModItems.SLIGHTLYCOOKEDMARSHMELLOW))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SLIGHTLYCOOKEDMARSHMELLOWSTICK)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.COOKEDMARSHMELLOWSTICK, 1)
-                .input(ModItems.COOKEDMARSHMELLOW,1)
-                .input(Items.STICK,1)
-                .criterion(hasItem(Items.STICK), conditionsFromItem(ModItems.COOKEDMARSHMELLOWSTICK))
-                .criterion(hasItem(ModItems.COOKEDMARSHMELLOW), conditionsFromItem(ModItems.COOKEDMARSHMELLOWSTICK))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.COOKEDMARSHMELLOWSTICK)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.BURNTMARSHMELLOWSTICK, 1)
-                .input(ModItems.BURNTMARSHMELLOW,1)
-                .input(Items.STICK,1)
-                .criterion(hasItem(Items.STICK), conditionsFromItem(ModItems.BURNTMARSHMELLOW))
-                .criterion(hasItem(ModItems.BURNTMARSHMELLOW), conditionsFromItem(ModItems.BURNTMARSHMELLOW))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.BURNTMARSHMELLOWSTICK)));
-
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CUTBREAD,2)
                 .input(Items.BREAD,1)
                 .criterion(hasItem(Items.BREAD), conditionsFromItem(ModItems.CUTBREAD))
@@ -1156,6 +1128,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         soups(ModItems.PUMPKINSOUP, Items.PUMPKIN,exporter);
         soups(ModItems.SPIDEREYESOUP, ModItems.CANDIEDSPIDEREYE,exporter);
 
+        marshstick(ModItems.MARSHMELLOWSTICK, ModItems.MARSHMELLOW,exporter);
+        marshstick(ModItems.COOKEDMARSHMELLOWSTICK, ModItems.COOKEDMARSHMELLOW,exporter);
+        marshstick(ModItems.BURNTMARSHMELLOWSTICK, ModItems.BURNTMARSHMELLOW,exporter);
+        marshstick(ModItems.SLIGHTLYCOOKEDMARSHMELLOWSTICK, ModItems.SLIGHTLYCOOKEDMARSHMELLOW,exporter);
+
     }
     private void cakesslice(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, output,8)
@@ -1181,6 +1158,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(Items.BOWL,1)
                 .input(ModItems.PARSLEY,1)
                 .input(ModItems.SALT,1)
+                .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
+                .offerTo(exporter, new Identifier(getRecipeName(output)));
+
+    }
+
+    private void marshstick(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, output)
+                .input(itemConvertible,1)
+                .input(Items.STICK,1)
                 .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
                 .offerTo(exporter, new Identifier(getRecipeName(output)));
 
