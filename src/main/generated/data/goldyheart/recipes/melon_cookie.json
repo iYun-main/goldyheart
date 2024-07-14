@@ -1,22 +1,19 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "ingredients": [
-    {
-      "item": "minecraft:melon_slice"
-    },
-    {
-      "item": "minecraft:melon_slice"
-    },
-    {
+  "key": {
+    "W": {
       "item": "goldyheart:dough"
     },
-    {
-      "item": "goldyheart:melted_butter"
+    "X": {
+      "item": "minecraft:melon_slice"
     }
+  },
+  "pattern": [
+    "WXW"
   ],
   "result": {
-    "count": 4,
     "item": "goldyheart:melon_cookie"
-  }
+  },
+  "show_notification": true
 }

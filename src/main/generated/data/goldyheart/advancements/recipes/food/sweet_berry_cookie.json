@@ -1,36 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dough": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "goldyheart:sweet_berry_cookie"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_melted_butter": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "goldyheart:sweet_berry_cookie"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_sweet_berries": {
       "conditions": {
         "items": [
           {
             "items": [
-              "goldyheart:sweet_berry_cookie"
+              "minecraft:sweet_berries"
             ]
           }
         ]
@@ -46,8 +22,6 @@
   },
   "requirements": [
     [
-      "has_melted_butter",
-      "has_dough",
       "has_sweet_berries",
       "has_the_recipe"
     ]
