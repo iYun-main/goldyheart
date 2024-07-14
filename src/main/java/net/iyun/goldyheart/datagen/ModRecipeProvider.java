@@ -1320,7 +1320,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.CHICKEN), conditionsFromItem(ModItems.RAWCHICKENLEG))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.RAWCHICKENLEG)));
 
-
+// this is just for me to simply repeating shit
         cakesslice(ModItems.BEETROOTCAKESLICE, ModItems.BEETROOTCAKE, exporter);
         cakesslice(ModItems.CHORUSCAKESLICE, ModItems.CHORUSCAKE, exporter);
         cakesslice(ModItems.SWEETBERRYCAKESLICE, ModItems.SWEETBERRYCAKE, exporter);
@@ -1332,10 +1332,23 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         cakesslice(ModItems.WATERMELONCAKESLICE, ModItems.MELONSCAKE, exporter);
         cakesslice(ModItems.CAKESLICE, Items.CAKE, exporter);
 
+        cakes(ModItems.CARROTCAKE, Items.CARROT,exporter);
+
+
     }
     private void cakesslice(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, output,8)
                 .input(itemConvertible)
+                .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
+                .offerTo(exporter, new Identifier(getRecipeName(output)));
+
+    }
+
+    private void cakes(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, output)
+                .input(itemConvertible,4)
+                .input(Items.MILK_BUCKET)
+                .input(ModItems.DOUGH,2)
                 .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
                 .offerTo(exporter, new Identifier(getRecipeName(output)));
 

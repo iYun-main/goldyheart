@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-14T09:37:02.0947094	Goldy Heart/Block Loot Tables
+// 1.20.1	2024-07-14T09:54:46.5251147	Goldy Heart/Block Loot Tables
 41cab8fd46b79ebeebd2ad393e8d14ca8dfe434b data\goldyheart\loot_tables\blocks\spiral_planks.json
 87e080662f984f3c5d422ce9723620f12e6b047e data\goldyheart\loot_tables\blocks\ancient_slab.json
 7fef7e5e5a16fe49de67618f6fca4aa1043935d9 data\goldyheart\loot_tables\blocks\bog_stairs.json
@@ -136,8 +136,8 @@ a6b9e5ce2fa9b537612ae1ffa0d052a9989f8463 data\goldyheart\loot_tables\blocks\dark
 d741f80d75ba08ec7507db86354d03a0fb4aeed4 data\goldyheart\loot_tables\blocks\fancy_fence_gate.json
 8a0e12d0aa11f4129a4fb129607d590e19565c81 data\goldyheart\loot_tables\blocks\spiral_leaves.json
 a9ce7558ca902327e255656e7ece976d6e9187fd data\goldyheart\loot_tables\blocks\spiral_sapling.json
-6193dd3f450a9f59f594b1d8a20aee67f7b9e7fa data\goldyheart\loot_tables\blocks\old_wood_slab.json
 a402111ddbf3bb45bc9818b10b2043d0b65a81c3 data\goldyheart\loot_tables\blocks\dark_spiral_slab.json
+6193dd3f450a9f59f594b1d8a20aee67f7b9e7fa data\goldyheart\loot_tables\blocks\old_wood_slab.json
 36a5c896c0e1d684da13b0f0836d799ff32eb54a data\goldyheart\loot_tables\blocks\blue_wool_slab.json
 baf80c0e0fb9c71752b650bdd122de35f5dc7245 data\goldyheart\loot_tables\blocks\spruce_slab.json
 70c74196d5cc07bdb2c2c26e2560005ed7688393 data\goldyheart\loot_tables\blocks\weathered_copper_slab.json
