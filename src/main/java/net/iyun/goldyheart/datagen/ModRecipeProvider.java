@@ -1066,6 +1066,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         itemslices(ModItems.LETTUCELEAF, ModItems.LETTUCE,exporter);
         itemslices(ModItems.TRUFFLE, Items.BROWN_MUSHROOM,exporter);
 
+        doughnuts(ModItems.APPLEDONUT, Items.BEDROCK, exporter);
+        doughnuts(ModItems.BEETDONUT, ModItems.BEETJAM, exporter);
+        doughnuts(ModItems.BLUEDONUT, ModItems.BLUEBERJAM, exporter);
+        doughnuts(ModItems.STRAWDONUT, ModItems.STRAWJAM, exporter);
+        doughnuts(ModItems.CARROTDONUT, ModItems.CARROTJAM, exporter);
+        doughnuts(ModItems.CHOCODONUT, Items.COCOA_BEANS, exporter);
+        doughnuts(ModItems.CHORUSDONUT, ModItems.CHORUSJAM, exporter);
+        doughnuts(ModItems.GLOWDONUT, ModItems.GLOWJAM, exporter);
+        doughnuts(ModItems.SWEETDONUT, ModItems.SWEETJAM, exporter);
+        doughnuts(ModItems.MELONDONUT, ModItems.MELONJAM, exporter);
+
+
     }
     private void cakesslice(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, output,8)
@@ -1087,9 +1099,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     private void doughnuts(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, output,2)
-                .input(itemConvertible,2)
-                .input(ModItems.DOUGH,1)
-                .input(Items.SUGAR,1)
+                .input(itemConvertible,1)
+                .input(ModItems.DOUGHTNUT,1)
+                .input(Items.SUGAR,2)
                 .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
                 .offerTo(exporter, new Identifier(getRecipeName(output)));
 
