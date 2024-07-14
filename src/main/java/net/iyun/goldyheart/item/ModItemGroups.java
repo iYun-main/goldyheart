@@ -174,6 +174,7 @@ public class ModItemGroups {
                     entries.add(ModItems.GLOWJAM);
                     entries.add(ModItems.BLUEBERJAM);
                     entries.add(ModItems.STRAWJAM);
+                    entries.add(ModItems.APPLEJAM);
                     entries.add(ModItems.GLOWCOOKIE);
                     entries.add(ModItems.MELONCOOKIE);
                     entries.add(ModItems.SWEETCOOKIE);

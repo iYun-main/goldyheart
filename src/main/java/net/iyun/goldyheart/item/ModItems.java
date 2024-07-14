@@ -150,6 +150,7 @@ public class ModItems {
     public static final Item BLUEBERSMOOTHIE = registerItem("blueberry_smoothie", new GlobalSmoothieItem(new FabricItemSettings().food(ModFoodComponents.GLOBALSMOOTHIES)));
     public static final Item STRAWBERSMOOTHIE = registerItem("strawberry_smoothie", new GlobalSmoothieItem(new FabricItemSettings().food(ModFoodComponents.GLOBALSMOOTHIES)));
     public static final Item MELONJAM = registerItem("melon_jam", new GlobalJamItem(new FabricItemSettings().food(ModFoodComponents.GLOBALJAMS)));
+    public static final Item APPLEJAM = registerItem("apple_jam", new GlobalJamItem(new FabricItemSettings().food(ModFoodComponents.GLOBALJAMS)));
     public static final Item BLUEBERJAM = registerItem("blueberry_jam", new GlobalJamItem(new FabricItemSettings().food(ModFoodComponents.GLOBALJAMS)));
     public static final Item STRAWJAM = registerItem("strawberry_jam", new GlobalJamItem(new FabricItemSettings().food(ModFoodComponents.GLOBALJAMS)));
     public static final Item CHORUSJAM = registerItem("chorus_jam", new GlobalJamItem(new FabricItemSettings().food(ModFoodComponents.GLOBALJAMS)));
