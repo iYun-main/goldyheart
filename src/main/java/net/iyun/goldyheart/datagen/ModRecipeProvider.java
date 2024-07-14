@@ -1065,6 +1065,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         itemslices(ModItems.CUCUMBERSLICE, ModItems.CUCUMBER,exporter);
         itemslices(ModItems.LETTUCELEAF, ModItems.LETTUCE,exporter);
         itemslices(ModItems.TRUFFLE, Items.BROWN_MUSHROOM,exporter);
+        itemslices(ModItems.CUTTOMATO, ModItems.TOMATO,exporter);
+        itemslices(ModItems.CUTBREAD, Items.BREAD,exporter);
 
         doughnuts(ModItems.APPLEDONUT, Items.BEDROCK, exporter);
         doughnuts(ModItems.BEETDONUT, ModItems.BEETJAM, exporter);
