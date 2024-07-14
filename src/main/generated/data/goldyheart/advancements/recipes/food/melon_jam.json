@@ -1,36 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_glass_bottle": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "goldyheart:melon_jam"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_melon_slice": {
       "conditions": {
         "items": [
           {
             "items": [
-              "goldyheart:melon_jam"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_sugar": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "goldyheart:melon_jam"
+              "minecraft:melon_slice"
             ]
           }
         ]
@@ -46,9 +22,7 @@
   },
   "requirements": [
     [
-      "has_sugar",
       "has_melon_slice",
-      "has_glass_bottle",
       "has_the_recipe"
     ]
   ],

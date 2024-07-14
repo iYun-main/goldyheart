@@ -1,36 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_glass_bottle": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "goldyheart:glow_berry_jam"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_glow_berries": {
       "conditions": {
         "items": [
           {
             "items": [
-              "goldyheart:glow_berry_jam"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_sugar": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "goldyheart:glow_berry_jam"
+              "minecraft:glow_berries"
             ]
           }
         ]
@@ -46,9 +22,7 @@
   },
   "requirements": [
     [
-      "has_sugar",
       "has_glow_berries",
-      "has_glass_bottle",
       "has_the_recipe"
     ]
   ],

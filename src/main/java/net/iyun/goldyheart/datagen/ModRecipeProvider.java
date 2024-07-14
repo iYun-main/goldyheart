@@ -1167,60 +1167,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.PARSLEYSEEDS)));
 
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.BEETJAM,2)
-                .input(Items.SUGAR,2)
-                .input(Items.GLASS_BOTTLE,2)
-                .input(Items.BEETROOT,2)
-                .criterion(hasItem(Items.SUGAR), conditionsFromItem(ModItems.BEETJAM))
-                .criterion(hasItem(Items.BEETROOT), conditionsFromItem(ModItems.BEETJAM))
-                .criterion(hasItem(Items.GLASS_BOTTLE), conditionsFromItem(ModItems.BEETJAM))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.BEETJAM)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.MELONJAM,2)
-                .input(Items.SUGAR,2)
-                .input(Items.GLASS_BOTTLE,2)
-                .input(Items.MELON_SLICE,2)
-                .criterion(hasItem(Items.SUGAR), conditionsFromItem(ModItems.MELONJAM))
-                .criterion(hasItem(Items.MELON_SLICE), conditionsFromItem(ModItems.MELONJAM))
-                .criterion(hasItem(Items.GLASS_BOTTLE), conditionsFromItem(ModItems.MELONJAM))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.MELONJAM)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CHORUSJAM,2)
-                .input(Items.SUGAR,2)
-                .input(Items.GLASS_BOTTLE,2)
-                .input(Items.CHORUS_FRUIT,2)
-                .criterion(hasItem(Items.SUGAR), conditionsFromItem(ModItems.CHORUSJAM))
-                .criterion(hasItem(Items.CHORUS_FRUIT), conditionsFromItem(ModItems.CHORUSJAM))
-                .criterion(hasItem(Items.GLASS_BOTTLE), conditionsFromItem(ModItems.CHORUSJAM))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CHORUSJAM)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SWEETJAM,2)
-                .input(Items.SUGAR,2)
-                .input(Items.GLASS_BOTTLE,2)
-                .input(Items.SWEET_BERRIES,2)
-                .criterion(hasItem(Items.SUGAR), conditionsFromItem(ModItems.SWEETJAM))
-                .criterion(hasItem(Items.SWEET_BERRIES), conditionsFromItem(ModItems.SWEETJAM))
-                .criterion(hasItem(Items.GLASS_BOTTLE), conditionsFromItem(ModItems.SWEETJAM))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SWEETJAM)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.GLOWJAM,2)
-                .input(Items.SUGAR,2)
-                .input(Items.GLASS_BOTTLE,2)
-                .input(Items.GLOW_BERRIES,2)
-                .criterion(hasItem(Items.SUGAR), conditionsFromItem(ModItems.GLOWJAM))
-                .criterion(hasItem(Items.GLOW_BERRIES), conditionsFromItem(ModItems.GLOWJAM))
-                .criterion(hasItem(Items.GLASS_BOTTLE), conditionsFromItem(ModItems.GLOWJAM))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.GLOWJAM)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CARROTJAM,2)
-                .input(Items.SUGAR,2)
-                .input(Items.GLASS_BOTTLE,2)
-                .input(Items.CARROT,2)
-                .criterion(hasItem(Items.SUGAR), conditionsFromItem(ModItems.CARROTJAM))
-                .criterion(hasItem(Items.CARROT), conditionsFromItem(ModItems.CARROTJAM))
-                .criterion(hasItem(Items.GLASS_BOTTLE), conditionsFromItem(ModItems.CARROTJAM))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CARROTJAM)));
-
 
 
 
@@ -1343,10 +1289,29 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         cakes(ModItems.SWEETBERRYCAKE, Items.SWEET_BERRIES,exporter);
 
 
+        jams(ModItems.CARROTJAM, Items.CARROT,exporter);
+        jams(ModItems.GLOWJAM, Items.GLOW_BERRIES,exporter);
+        jams(ModItems.SWEETJAM, Items.SWEET_BERRIES,exporter);
+        jams(ModItems.BEETJAM, Items.BEETROOT,exporter);
+        jams(ModItems.CHORUSJAM, Items.CHORUS_FRUIT,exporter);
+        jams(ModItems.MELONJAM, Items.MELON_SLICE,exporter);
+        jams(ModItems.STRAWJAM, ModItems.STRAWBERRY,exporter);
+        jams(ModItems.BLUEBERJAM, ModItems.BLUEBERRY,exporter);
+
     }
     private void cakesslice(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, output,8)
                 .input(itemConvertible)
+                .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
+                .offerTo(exporter, new Identifier(getRecipeName(output)));
+
+    }
+
+    private void jams(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, output,2)
+                .input(itemConvertible,2)
+                .input(Items.GLASS_BOTTLE,2)
+                .input(Items.SUGAR,2)
                 .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
                 .offerTo(exporter, new Identifier(getRecipeName(output)));
 

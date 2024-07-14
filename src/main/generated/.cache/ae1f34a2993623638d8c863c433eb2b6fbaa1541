@@ -1,8 +1,8 @@
-// 1.20.1	2024-07-14T10:13:42.5988496	Goldy Heart/Tags for minecraft:item
+// 1.20.1	2024-07-14T10:18:35.3055073	Goldy Heart/Tags for minecraft:item
 a2960d39d3682352950703c2981c03022ca996e4 data\minecraft\tags\items\stairs.json
+fbd114a50aabbb9bfea0ae134b5842df49212aa8 data\minecraft\tags\items\slabs.json
 b4726539cff3c2ec4906c1333756737526dad027 data\minecraft\tags\items\doors.json
 03a15d19a5970d88f478a6068698db5c72ac86c3 data\minecraft\tags\items\buttons.json
-fbd114a50aabbb9bfea0ae134b5842df49212aa8 data\minecraft\tags\items\slabs.json
 6973c9ca106a4dda4a2e6970b46d70761cb2d940 data\minecraft\tags\items\leaves.json
 b2a278b6e530f6c4d9a640763886956601562f8c data\minecraft\tags\items\logs_that_burn.json
 ed446e162b5940c98b5c2c628003b45b93eaf3c9 data\minecraft\tags\items\planks.json

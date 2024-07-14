@@ -6,31 +6,7 @@
         "items": [
           {
             "items": [
-              "goldyheart:beetroot_jam"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_glass_bottle": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "goldyheart:beetroot_jam"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_sugar": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "goldyheart:beetroot_jam"
+              "minecraft:beetroot"
             ]
           }
         ]
@@ -46,9 +22,7 @@
   },
   "requirements": [
     [
-      "has_sugar",
       "has_beetroot",
-      "has_glass_bottle",
       "has_the_recipe"
     ]
   ],
