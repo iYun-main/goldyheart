@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:glow_berries"
+    },
+    {
+      "item": "minecraft:glow_berries"
+    },
+    {
+      "item": "goldyheart:dough"
+    },
+    {
+      "item": "goldyheart:melted_butter"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "goldyheart:glow_berry_cookie"
+  }
+}

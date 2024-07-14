@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "goldyheart:old_door",
+    "goldyheart:spiral_door",
+    "goldyheart:dark_spiral_door",
+    "goldyheart:ancient_door"
+  ]
+}

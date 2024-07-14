@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "goldyheart:ancient_fence_gate",
+    "goldyheart:old_fence_gate",
+    "goldyheart:fancy_fence_gate",
+    "goldyheart:spiral_fence_gate",
+    "goldyheart:dark_spiral_fence_gate"
+  ]
+}

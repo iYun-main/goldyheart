@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "goldyheart:stripped_dark_spiral_wood"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "goldyheart:stripped_dark_spiral_wood_slab"
+  },
+  "show_notification": true
+}

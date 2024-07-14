@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "goldyheart:lettuce_leaf"
+    }
+  ],
+  "result": {
+    "item": "goldyheart:lettuce_seeds"
+  }
+}

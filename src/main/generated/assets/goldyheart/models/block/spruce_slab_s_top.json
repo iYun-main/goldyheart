@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "goldyheart:block/spruce_wood_as",
+    "side": "goldyheart:block/spruce_wood_as",
+    "top": "goldyheart:block/spruce_wood_as"
+  }
+}

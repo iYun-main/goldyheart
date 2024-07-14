@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "goldyheart:block/spiral_wood_as",
+    "side": "goldyheart:block/spiral_wood_as",
+    "top": "goldyheart:block/spiral_wood_as"
+  }
+}

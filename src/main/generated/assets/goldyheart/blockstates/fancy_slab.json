@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "goldyheart:block/fancy_slab"
+    },
+    "type=double": {
+      "model": "goldyheart:block/fancy_plank"
+    },
+    "type=top": {
+      "model": "goldyheart:block/fancy_slab_top"
+    }
+  }
+}

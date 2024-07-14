@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:beetroot"
+    },
+    {
+      "item": "minecraft:beetroot"
+    },
+    {
+      "item": "goldyheart:dough"
+    },
+    {
+      "item": "goldyheart:melted_butter"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "goldyheart:beetroot_cookie"
+  }
+}

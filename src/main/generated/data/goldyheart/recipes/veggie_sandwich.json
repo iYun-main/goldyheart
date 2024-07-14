@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "goldyheart:lettuce_leaf"
+    },
+    {
+      "item": "goldyheart:toast"
+    },
+    {
+      "item": "goldyheart:onion_slice"
+    },
+    {
+      "item": "goldyheart:cheese"
+    },
+    {
+      "item": "minecraft:beetroot"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "goldyheart:cut_tomato"
+    },
+    {
+      "item": "goldyheart:cucumber_slice"
+    }
+  ],
+  "result": {
+    "item": "goldyheart:veggie_sandwich"
+  }
+}

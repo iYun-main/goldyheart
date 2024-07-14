@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "goldyheart:block/ancient_log",
+    "side": "goldyheart:block/ancient_log"
+  }
+}

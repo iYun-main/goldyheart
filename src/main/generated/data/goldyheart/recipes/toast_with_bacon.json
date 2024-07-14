@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "goldyheart:toasted_toast"
+    },
+    {
+      "item": "goldyheart:cooked_bacon"
+    }
+  ],
+  "result": {
+    "item": "goldyheart:toast_with_bacon"
+  }
+}

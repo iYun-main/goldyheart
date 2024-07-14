@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "goldyheart:block/old_pressureplate"
+    },
+    "powered=true": {
+      "model": "goldyheart:block/old_pressureplate_down"
+    }
+  }
+}

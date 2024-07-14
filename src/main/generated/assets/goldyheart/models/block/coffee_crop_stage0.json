@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "goldyheart:block/coffee_crop_stage0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "goldyheart:block/dark_spiral_slab"
+    },
+    "type=double": {
+      "model": "goldyheart:block/dark_spiral_planks"
+    },
+    "type=top": {
+      "model": "goldyheart:block/dark_spiral_slab_top"
+    }
+  }
+}

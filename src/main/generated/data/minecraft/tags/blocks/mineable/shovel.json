@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "goldyheart:dirt_slab",
+    "goldyheart:overgrown_slab",
+    "goldyheart:rooted_dirt_slab",
+    "goldyheart:sand_slab",
+    "goldyheart:sand_stairs",
+    "goldyheart:red_sand_slab",
+    "goldyheart:red_sand_stairs",
+    "goldyheart:soul_sand_slab",
+    "goldyheart:soul_soil_slab",
+    "goldyheart:gravel_slab"
+  ]
+}

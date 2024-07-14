@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "goldyheart:bog_log",
+    "goldyheart:ancient_log",
+    "goldyheart:ancient_wood",
+    "goldyheart:stripped_ancient_wood",
+    "goldyheart:stripped_ancient_log",
+    "goldyheart:spiral_log",
+    "goldyheart:spiral_wood",
+    "goldyheart:stripped_spiral_wood",
+    "goldyheart:stripped_spiral_log",
+    "goldyheart:dark_spiral_log",
+    "goldyheart:dark_spiral_wood",
+    "goldyheart:stripped_dark_spiral_wood",
+    "goldyheart:stripped_dark_spiral_log",
+    "goldyheart:old_log",
+    "goldyheart:old_wood",
+    "goldyheart:stripped_old_log",
+    "goldyheart:stripped_old_wood",
+    "goldyheart:stripped_bog_log",
+    "goldyheart:stripped_bog_wood",
+    "goldyheart:bog_wood"
+  ]
+}

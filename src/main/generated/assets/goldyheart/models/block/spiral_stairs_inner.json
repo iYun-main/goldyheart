@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "goldyheart:block/spiral_planks",
+    "side": "goldyheart:block/spiral_planks",
+    "top": "goldyheart:block/spiral_planks"
+  }
+}

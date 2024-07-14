@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "goldyheart:block/dark_spiral_log_top",
+    "side": "goldyheart:block/dark_spiral_log"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "goldyheart:spiral_pressureplate"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "goldyheart:spiral_pressureplate"
+  },
+  "show_notification": true
+}

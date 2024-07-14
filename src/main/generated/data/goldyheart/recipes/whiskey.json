@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "goldyheart:grape"
+    },
+    {
+      "item": "goldyheart:grape"
+    },
+    {
+      "item": "goldyheart:grape"
+    },
+    {
+      "item": "goldyheart:grape"
+    },
+    {
+      "item": "goldyheart:salt"
+    },
+    {
+      "item": "goldyheart:salt"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "goldyheart:whiskey"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:sugar"
+    },
+    "T": {
+      "item": "minecraft:spider_eye"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "GGG",
+    "TTT"
+  ],
+  "result": {
+    "count": 2,
+    "item": "goldyheart:candied_spider_eye"
+  },
+  "show_notification": true
+}

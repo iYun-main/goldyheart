@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "E": {
+      "item": "goldyheart:stripped_ancient_log"
+    }
+  },
+  "pattern": [
+    "EE",
+    "EE"
+  ],
+  "result": {
+    "count": 4,
+    "item": "goldyheart:stripped_ancient_wood"
+  },
+  "show_notification": true
+}

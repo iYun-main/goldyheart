@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "goldyheart:block/birch_slab_s"
+    },
+    "type=double": {
+      "model": "goldyheart:block/birch_wood_as"
+    },
+    "type=top": {
+      "model": "goldyheart:block/birch_slab_s_top"
+    }
+  }
+}

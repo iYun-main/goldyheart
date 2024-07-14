@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "goldyheart:block/dead_tube_coral_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/dead_tube_coral_block"
+    },
+    "type=top": {
+      "model": "goldyheart:block/dead_tube_coral_slab_top"
+    }
+  }
+}

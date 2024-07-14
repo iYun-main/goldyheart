@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right",
+  "textures": {
+    "bottom": "goldyheart:block/old_door_bottom",
+    "top": "goldyheart:block/old_door_top"
+  }
+}

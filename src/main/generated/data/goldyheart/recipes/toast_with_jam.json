@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "goldyheart:toasted_toast"
+    },
+    {
+      "item": "goldyheart:sweet_berry_jam"
+    }
+  ],
+  "result": {
+    "item": "goldyheart:toast_with_jam"
+  }
+}

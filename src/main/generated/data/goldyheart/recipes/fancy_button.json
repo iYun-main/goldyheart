@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "goldyheart:fancy_plank"
+    }
+  ],
+  "result": {
+    "item": "goldyheart:fancy_button"
+  }
+}

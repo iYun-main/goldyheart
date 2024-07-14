@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "goldyheart:block/dark_spiral_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "goldyheart:block/dark_spiral_wood"
+    },
+    "axis=z": {
+      "model": "goldyheart:block/dark_spiral_wood",
+      "x": 90
+    }
+  }
+}

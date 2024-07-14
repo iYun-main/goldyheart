@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "goldyheart:block/tomato_crop_stage2"
+  }
+}

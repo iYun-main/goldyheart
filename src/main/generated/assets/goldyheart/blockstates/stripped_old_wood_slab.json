@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "goldyheart:block/stripped_old_wood_slab"
+    },
+    "type=double": {
+      "model": "goldyheart:block/old_wood_as"
+    },
+    "type=top": {
+      "model": "goldyheart:block/stripped_old_wood_slab_top"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "goldyheart",
+	"version": "${version}",
+	"name": "Goldy Heart",
+	"description": "A tiny Mod that adds 1-2 Items and Blocks",
+	"authors": [
+		"iYun_",
+		"inkgum"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/project/goldy-heart",
+		"sources": "https://modrinth.com/project/goldy-heart"
+	},
+	"license": "ARR",
+	"icon": "assets/goldyheart/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.iyun.goldyheart.Goldy_Heart"
+		],
+		"client": [
+			"net.iyun.goldyheart.Goldy_HeartClient"
+		],
+		"fabric-datagen": [
+			"net.iyun.goldyheart.Goldy_HeartDataGenerator"
+		]
+	},
+	"mixins": [
+		"goldyheart.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
