@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "goldyheart:block/ancient_planks",
-    "side": "goldyheart:block/ancient_planks",
-    "top": "goldyheart:block/ancient_planks"
-  }
-}

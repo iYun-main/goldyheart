@@ -16,6 +16,9 @@ public class ModTags {
     }
 
     public static class Items {
+
+        public static final TagKey<Item> JAMS = createTag("global_jams");
+
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, new Identifier(Goldy_Heart.MOD_ID, name));
         }

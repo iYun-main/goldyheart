@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "goldyheart:block/acacia_wood_as",
-    "side": "goldyheart:block/acacia_wood_as",
-    "top": "goldyheart:block/acacia_wood_as"
-  }
-}

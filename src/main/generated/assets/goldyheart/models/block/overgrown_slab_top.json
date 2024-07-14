@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "goldyheart:block/overgrown_grass",
-    "side": "goldyheart:block/overgrown_grass",
-    "top": "goldyheart:block/overgrown_grass"
-  }
-}

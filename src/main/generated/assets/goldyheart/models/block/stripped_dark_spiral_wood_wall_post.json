@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/template_wall_post",
-  "textures": {
-    "wall": "goldyheart:block/dark_spiral_wood_as"
-  }
-}

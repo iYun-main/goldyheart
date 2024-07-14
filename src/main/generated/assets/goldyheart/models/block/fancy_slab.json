@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "goldyheart:block/fancy_plank",
-    "side": "goldyheart:block/fancy_plank",
-    "top": "goldyheart:block/fancy_plank"
-  }
-}
