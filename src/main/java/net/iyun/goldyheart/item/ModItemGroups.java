@@ -432,6 +432,7 @@ public class ModItemGroups {
                     entries.add(ModItems.RICE);
                     entries.add(ModItems.STRAWBERRY);
                     entries.add(ModItems.BLUEBERRY);
+                    entries.add(ModItems.RUHBARBSEEDS);
                     }).build());
 
     public static final ItemGroup AGOLDYVOIDSTORAGE = Registry.register(Registries.ITEM_GROUP,
