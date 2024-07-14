@@ -1079,7 +1079,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         doughnuts(ModItems.SWEETDONUT, ModItems.SWEETJAM, exporter);
         doughnuts(ModItems.MELONDONUT, ModItems.MELONJAM, exporter);
 
-
     }
     private void cakesslice(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, output,8)
