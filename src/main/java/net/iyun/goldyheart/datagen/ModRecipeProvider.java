@@ -929,83 +929,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.BOWL), conditionsFromItem(ModItems.SALAD))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.SALAD)));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CARROTCAKE,1)
-                .input(Items.CARROT,5)
-                .input(ModItems.DOUGH,2)
-                .input(Items.MILK_BUCKET,1)
-                .input(Items.CAKE,1)
-                .criterion(hasItem(Items.MILK_BUCKET), conditionsFromItem(ModItems.CARROTCAKE))
-                .criterion(hasItem(ModItems.DOUGH), conditionsFromItem(ModItems.CARROTCAKE))
-                .criterion(hasItem(Items.CARROT), conditionsFromItem(ModItems.CARROTCAKE))
-                .criterion(hasItem(Items.CAKE), conditionsFromItem(ModItems.CARROTCAKE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CARROTCAKE)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.MELONSCAKE,1)
-                .input(Items.MELON_SLICE,5)
-                .input(ModItems.DOUGH,2)
-                .input(Items.MILK_BUCKET,1)
-                .input(Items.CAKE,1)
-                .criterion(hasItem(Items.MILK_BUCKET), conditionsFromItem(ModItems.MELONSCAKE))
-                .criterion(hasItem(ModItems.DOUGH), conditionsFromItem(ModItems.MELONSCAKE))
-                .criterion(hasItem(Items.MELON_SLICE), conditionsFromItem(ModItems.MELONSCAKE))
-                .criterion(hasItem(Items.CAKE), conditionsFromItem(ModItems.MELONSCAKE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.MELONSCAKE)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CHORUSCAKE,1)
-                .input(Items.CHORUS_FRUIT,5)
-                .input(ModItems.DOUGH,2)
-                .input(Items.MILK_BUCKET,1)
-                .input(Items.CAKE,1)
-                .criterion(hasItem(Items.MILK_BUCKET), conditionsFromItem(ModItems.CHORUSCAKE))
-                .criterion(hasItem(ModItems.DOUGH), conditionsFromItem(ModItems.CHORUSCAKE))
-                .criterion(hasItem(Items.CHORUS_FRUIT), conditionsFromItem(ModItems.CHORUSCAKE))
-                .criterion(hasItem(Items.CAKE), conditionsFromItem(ModItems.CHORUSCAKE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CHORUSCAKE)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.GLOWBERRYCAKE,1)
-                .input(Items.GLOW_BERRIES,5)
-                .input(ModItems.DOUGH,2)
-                .input(Items.MILK_BUCKET,1)
-                .input(Items.CAKE,1)
-                .criterion(hasItem(Items.MILK_BUCKET), conditionsFromItem(ModItems.GLOWBERRYCAKE))
-                .criterion(hasItem(ModItems.DOUGH), conditionsFromItem(ModItems.GLOWBERRYCAKE))
-                .criterion(hasItem(Items.GLOW_BERRIES), conditionsFromItem(ModItems.GLOWBERRYCAKE))
-                .criterion(hasItem(Items.CAKE), conditionsFromItem(ModItems.GLOWBERRYCAKE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.GLOWBERRYCAKE)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SWEETBERRYCAKE,1)
-                .input(Items.SWEET_BERRIES,5)
-                .input(ModItems.DOUGH,2)
-                .input(Items.MILK_BUCKET,1)
-                .input(Items.CAKE,1)
-                .criterion(hasItem(Items.MILK_BUCKET), conditionsFromItem(ModItems.SWEETBERRYCAKE))
-                .criterion(hasItem(ModItems.DOUGH), conditionsFromItem(ModItems.SWEETBERRYCAKE))
-                .criterion(hasItem(Items.SWEET_BERRIES), conditionsFromItem(ModItems.SWEETBERRYCAKE))
-                .criterion(hasItem(Items.CAKE), conditionsFromItem(ModItems.SWEETBERRYCAKE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SWEETBERRYCAKE)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.APPLECAKE,1)
-                .input(Items.APPLE,5)
-                .input(ModItems.DOUGH,2)
-                .input(Items.MILK_BUCKET,1)
-                .input(Items.CAKE,1)
-                .criterion(hasItem(Items.MILK_BUCKET), conditionsFromItem(ModItems.APPLECAKE))
-                .criterion(hasItem(ModItems.DOUGH), conditionsFromItem(ModItems.APPLECAKE))
-                .criterion(hasItem(Items.APPLE), conditionsFromItem(ModItems.APPLECAKE))
-                .criterion(hasItem(Items.CAKE), conditionsFromItem(ModItems.APPLECAKE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.APPLECAKE)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.BEETROOTCAKE,1)
-                .input(Items.BEETROOT,5)
-                .input(ModItems.DOUGH,2)
-                .input(Items.MILK_BUCKET,1)
-                .input(Items.CAKE,1)
-                .criterion(hasItem(Items.MILK_BUCKET), conditionsFromItem(ModItems.BEETROOTCAKE))
-                .criterion(hasItem(ModItems.DOUGH), conditionsFromItem(ModItems.BEETROOTCAKE))
-                .criterion(hasItem(Items.BEETROOT), conditionsFromItem(ModItems.BEETROOTCAKE))
-                .criterion(hasItem(Items.CAKE), conditionsFromItem(ModItems.BEETROOTCAKE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.BEETROOTCAKE)));
-
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.BEETCOOKIE,4)
                 .input(Items.BEETROOT,2)
                 .input(ModItems.DOUGH,1)
@@ -1243,46 +1166,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.PARSLEY), conditionsFromItem(ModItems.PARSLEYSEEDS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.PARSLEYSEEDS)));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CARROTCAKESLICE,8)
-                .input(ModItems.CARROTCAKE,1)
-                .criterion(hasItem(ModItems.CARROTCAKE), conditionsFromItem(ModItems.CARROTCAKESLICE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CARROTCAKESLICE)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.APPLECAKESLICE,8)
-                .input(ModItems.APPLECAKE,1)
-                .criterion(hasItem(ModItems.APPLECAKE), conditionsFromItem(ModItems.APPLECAKESLICE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.APPLECAKESLICE)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.GLOWBERRYCAKESLICE,8)
-                .input(ModItems.GLOWBERRYCAKE,1)
-                .criterion(hasItem(ModItems.GLOWBERRYCAKE), conditionsFromItem(ModItems.GLOWBERRYCAKESLICE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.GLOWBERRYCAKESLICE)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SWEETBERRYCAKESLICE,8)
-                .input(ModItems.SWEETBERRYCAKE,1)
-                .criterion(hasItem(ModItems.SWEETBERRYCAKE), conditionsFromItem(ModItems.SWEETBERRYCAKESLICE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SWEETBERRYCAKESLICE)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.BLUEBERRYCAKESLICE,8)
-                .input(ModItems.BLUEBERRYCAKE,1)
-                .criterion(hasItem(ModItems.BLUEBERRYCAKE), conditionsFromItem(ModItems.BLUEBERRYCAKESLICE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.BLUEBERRYCAKESLICE)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.WATERMELONCAKESLICE,8)
-                .input(ModItems.MELONSCAKE,1)
-                .criterion(hasItem(ModItems.MELONSCAKE), conditionsFromItem(ModItems.WATERMELONCAKESLICE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.WATERMELONCAKESLICE)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CHORUSCAKESLICE,8)
-                .input(ModItems.CHORUSCAKE,1)
-                .criterion(hasItem(ModItems.CHORUSCAKE), conditionsFromItem(ModItems.CHORUSCAKESLICE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CHORUSCAKESLICE)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.BEETROOTCAKESLICE,8)
-                .input(ModItems.BEETROOTCAKE,1)
-                .criterion(hasItem(ModItems.BEETROOTCAKE), conditionsFromItem(ModItems.BEETROOTCAKESLICE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.BEETROOTCAKESLICE)));
-
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.BEETJAM,2)
                 .input(Items.SUGAR,2)
@@ -1337,6 +1220,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.CARROT), conditionsFromItem(ModItems.CARROTJAM))
                 .criterion(hasItem(Items.GLASS_BOTTLE), conditionsFromItem(ModItems.CARROTJAM))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.CARROTJAM)));
+
+
+
 
 // Nation food this should have a fucking config toggle so i dont have to forcefully remove the recipe
 
@@ -1435,7 +1321,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.RAWCHICKENLEG)));
 
 
-    }
+        cakesslice(ModItems.BEETROOTCAKESLICE, ModItems.BEETROOTCAKE, exporter);
+        cakesslice(ModItems.CHORUSCAKESLICE, ModItems.CHORUSCAKE, exporter);
+        cakesslice(ModItems.SWEETBERRYCAKESLICE, ModItems.SWEETBERRYCAKE, exporter);
+        cakesslice(ModItems.APPLECAKESLICE, ModItems.APPLECAKE, exporter);
+        cakesslice(ModItems.BLUEBERRYCAKESLICE, ModItems.BLUEBERRYCAKE, exporter);
+        cakesslice(ModItems.GLOWBERRYCAKESLICE, ModItems.GLOWBERRYCAKE, exporter);
+        cakesslice(ModItems.STRAWBERRYCAKESLICE, ModItems.STRAWBERRYCAKE, exporter);
+        cakesslice(ModItems.CARROTCAKESLICE, ModItems.CARROTCAKE, exporter);
+        cakesslice(ModItems.WATERMELONCAKESLICE, ModItems.MELONSCAKE, exporter);
+        cakesslice(ModItems.CAKESLICE, Items.CAKE, exporter);
 
+    }
+    private void cakesslice(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, output,8)
+                .input(itemConvertible)
+                .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
+                .offerTo(exporter, new Identifier(getRecipeName(output)));
+
+    }
 
 }
