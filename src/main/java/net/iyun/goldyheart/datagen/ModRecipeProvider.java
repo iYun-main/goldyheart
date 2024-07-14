@@ -759,8 +759,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(ModItems.BELLPEPPERSLICE,1)
                 .input(ModItems.LETTUCELEAF,1)
                 .input(Items.BOWL,1)
-                .input(Items.BEETROOT,1)
-                .criterion(hasItem(Items.BEETROOT), conditionsFromItem(ModItems.SALAD))
+                .input(ModItems.GARLIC,1)
+                .criterion(hasItem(ModItems.GARLIC), conditionsFromItem(ModItems.SALAD))
                 .criterion(hasItem(ModItems.LETTUCELEAF), conditionsFromItem(ModItems.SALAD))
                 .criterion(hasItem(ModItems.CUTTOMATO), conditionsFromItem(ModItems.SALAD))
                 .criterion(hasItem(ModItems.CUCUMBERSLICE), conditionsFromItem(ModItems.SALAD))
@@ -961,6 +961,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.BUTTER), conditionsFromItem(ModItems.DOUGHTNUT))
                 .criterion(hasItem(ModItems.SALT), conditionsFromItem(ModItems.DOUGHTNUT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.DOUGHTNUT)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.MUFFIN,4)
+                .input(ModItems.SALT,1)
+                .input(Items.SUGAR,1)
+                .input(Items.MILK_BUCKET)
+                .input(ModItems.DOUGH,1)
+                .criterion(hasItem(ModItems.DOUGH), conditionsFromItem(ModItems.MUFFIN))
+                .criterion(hasItem(Items.SUGAR), conditionsFromItem(ModItems.MUFFIN))
+                .criterion(hasItem(Items.MILK_BUCKET), conditionsFromItem(ModItems.MUFFIN))
+                .criterion(hasItem(ModItems.SALT), conditionsFromItem(ModItems.MUFFIN))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.MUFFIN)));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.RAWCHICKENLEG,2)
                 .input(Items.CHICKEN,2)
