@@ -66,7 +66,7 @@ public class ModFoodComponents {
     public static final FoodComponent NIGIRISUSHI = new FoodComponent.Builder().meat().hunger(6).saturationModifier(0.5f).build();
     public static final FoodComponent VEGGIEMAKI = new FoodComponent.Builder().hunger(5).saturationModifier(0.25f).build();
     public static final FoodComponent VEGGIESANDWICH = new FoodComponent.Builder().hunger(7).saturationModifier(0.25f).build();
-    public static final FoodComponent SALAD = new FoodComponent.Builder().hunger(4).saturationModifier(0.25f).build();
+    public static final FoodComponent SALAD = new FoodComponent.Builder().hunger(6).saturationModifier(0.35f).build();
     public static final FoodComponent BURGER = new FoodComponent.Builder().meat().hunger(6).saturationModifier(0.4f).build();
     public static final FoodComponent GLOBALSMOOTHIES = new FoodComponent.Builder().hunger(5).saturationModifier(0.25f).build();
     public static final FoodComponent GLOBALJAMS = new FoodComponent.Builder().hunger(5).saturationModifier(0.1f).build();

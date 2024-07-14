@@ -1099,9 +1099,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
     private void doughnuts(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, output,2)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, output)
                 .input(itemConvertible,1)
                 .input(ModItems.DOUGHTNUT,1)
+                .input(Items.SUGAR,2)
+                .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
+                .offerTo(exporter, new Identifier(getRecipeName(output)));
+
+    }
+
+    private void muffins(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, output)
+                .input(itemConvertible,1)
+                .input(ModItems.MUFFIN,1)
                 .input(Items.SUGAR,2)
                 .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
                 .offerTo(exporter, new Identifier(getRecipeName(output)));
