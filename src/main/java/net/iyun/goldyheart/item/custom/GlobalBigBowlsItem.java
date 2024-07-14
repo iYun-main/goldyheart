@@ -1,25 +1,20 @@
 package net.iyun.goldyheart.item.custom;
 
+import net.iyun.goldyheart.item.ModItems;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemUsage;
 import net.minecraft.item.Items;
 import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.sound.SoundEvent;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
-import net.minecraft.util.Hand;
-import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
 
-public class GlobalJamItem extends Item {
-    public GlobalJamItem(Settings settings) {
+public class GlobalBigBowlsItem extends Item {
+    public GlobalBigBowlsItem(Settings settings) {
         super(settings);
     }
 
@@ -32,10 +27,11 @@ public class GlobalJamItem extends Item {
         }
 
         if (stack.isEmpty()) {
-            return new ItemStack(Items.GLASS_BOTTLE);
+            return new ItemStack(ModItems.BIGBOWL);
+
         } else {
             if (user instanceof PlayerEntity playerEntity && !((PlayerEntity)user).getAbilities().creativeMode) {
-                ItemStack itemStack = new ItemStack(Items.GLASS_BOTTLE);
+                ItemStack itemStack = new ItemStack(ModItems.BIGBOWL);
                 if (!playerEntity.getInventory().insertStack(itemStack)) {
                     playerEntity.dropItem(itemStack, false);
                 }
@@ -45,26 +41,18 @@ public class GlobalJamItem extends Item {
         }
     }
 
-    private static final int MAX_USE_TIME = 50;
+    private static final int MAX_USE_TIME = 60;
 
-        @Override
-        public int getMaxUseTime(ItemStack stack) {
-            return 50;
-        }
-
-        @Override
-        public UseAction getUseAction(ItemStack stack) {
-            return UseAction.EAT;
-        }
-
-        @Override
-        public SoundEvent getDrinkSound() {
-            return SoundEvents.ITEM_HONEY_BOTTLE_DRINK;
-        }
-
-        @Override
-        public SoundEvent getEatSound() {
-            return SoundEvents.ITEM_HONEY_BOTTLE_DRINK;
-        }
-
+    @Override
+    public int getMaxUseTime(ItemStack stack) {
+        return 60;
     }
+
+    @Override
+    public UseAction getUseAction(ItemStack stack) {
+        return UseAction.EAT;
+    }
+
+
+}
+

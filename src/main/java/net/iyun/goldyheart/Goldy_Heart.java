@@ -6,17 +6,10 @@ import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.iyun.goldyheart.block.ModBlocks;
-import net.iyun.goldyheart.effect.ModEffects;
 import net.iyun.goldyheart.item.ModItemGroups;
 import net.iyun.goldyheart.item.ModItems;
 import net.iyun.goldyheart.util.ModCustomTrades;
 import net.iyun.goldyheart.util.ModLootTableModifiers;
-import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.damage.DamageType;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
-import net.minecraft.util.Identifier;
-import net.minecraft.world.World;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -32,7 +25,6 @@ public class Goldy_Heart implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModCustomTrades.registerCustomTrades();
-		ModEffects.registerEffects();
 
 
 		CompostingChanceRegistry.INSTANCE.add(ModItems.GRAPESEEDS,0.05f);

@@ -98,4 +98,17 @@ public class ModFoodComponents {
     public static final FoodComponent BURNTMARSHMELLOW = new FoodComponent.Builder().hunger(2).saturationModifier(0.45f).statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 400, 0),1f).build();
     public static final FoodComponent BURNTMARSHMELLOWSTICK = new FoodComponent.Builder().hunger(1).saturationModifier(0.125f).statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 400, 0),1f).build();
     public static final FoodComponent DEBUG = new FoodComponent.Builder().hunger(-9999999).saturationModifier(1f).alwaysEdible().build();
+    public static final FoodComponent BERRIES = new FoodComponent.Builder().hunger(2).saturationModifier(0.25f).build();
+    public static final FoodComponent WORMBOWL = new FoodComponent.Builder().hunger(5).meat().saturationModifier(0.2f).build();
+    public static final FoodComponent PEARLSTEW = new FoodComponent.Builder().hunger(6).saturationModifier(0.2f).build();
+    public static final FoodComponent BUTTERCORN = new FoodComponent.Builder().hunger(6).saturationModifier(0.25f).build();
+    public static final FoodComponent POPCORN = new FoodComponent.Builder().hunger(5).saturationModifier(0.15f).build();
+    public static final FoodComponent GRILLEDCORN = new FoodComponent.Builder().hunger(6).saturationModifier(0.125f).build();
+    public static final FoodComponent BOILEDSNIFF = new FoodComponent.Builder().meat().hunger(3).saturationModifier(0.125f).build();
+    public static final FoodComponent OMLETTESNIFF = new FoodComponent.Builder().meat().hunger(5).saturationModifier(0.125f).build();
+    public static final FoodComponent BLAZERODNOODLES = new FoodComponent.Builder().meat().hunger(7).saturationModifier(0.125f).statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 400 ,0),0.3f).build();
+    public static final FoodComponent CHOCOSTRAW = new FoodComponent.Builder().hunger(3).saturationModifier(0.125f).build();
+    public static final FoodComponent MUFFIN = new FoodComponent.Builder().hunger(5).saturationModifier(0.2f).build();
+    public static final FoodComponent GLOBALMUFFINS = new FoodComponent.Builder().hunger(5).saturationModifier(0.2f).build();
+    public static final FoodComponent GLOBALPICKELS = new FoodComponent.Builder().hunger(6).saturationModifier(0.25f).build();
 }
