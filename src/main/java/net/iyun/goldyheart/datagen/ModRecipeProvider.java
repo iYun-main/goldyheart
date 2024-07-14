@@ -943,7 +943,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
 
-
 // Nation food this should have a fucking config toggle so i dont have to forcefully remove the recipe
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.WHISKEY,1)
