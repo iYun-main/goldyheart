@@ -265,8 +265,6 @@ public class ModItems {
 
 // the god forsaken tools
 
-    public static final Item IRONROD = registerItem("iron_rod", new IronFishingRodItem(new Item.Settings().maxDamage(128)));
-
 
     public static final Item STONE_KNIFE = registerItem("stone_knive",
             new KniveItem(ToolMaterials.STONE, 0, 0f, new FabricItemSettings().maxCount(1).maxDamage(100)));

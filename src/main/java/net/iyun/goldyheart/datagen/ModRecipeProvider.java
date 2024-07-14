@@ -768,34 +768,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.BOWL), conditionsFromItem(ModItems.SALAD))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.SALAD)));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.TOASTWITHBUTTER,1)
-                .input(ModItems.TOAST2,1)
-                .input(ModItems.BUTTER,1)
-                .criterion(hasItem(ModItems.TOAST2), conditionsFromItem(ModItems.TOASTWITHBUTTER))
-                .criterion(hasItem(ModItems.BUTTER), conditionsFromItem(ModItems.TOASTWITHBUTTER))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.TOASTWITHBUTTER)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.TOASTWITHEGG,1)
-                .input(ModItems.TOAST2,1)
-                .input(ModItems.FRIEDEGG,1)
-                .criterion(hasItem(ModItems.TOAST2), conditionsFromItem(ModItems.TOASTWITHEGG))
-                .criterion(hasItem(ModItems.FRIEDEGG), conditionsFromItem(ModItems.TOASTWITHEGG))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.TOASTWITHEGG)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.TOASTWITHJAM,1)
-                .input(ModItems.TOAST2,1)
-                .input(ModItems.SWEETJAM,1)
-                .criterion(hasItem(ModItems.TOAST2), conditionsFromItem(ModItems.TOASTWITHJAM))
-                .criterion(hasItem(ModItems.SWEETJAM), conditionsFromItem(ModItems.TOASTWITHJAM))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.TOASTWITHJAM)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.TOASTWITHBACON,1)
-                .input(ModItems.TOAST2,1)
-                .input(ModItems.COOKEDBACON,1)
-                .criterion(hasItem(ModItems.TOAST2), conditionsFromItem(ModItems.TOASTWITHBACON))
-                .criterion(hasItem(ModItems.COOKEDBACON), conditionsFromItem(ModItems.TOASTWITHBACON))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.TOASTWITHBACON)));
-
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.VEGGIESANDWICH,1)
                 .input(ModItems.LETTUCELEAF,1)
                 .input(ModItems.TOAST,1)
@@ -980,12 +952,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.DOUGH)));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.DOUGHTNUT,4)
-                .input(Items.EGG,2)
-                .input(ModItems.MELTEDBUTTER,1)
+                .input(ModItems.SALT,1)
+                .input(Items.SUGAR,1)
+                .input(ModItems.BUTTER,1)
                 .input(ModItems.DOUGH,1)
-                .criterion(hasItem(Items.EGG), conditionsFromItem(ModItems.DOUGHTNUT))
-                .criterion(hasItem(ModItems.MELTEDBUTTER), conditionsFromItem(ModItems.DOUGHTNUT))
                 .criterion(hasItem(ModItems.DOUGH), conditionsFromItem(ModItems.DOUGHTNUT))
+                .criterion(hasItem(Items.SUGAR), conditionsFromItem(ModItems.DOUGHTNUT))
+                .criterion(hasItem(ModItems.BUTTER), conditionsFromItem(ModItems.DOUGHTNUT))
+                .criterion(hasItem(ModItems.SALT), conditionsFromItem(ModItems.DOUGHTNUT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.DOUGHTNUT)));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.RAWCHICKENLEG,2)
@@ -1079,6 +1053,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         doughnuts(ModItems.SWEETDONUT, ModItems.SWEETJAM, exporter);
         doughnuts(ModItems.MELONDONUT, ModItems.MELONJAM, exporter);
 
+        toastevar(ModItems.TOASTWITHBACON, ModItems.COOKEDBACON, exporter);
+        toastevar(ModItems.TOASTWITHJAM, ModItems.SWEETJAM, exporter);
+        toastevar(ModItems.TOASTWITHEGG, ModItems.FRIEDEGG, exporter);
+        toastevar(ModItems.TOASTWITHBUTTER, ModItems.BUTTER, exporter);
+
     }
     private void cakesslice(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, output,8)
@@ -1102,7 +1081,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, output)
                 .input(itemConvertible,1)
                 .input(ModItems.DOUGHTNUT,1)
-                .input(Items.SUGAR,2)
                 .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
                 .offerTo(exporter, new Identifier(getRecipeName(output)));
 
@@ -1149,6 +1127,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     private void itemslices(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, output,2)
                 .input(itemConvertible,1)
+                .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
+                .offerTo(exporter, new Identifier(getRecipeName(output)));
+
+    }
+
+    private void toastevar(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, output,1)
+                .input(ModItems.TOAST2)
+                .input(itemConvertible)
                 .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
                 .offerTo(exporter, new Identifier(getRecipeName(output)));
 

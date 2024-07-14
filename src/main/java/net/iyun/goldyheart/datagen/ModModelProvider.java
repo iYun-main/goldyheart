@@ -555,7 +555,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.DIAMOND_KNIFE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.NETHERITE_KNIFE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RODWITHWORM, Models.HANDHELD_ROD);
-        itemModelGenerator.register(ModItems.IRONROD, Models.HANDHELD_ROD);
 
 // Dungoen Loot textures should generate here  :)
         itemModelGenerator.register(ModItems.LOOT_1, Models.GENERATED);
