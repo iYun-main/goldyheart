@@ -1333,6 +1333,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         cakesslice(ModItems.CAKESLICE, Items.CAKE, exporter);
 
         cakes(ModItems.CARROTCAKE, Items.CARROT,exporter);
+        cakes(ModItems.BEETROOTCAKE, Items.BEETROOT,exporter);
+        cakes(ModItems.CHORUSCAKE, Items.CHORUS_FRUIT,exporter);
+        cakes(ModItems.APPLECAKE, Items.APPLE,exporter);
+        cakes(ModItems.GLOWBERRYCAKE, Items.GLOW_BERRIES,exporter);
+        cakes(ModItems.MELONSCAKE, Items.MELON_SLICE,exporter);
+        cakes(ModItems.BLUEBERRYCAKE, ModItems.BLUEBERRY,exporter);
+        cakes(ModItems.STRAWBERRYCAKE, ModItems.STRAWBERRY,exporter);
+        cakes(ModItems.SWEETBERRYCAKE, Items.SWEET_BERRIES,exporter);
 
 
     }
@@ -1343,12 +1351,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(output)));
 
     }
-
     private void cakes(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, output)
-                .input(itemConvertible,4)
-                .input(Items.MILK_BUCKET)
-                .input(ModItems.DOUGH,2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, output)
+                .pattern("XXX")
+                .pattern("SES")
+                .pattern("HHH")
+                .input('X',Items.MILK_BUCKET)
+                .input('S',Items.SUGAR)
+                .input('E',Items.EGG)
+                .input('H',itemConvertible)
                 .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
                 .offerTo(exporter, new Identifier(getRecipeName(output)));
 
