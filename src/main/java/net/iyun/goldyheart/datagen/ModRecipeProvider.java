@@ -940,15 +940,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.CUTBREAD), conditionsFromItem(ModItems.BURGER))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.BURGER)));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.DOUGH,4)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.DOUGH,8)
                 .input(Items.EGG,2)
                 .input(Items.WHEAT,1)
-                .input(Items.MILK_BUCKET,1)
-                .input(ModItems.MELTEDBUTTER,1)
+                .input(Items.SUGAR,2)
+                .input(ModItems.BUTTER,1)
                 .criterion(hasItem(Items.EGG), conditionsFromItem(ModItems.DOUGH))
                 .criterion(hasItem(Items.WHEAT), conditionsFromItem(ModItems.DOUGH))
-                .criterion(hasItem(Items.MILK_BUCKET), conditionsFromItem(ModItems.DOUGH))
-                .criterion(hasItem(ModItems.MELTEDBUTTER), conditionsFromItem(ModItems.DOUGH))
+                .criterion(hasItem(Items.SUGAR), conditionsFromItem(ModItems.DOUGH))
+                .criterion(hasItem(ModItems.BUTTER), conditionsFromItem(ModItems.DOUGH))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.DOUGH)));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.DOUGHTNUT,4)
