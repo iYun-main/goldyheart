@@ -244,7 +244,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CORN_CROP, this.cropDrops(ModBlocks.CORN_CROP, ModItems.CORN, ModItems.CORNSEEDS,builder10));
 
         BlockStatePropertyLootCondition.Builder builder12 = BlockStatePropertyLootCondition.builder(ModBlocks.RUHBARB_CROP).properties(StatePredicate.Builder.create().exactMatch(CornCropBlock.AGE, 7));
-        addDrop(ModBlocks.RUHBARB_CROP, this.cropDrops(ModBlocks.RUHBARB_CROP, ModItems.RUHBARB, ModItems.RUHBARBSEEDS,builder12));
+        addDrop(ModBlocks.RUHBARB_CROP, this.cropDrops(ModBlocks.RUHBARB_CROP, ModItems.RHUBARB, ModItems.RUHBARBSEEDS,builder12));
 
 
     //    AnyOfLootCondition.Builder builder1 = BlockStatePropertyLootCondition.builder(ModBlocks.CHILLI_CROP).properties(StatePredicate.Builder.create()

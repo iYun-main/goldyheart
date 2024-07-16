@@ -128,6 +128,7 @@ public class ModItemGroups {
                     entries.add(ModItems.WATERMELONSMOOTHIE);
                     entries.add(ModItems.GLOWBERRYSMOOTHIE);
                     entries.add(ModItems.BLUEBERSMOOTHIE);
+                    entries.add(ModItems.STRAWBERSMOOTHIE);
                     entries.add(ModItems.TOASTWITHBUTTER);
                     entries.add(ModItems.TOASTWITHBACON);
                     entries.add(ModItems.TOASTWITHJAM);

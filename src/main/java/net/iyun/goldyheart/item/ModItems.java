@@ -63,7 +63,7 @@ public class ModItems {
     public static final Item RICE = registerItem("rice", new AliasedBlockItem(ModBlocks.RICE_CROP, new FabricItemSettings().food(ModFoodComponents.RICE)));
     public static final Item GARLIC = registerItem("garlic", new AliasedBlockItem(ModBlocks.GARLIC_CROP, new FabricItemSettings().food(ModFoodComponents.GARLIC)));
     public static final Item TOMATO = registerItem("tomato", new Item(new FabricItemSettings().food(ModFoodComponents.TOMATO)));
-    public static final Item RHUBARB = registerItem("rhubarb", new Item(new FabricItemSettings().food(ModFoodComponents.RUHBARB)));
+    public static final Item RHUBARB = registerItem("ruhbarb", new Item(new FabricItemSettings().food(ModFoodComponents.RUHBARB)));
     public static final Item RAWONIONRING = registerItem("raw_onion_ring", new Item(new FabricItemSettings().food(ModFoodComponents.RAWONIONRING)));
     public static final Item LETTUCELEAF = registerItem("lettuce_leaf", new Item(new FabricItemSettings().food(ModFoodComponents.LETTUCELEAF)));
     public static final Item ONIONSLICE = registerItem("onion_slice", new Item(new FabricItemSettings().food(ModFoodComponents.ONIONSLICE)));
@@ -175,7 +175,6 @@ public class ModItems {
     public static final Item BEETROOTCAKESLICE = registerItem("beetroot_cake_slice", new Item(new FabricItemSettings().food(ModFoodComponents.CAKESLICE)));
     public static final Item BEETROOTCAKE = registerItem("beetroot_cake", new Item(new FabricItemSettings().food(ModFoodComponents.GLOBALCAKES).maxCount(4)));
     public static final Item CORN = registerItem("corn", new Item(new FabricItemSettings().food(ModFoodComponents.CORN)));
-    public static final Item RUHBARB = registerItem("ruhbarb", new Item(new FabricItemSettings().food(ModFoodComponents.RUHBARB)));
     public static final Item WORMBOWL = registerItem("worm_bowl", new Item(new FabricItemSettings().food(ModFoodComponents.WORMBOWL)));
     public static final Item DEBUG = registerItem("debug", new Item(new FabricItemSettings().food(ModFoodComponents.DEBUG)));
     public static final Item PEARLSTEW = registerItem("pearl_stew", new Item(new FabricItemSettings().food(ModFoodComponents.PEARLSTEW)));

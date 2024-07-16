@@ -51,7 +51,7 @@ public class Goldy_Heart implements ModInitializer {
 		CompostingChanceRegistry.INSTANCE.add(ModItems.GRAPES,0.2f);
 		CompostingChanceRegistry.INSTANCE.add(ModItems.STRAWBERRY,0.25f);
 		CompostingChanceRegistry.INSTANCE.add(ModItems.BLUEBERRY,0.25f);
-		CompostingChanceRegistry.INSTANCE.add(ModItems.RUHBARB,0.25f);
+		CompostingChanceRegistry.INSTANCE.add(ModItems.RHUBARB,0.25f);
 
 		StrippableBlockRegistry.register(ModBlocks.WEATHERED_LOG, ModBlocks.STRIPPED_WEATHERED_LOG);
 		StrippableBlockRegistry.register(ModBlocks.WEATHERED_WOOD, ModBlocks.STRIPPED_WEATHERED_WOOD);
