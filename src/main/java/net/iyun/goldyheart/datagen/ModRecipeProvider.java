@@ -61,6 +61,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Blocks.GRASS_BLOCK),conditionsFromItem(ModBlocks.GRASS_SLAB))
                 .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.GRASS_SLAB)));
 
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WEATHERED_PLANK_SLABS, Ingredient.ofItems(ModBlocks.WEATHERED_PLANKS))
+                .criterion(hasItem(ModBlocks.WEATHERED_PLANKS),conditionsFromItem(ModBlocks.WEATHERED_PLANK_SLABS))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.WEATHERED_PLANK_SLABS)));
+
         createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FANCY_SLAB, Ingredient.ofItems(ModBlocks.FANCY_PLANK))
                 .criterion(hasItem(ModBlocks.FANCY_SLAB),conditionsFromItem(ModBlocks.FANCY_SLAB))
                 .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.FANCY_SLAB)));
@@ -277,6 +281,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         createStairsRecipe(ModBlocks.SMOOTH_BASALT_STAIRS, Ingredient.ofItems(Blocks.SMOOTH_BASALT))
                 .criterion(hasItem(Blocks.SMOOTH_BASALT),conditionsFromItem(ModBlocks.SMOOTH_BASALT_STAIRS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SMOOTH_BASALT_STAIRS)));
+
+        createStairsRecipe(ModBlocks.WEATHERED_PLANK_STAIRS, Ingredient.ofItems(ModBlocks.WEATHERED_PLANKS))
+                .criterion(hasItem(ModBlocks.WEATHERED_PLANKS),conditionsFromItem(ModBlocks.WEATHERED_PLANK_STAIRS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.WEATHERED_PLANK_STAIRS)));
 
         createStairsRecipe(ModBlocks.FANCY_STAIRS, Ingredient.ofItems(ModBlocks.FANCY_PLANK))
                 .criterion(hasItem(ModBlocks.FANCY_PLANK),conditionsFromItem(ModBlocks.FANCY_STAIRS))
@@ -521,6 +529,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 //Plank Recipe
         offerPlanksRecipe(exporter, ModBlocks.ANCIENT_PLANKS, ModTags.Items.ANC,4);
+        offerPlanksRecipe(exporter, ModBlocks.OLD_PLANKS, ModTags.Items.OLD,4);
+        offerPlanksRecipe(exporter, ModBlocks.SPIRAL_PLANKS, ModTags.Items.SPI,4);
+        offerPlanksRecipe(exporter, ModBlocks.DARK_SPIRAL_PLANKS, ModTags.Items.SPID,4);
+        offerPlanksRecipe(exporter, ModBlocks.WEATHERED_PLANKS, ModTags.Items.BOG,4);
 
 // Pressure Plate Recipe
 

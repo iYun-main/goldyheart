@@ -13,7 +13,6 @@ public class ModTags {
 
     public static class Blocks {
 
-        public static final TagKey<Block> ANCIENT_WOOD = createTag("anc");
 
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(Goldy_Heart.MOD_ID, name));
@@ -23,6 +22,10 @@ public class ModTags {
     public static class Items {
 
         public static final TagKey<Item> ANC = createTag("anc");
+        public static final TagKey<Item> OLD = createTag("old");
+        public static final TagKey<Item> SPI = createTag("spi");
+        public static final TagKey<Item> SPID = createTag("spid");
+        public static final TagKey<Item> BOG = createTag("bog");
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, new Identifier(Goldy_Heart.MOD_ID, name));
