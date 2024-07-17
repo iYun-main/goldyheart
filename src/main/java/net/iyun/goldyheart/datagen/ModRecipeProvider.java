@@ -276,6 +276,70 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.STRIPPED_OLD_WOOD),conditionsFromItem(ModBlocks.OLD_WOOD_SLAB_S))
                 .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.OLD_WOOD_SLAB_S)));
 
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OAK_WOOD_SLAB, Ingredient.ofItems(Blocks.OAK_WOOD))
+                .criterion(hasItem(ModBlocks.OAK_WOOD_SLAB),conditionsFromItem(Blocks.OAK_WOOD))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.OAK_WOOD_SLAB)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OAK_WOOD_SLAB_S, Ingredient.ofItems(Blocks.STRIPPED_OAK_WOOD))
+                .criterion(hasItem(ModBlocks.OAK_WOOD_SLAB_S),conditionsFromItem(Blocks.STRIPPED_OAK_WOOD))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.OAK_WOOD_SLAB_S)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHERRY_WOOD_SLAB_S, Ingredient.ofItems(Blocks.STRIPPED_CHERRY_WOOD))
+                .criterion(hasItem(ModBlocks.CHERRY_WOOD_SLAB_S),conditionsFromItem(Blocks.STRIPPED_CHERRY_WOOD))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.CHERRY_WOOD_SLAB_S)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHERRY_WOOD_SLAB, Ingredient.ofItems(Blocks.CHERRY_WOOD))
+                .criterion(hasItem(ModBlocks.CHERRY_WOOD_SLAB),conditionsFromItem(Blocks.CHERRY_WOOD))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.CHERRY_WOOD_SLAB)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.JUNGLE_WOOD_SLAB, Ingredient.ofItems(Blocks.JUNGLE_WOOD))
+                .criterion(hasItem(ModBlocks.JUNGLE_WOOD_SLAB),conditionsFromItem(Blocks.JUNGLE_WOOD))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.JUNGLE_WOOD_SLAB)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.JUNGLE_WOOD_SLAB_S, Ingredient.ofItems(Blocks.STRIPPED_JUNGLE_WOOD))
+                .criterion(hasItem(ModBlocks.JUNGLE_WOOD_SLAB_S),conditionsFromItem(Blocks.STRIPPED_JUNGLE_WOOD))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.JUNGLE_WOOD_SLAB_S)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MANGROVE_WOOD_SLAB, Ingredient.ofItems(Blocks.MANGROVE_WOOD))
+                .criterion(hasItem(ModBlocks.MANGROVE_WOOD_SLAB),conditionsFromItem(Blocks.MANGROVE_WOOD))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.MANGROVE_WOOD_SLAB)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MANGROVE_WOOD_SLAB_S, Ingredient.ofItems(Blocks.STRIPPED_MANGROVE_WOOD))
+                .criterion(hasItem(ModBlocks.MANGROVE_WOOD_SLAB_S),conditionsFromItem(Blocks.STRIPPED_MANGROVE_WOOD))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.MANGROVE_WOOD_SLAB_S)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ACA_WOOD_SLAB, Ingredient.ofItems(Blocks.ACACIA_WOOD))
+                .criterion(hasItem(ModBlocks.ACA_WOOD_SLAB),conditionsFromItem(Blocks.ACACIA_WOOD))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.ACA_WOOD_SLAB)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ACA_WOOD_SLAB_S, Ingredient.ofItems(Blocks.ACACIA_WOOD))
+                .criterion(hasItem(ModBlocks.ACA_WOOD_SLAB_S),conditionsFromItem(Blocks.ACACIA_WOOD))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.ACA_WOOD_SLAB_S)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_OAK_WOOD_SLAB, Ingredient.ofItems(Blocks.DARK_OAK_WOOD))
+                .criterion(hasItem(ModBlocks.DARK_OAK_WOOD_SLAB),conditionsFromItem(Blocks.DARK_OAK_WOOD))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.DARK_OAK_WOOD_SLAB)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_OAK_WOOD_SLAB_S, Ingredient.ofItems(Blocks.STRIPPED_DARK_OAK_WOOD))
+                .criterion(hasItem(ModBlocks.DARK_OAK_WOOD_SLAB_S),conditionsFromItem(Blocks.STRIPPED_DARK_OAK_WOOD))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.DARK_OAK_WOOD_SLAB_S)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BIRCH_WOOD_SLAB, Ingredient.ofItems(Blocks.BIRCH_WOOD))
+                .criterion(hasItem(ModBlocks.BIRCH_WOOD_SLAB),conditionsFromItem(Blocks.BIRCH_WOOD))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.BIRCH_WOOD_SLAB)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BIRCH_WOOD_SLAB_S, Ingredient.ofItems(Blocks.STRIPPED_BIRCH_WOOD))
+                .criterion(hasItem(ModBlocks.BIRCH_WOOD_SLAB_S),conditionsFromItem(Blocks.STRIPPED_BIRCH_WOOD))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.BIRCH_WOOD_SLAB_S)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SPRUCE_WOOD_SLAB, Ingredient.ofItems(Blocks.SPRUCE_WOOD))
+                .criterion(hasItem(ModBlocks.SPRUCE_WOOD_SLAB),conditionsFromItem(Blocks.SPRUCE_WOOD))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.SPRUCE_WOOD_SLAB)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SPRUCE_WOOD_SLAB_S, Ingredient.ofItems(Blocks.STRIPPED_SPRUCE_WOOD))
+                .criterion(hasItem(ModBlocks.SPRUCE_WOOD_SLAB_S),conditionsFromItem(Blocks.STRIPPED_SPRUCE_WOOD))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.SPRUCE_WOOD_SLAB_S)));
+
 //Stair Recipe
         createStairsRecipe(ModBlocks.SMOOTH_BASALT_STAIRS, Ingredient.ofItems(Blocks.SMOOTH_BASALT))
                 .criterion(hasItem(Blocks.SMOOTH_BASALT),conditionsFromItem(ModBlocks.SMOOTH_BASALT_STAIRS))
