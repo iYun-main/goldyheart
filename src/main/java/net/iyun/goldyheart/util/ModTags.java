@@ -26,6 +26,7 @@ public class ModTags {
         public static final TagKey<Item> SPI = createTag("spi");
         public static final TagKey<Item> SPID = createTag("spid");
         public static final TagKey<Item> BOG = createTag("bog");
+        public static final TagKey<Item> JAM = createTag("jams");
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, new Identifier(Goldy_Heart.MOD_ID, name));

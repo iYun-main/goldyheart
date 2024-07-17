@@ -6,7 +6,6 @@ import net.iyun.goldyheart.block.ModBlocks;
 import net.iyun.goldyheart.item.ModItems;
 import net.iyun.goldyheart.util.ModTags;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.WoodType;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
@@ -1146,7 +1145,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         doughnuts(ModItems.MELONDONUT, ModItems.MELONJAM, exporter);
 
         toastevar(ModItems.TOASTWITHBACON, ModItems.COOKEDBACON, exporter);
-        toastevar(ModItems.TOASTWITHJAM, ModItems.SWEETJAM, exporter);
         toastevar(ModItems.TOASTWITHEGG, ModItems.FRIEDEGG, exporter);
         toastevar(ModItems.TOASTWITHBUTTER, ModItems.BUTTER, exporter);
 
@@ -1179,6 +1177,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         simplebowls(ModItems.PEARLSTEW, Items.ENDER_PEARL,exporter);
         simplebowls(ModItems.GRILLEDCORN, ModItems.CORN,exporter);
 
+        toastjam(ModItems.TOASTWITHJAM, ModItems.TOAST2,exporter);
+
+
     }
 
 
@@ -1195,6 +1196,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(itemConvertible,2)
                 .input(Items.GLASS_BOTTLE,1)
                 .input(Items.SUGAR,2)
+                .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
+                .offerTo(exporter, new Identifier(getRecipeName(output)));
+
+    }
+
+    private void toastjam(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, output,1)
+                .input(ModTags.Items.JAM)
+                .input(itemConvertible)
                 .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
                 .offerTo(exporter, new Identifier(getRecipeName(output)));
 
