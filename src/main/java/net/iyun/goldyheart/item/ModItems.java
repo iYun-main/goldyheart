@@ -47,6 +47,7 @@ public class ModItems {
     public static final Item CHILLI = registerItem("chilli", new Item(new FabricItemSettings().food(ModFoodComponents.CHILLI)));
     public static final Item CHILLISEEDS = registerItem("chilli_seeds", new AliasedBlockItem(ModBlocks.CHILLI_CROP, new FabricItemSettings()));
     public static final Item RUHBARBSEEDS = registerItem("ruhbarb_seeds", new AliasedBlockItem(ModBlocks.RUHBARB_CROP, new FabricItemSettings()));
+    public static final Item ANCIENTSEEDS = registerItem("ancient_seeds", new AliasedBlockItem(ModBlocks.ANCIENT_CROP, new FabricItemSettings()));
     public static final Item STRAWBERRY = registerItem("strawberry", new AliasedBlockItem(ModBlocks.STRAWBER_BUSH, new FabricItemSettings().food(ModFoodComponents.BERRIES)));
     public static final Item BLUEBERRY = registerItem("blueberry", new AliasedBlockItem(ModBlocks.BLUEBER_BUSH, new FabricItemSettings().food(ModFoodComponents.BERRIES)));
     public static final Item WHISKEY = registerItem("whiskey", new WhiskyItem(new FabricItemSettings().food(ModFoodComponents.WHISKEY)));
@@ -63,6 +64,7 @@ public class ModItems {
     public static final Item RICE = registerItem("rice", new AliasedBlockItem(ModBlocks.RICE_CROP, new FabricItemSettings().food(ModFoodComponents.RICE)));
     public static final Item GARLIC = registerItem("garlic", new AliasedBlockItem(ModBlocks.GARLIC_CROP, new FabricItemSettings().food(ModFoodComponents.GARLIC)));
     public static final Item TOMATO = registerItem("tomato", new Item(new FabricItemSettings().food(ModFoodComponents.TOMATO)));
+    public static final Item ANCIENTFRUIT = registerItem("ancient_fruit", new Item(new FabricItemSettings().food(ModFoodComponents.TOMATO).food(ModFoodComponents.BERRIES)));
     public static final Item RHUBARB = registerItem("ruhbarb", new Item(new FabricItemSettings().food(ModFoodComponents.RUHBARB)));
     public static final Item RAWONIONRING = registerItem("raw_onion_ring", new Item(new FabricItemSettings().food(ModFoodComponents.RAWONIONRING)));
     public static final Item LETTUCELEAF = registerItem("lettuce_leaf", new Item(new FabricItemSettings().food(ModFoodComponents.LETTUCELEAF)));

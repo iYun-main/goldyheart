@@ -18,6 +18,9 @@ public class ModBlocks {
 
     //Blocks that will render but not obtainable in the Creative Inv
 
+    public static final Block ANCIENT_CROP = Registry.register(Registries.BLOCK, new Identifier(Goldy_Heart.MOD_ID, "ancient_crop"),
+            new AncientCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+
 public static final Block STRAWBER_BUSH = Registry.register(Registries.BLOCK, new Identifier(Goldy_Heart.MOD_ID, "strawber_bush"),
         new StrawberBushBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH)));
 

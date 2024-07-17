@@ -335,6 +335,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCrop(ModBlocks.CHILLI_CROP, ChilliCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
         blockStateModelGenerator.registerCrop(ModBlocks.PARSLEY_CROP, ParsleyCropBlock.AGE, 0, 1, 2, 3);
         blockStateModelGenerator.registerCrop(ModBlocks.GARLIC_CROP, GarlicCropBlock.AGE, 0, 1, 2, 3);
+        blockStateModelGenerator.registerCrop(ModBlocks.ANCIENT_CROP, AncientCropBlock.AGE, 0,1,2,3,4,5,6,7);
 
 // THIS IS USED FOR THE BUSHES IDFK HOW BUT IT DOES
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.STRAWBER_BUSH,

@@ -16,6 +16,7 @@ public class ModItemGroups {
             new Identifier(Goldy_Heart.MOD_ID,"aafood"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.aafood"))
                     .icon(() -> new ItemStack(ModItems.NETHERITEBERRY)).entries((displayContext, entries) -> {
+                    entries.add(ModItems.ANCIENTFRUIT);
                     entries.add(ModItems.SALT);
                     entries.add(ModItems.BUCKETOFSALT);
                     entries.add(ModItems.PEPPER);
@@ -434,6 +435,7 @@ public class ModItemGroups {
                     entries.add(ModItems.STRAWBERRY);
                     entries.add(ModItems.BLUEBERRY);
                     entries.add(ModItems.RUHBARBSEEDS);
+                    entries.add(ModItems.ANCIENTSEEDS);
                     }).build());
 
     public static final ItemGroup AGOLDYVOIDSTORAGE = Registry.register(Registries.ITEM_GROUP,
