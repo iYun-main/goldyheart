@@ -456,16 +456,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 // All wood side recipes
 
-        offer2x2CompactingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.ANCIENT_WOOD, ModBlocks.ANCIENT_LOG);
-        offer2x2CompactingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_ANCIENT_WOOD, ModBlocks.STRIPPED_ANCIENT_LOG);
-        offer2x2CompactingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.OLD_WOOD, ModBlocks.OLD_LOG);
-        offer2x2CompactingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_OLD_WOOD, ModBlocks.STRIPPED_OLD_LOG);
-        offer2x2CompactingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.SPIRAL_WOOD, ModBlocks.SPIRAL_LOG);
-        offer2x2CompactingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_SPIRAL_WOOD, ModBlocks.STRIPPED_SPIRAL_LOG);
-        offer2x2CompactingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_DARK_SPIRAL_WOOD, ModBlocks.STRIPPED_DARK_SPIRAL_WOOD);
-        offer2x2CompactingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_SPIRAL_WOOD, ModBlocks.DARK_SPIRAL_WOOD);
-        offer2x2CompactingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.WEATHERED_WOOD, ModBlocks.WEATHERED_LOG);
-        offer2x2CompactingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_WEATHERED_WOOD, ModBlocks.STRIPPED_WEATHERED_LOG);
+        offerBarkBlockRecipe(exporter,ModBlocks.ANCIENT_WOOD, ModBlocks.ANCIENT_LOG);
+        offerBarkBlockRecipe(exporter,ModBlocks.STRIPPED_ANCIENT_WOOD, ModBlocks.STRIPPED_ANCIENT_LOG);
+        offerBarkBlockRecipe(exporter,ModBlocks.OLD_WOOD, ModBlocks.OLD_LOG);
+        offerBarkBlockRecipe(exporter,ModBlocks.STRIPPED_OLD_WOOD, ModBlocks.STRIPPED_OLD_LOG);
+        offerBarkBlockRecipe(exporter,ModBlocks.SPIRAL_WOOD, ModBlocks.SPIRAL_LOG);
+        offerBarkBlockRecipe(exporter,ModBlocks.STRIPPED_SPIRAL_WOOD, ModBlocks.STRIPPED_SPIRAL_LOG);
+        offerBarkBlockRecipe(exporter,ModBlocks.STRIPPED_DARK_SPIRAL_WOOD, ModBlocks.STRIPPED_DARK_SPIRAL_WOOD);
+        offerBarkBlockRecipe(exporter,ModBlocks.DARK_SPIRAL_WOOD, ModBlocks.DARK_SPIRAL_WOOD);
+        offerBarkBlockRecipe(exporter,ModBlocks.WEATHERED_WOOD, ModBlocks.WEATHERED_LOG);
+        offerBarkBlockRecipe(exporter,ModBlocks.STRIPPED_WEATHERED_WOOD, ModBlocks.STRIPPED_WEATHERED_LOG);
+
 
 // Fence Gate Recipe
 
