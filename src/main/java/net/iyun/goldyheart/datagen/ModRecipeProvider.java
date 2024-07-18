@@ -455,61 +455,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.DARK_SPIRAL_FENCE)));
 
 // All wood side recipes
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ANCIENT_WOOD,4)
-                .pattern("EE")
-                .pattern("EE")
-                .input('E', ModBlocks.ANCIENT_LOG)
-                .criterion(hasItem(ModBlocks.ANCIENT_LOG), conditionsFromItem(ModBlocks.ANCIENT_WOOD))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ANCIENT_WOOD)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OLD_WOOD,4)
-                .pattern("EE")
-                .pattern("EE")
-                .input('E', ModBlocks.OLD_LOG)
-                .criterion(hasItem(ModBlocks.OLD_LOG), conditionsFromItem(ModBlocks.OLD_WOOD))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.OLD_WOOD)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SPIRAL_WOOD,4)
-                .pattern("EE")
-                .pattern("EE")
-                .input('E', ModBlocks.SPIRAL_LOG)
-                .criterion(hasItem(ModBlocks.SPIRAL_LOG), conditionsFromItem(ModBlocks.SPIRAL_WOOD))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SPIRAL_WOOD)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_SPIRAL_WOOD,4)
-                .pattern("EE")
-                .pattern("EE")
-                .input('E', ModBlocks.DARK_SPIRAL_LOG)
-                .criterion(hasItem(ModBlocks.DARK_SPIRAL_LOG), conditionsFromItem(ModBlocks.DARK_SPIRAL_WOOD))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.DARK_SPIRAL_WOOD)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_ANCIENT_WOOD,4)
-                .pattern("EE")
-                .pattern("EE")
-                .input('E', ModBlocks.STRIPPED_ANCIENT_LOG)
-                .criterion(hasItem(ModBlocks.STRIPPED_ANCIENT_LOG), conditionsFromItem(ModBlocks.STRIPPED_ANCIENT_WOOD))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.STRIPPED_ANCIENT_WOOD)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_OLD_WOOD,4)
-                .pattern("EE")
-                .pattern("EE")
-                .input('E', ModBlocks.STRIPPED_OLD_LOG)
-                .criterion(hasItem(ModBlocks.STRIPPED_OLD_LOG), conditionsFromItem(ModBlocks.STRIPPED_OLD_WOOD))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.STRIPPED_OLD_WOOD)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_SPIRAL_WOOD,4)
-                .pattern("EE")
-                .pattern("EE")
-                .input('E', ModBlocks.STRIPPED_SPIRAL_LOG)
-                .criterion(hasItem(ModBlocks.STRIPPED_SPIRAL_LOG), conditionsFromItem(ModBlocks.STRIPPED_SPIRAL_WOOD))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.STRIPPED_SPIRAL_WOOD)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_DARK_SPIRAL_WOOD,4)
-                .pattern("EE")
-                .pattern("EE")
-                .input('E', ModBlocks.STRIPPED_DARK_SPIRAL_LOG)
-                .criterion(hasItem(ModBlocks.STRIPPED_DARK_SPIRAL_LOG), conditionsFromItem(ModBlocks.STRIPPED_DARK_SPIRAL_WOOD))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.STRIPPED_DARK_SPIRAL_WOOD)));
+        offer2x2CompactingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.ANCIENT_WOOD, ModBlocks.ANCIENT_LOG);
+        offer2x2CompactingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_ANCIENT_WOOD, ModBlocks.STRIPPED_ANCIENT_LOG);
+        offer2x2CompactingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.OLD_WOOD, ModBlocks.OLD_LOG);
+        offer2x2CompactingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_OLD_WOOD, ModBlocks.STRIPPED_OLD_LOG);
+        offer2x2CompactingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.SPIRAL_WOOD, ModBlocks.SPIRAL_LOG);
+        offer2x2CompactingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_SPIRAL_WOOD, ModBlocks.STRIPPED_SPIRAL_LOG);
+        offer2x2CompactingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_DARK_SPIRAL_WOOD, ModBlocks.STRIPPED_DARK_SPIRAL_WOOD);
+        offer2x2CompactingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_SPIRAL_WOOD, ModBlocks.DARK_SPIRAL_WOOD);
+        offer2x2CompactingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.WEATHERED_WOOD, ModBlocks.WEATHERED_LOG);
+        offer2x2CompactingRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_WEATHERED_WOOD, ModBlocks.STRIPPED_WEATHERED_LOG);
 
 // Fence Gate Recipe
 
@@ -740,7 +696,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.ONION), conditionsFromItem(ModItems.VEGGIEMAKI))
                 .criterion(hasItem(ModItems.SALT), conditionsFromItem(ModItems.VEGGIEMAKI))
                 .criterion(hasItem(ModItems.RICE), conditionsFromItem(ModItems.VEGGIEMAKI))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.VEGGIEMAKI)));
+                .offerTo(exporter, new Identifier(etRecipeName(ModItems.VEGGIEMAKI)));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.PANCAKES,4)
                 .input(Items.MILK_BUCKET,1)
