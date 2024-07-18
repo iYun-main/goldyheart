@@ -696,7 +696,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.ONION), conditionsFromItem(ModItems.VEGGIEMAKI))
                 .criterion(hasItem(ModItems.SALT), conditionsFromItem(ModItems.VEGGIEMAKI))
                 .criterion(hasItem(ModItems.RICE), conditionsFromItem(ModItems.VEGGIEMAKI))
-                .offerTo(exporter, new Identifier(etRecipeName(ModItems.VEGGIEMAKI)));
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.VEGGIEMAKI)));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.PANCAKES,4)
                 .input(Items.MILK_BUCKET,1)
