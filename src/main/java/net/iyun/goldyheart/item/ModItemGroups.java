@@ -200,6 +200,7 @@ public class ModItemGroups {
                     entries.add(ModItems.GRILLEDCORN);
                     entries.add(ModItems.CHOCOSTRAWBERRY);
                     entries.add(ModItems.RHUBARB);
+                    entries.add(ModItems.SANDBREAD);
                     }).build());
 
     public static final ItemGroup AGOLDYBLOCK = Registry.register(Registries.ITEM_GROUP,

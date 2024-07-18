@@ -554,6 +554,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SWEETWINE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RHUBARB, Models.GENERATED);
         itemModelGenerator.register(ModItems.MELONCOOKIE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SANDBREAD, Models.GENERATED);
         itemModelGenerator.register(ModItems.DIAMOND_KNIFE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.NETHERITE_KNIFE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RODWITHWORM, Models.HANDHELD_ROD);

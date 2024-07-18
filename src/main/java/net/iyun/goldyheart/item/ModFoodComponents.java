@@ -12,7 +12,7 @@ public class ModFoodComponents {
     public static final FoodComponent SALTBUCKET = new FoodComponent.Builder().hunger(1).saturationModifier(0.1f).build();
     public static final FoodComponent CORN = new FoodComponent.Builder().hunger(4).saturationModifier(0.5f).build();
     public static final FoodComponent RUHBARB = new FoodComponent.Builder().hunger(3).saturationModifier(0.5f).build();
-    public static final FoodComponent SANDBREAD = new FoodComponent.Builder().hunger(1).saturationModifier(0.5f).build();
+    public static final FoodComponent SANDBREAD = new FoodComponent.Builder().hunger(3).saturationModifier(-1.5f).build();
     public static final FoodComponent WORMS = new FoodComponent.Builder().meat().hunger(3).saturationModifier(0.5f).build();
     public static final FoodComponent CANOFWORMS = new FoodComponent.Builder().meat().hunger(4).saturationModifier(0.5f).build();
     public static final FoodComponent CUCUMBER = new FoodComponent.Builder().hunger(3).saturationModifier(0.25f).build();

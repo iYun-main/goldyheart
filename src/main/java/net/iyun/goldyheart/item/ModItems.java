@@ -218,7 +218,7 @@ public class ModItems {
 
     public static final Item RODWITHWORM = registerItem("rod_with_worm", new Item(new FabricItemSettings().maxCount(1).maxDamage(80)));
 
-  //  public static final Item SANDBREAD = registerItem("sand_bread", new Item(new FabricItemSettings().food(ModFoodComponents.SANDBREAD)));
+    public static final Item SANDBREAD = registerItem("sand_bread", new Item(new FabricItemSettings().food(ModFoodComponents.SANDBREAD)));
 
     // These are the RP items
 
