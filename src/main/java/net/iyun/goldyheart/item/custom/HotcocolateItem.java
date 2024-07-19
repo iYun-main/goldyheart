@@ -10,14 +10,6 @@ public class HotcocolateItem extends Item {
         super(settings);
     }
 
-    private static final int MAX_USE_TIME = 60;
-
-    @Override
-    public int getMaxUseTime(ItemStack stack) {
-        return 60;
-    }
-
-
     @Override
     public UseAction getUseAction(ItemStack stack) {
         return UseAction.DRINK;

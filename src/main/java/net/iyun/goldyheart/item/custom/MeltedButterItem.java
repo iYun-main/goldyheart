@@ -39,12 +39,6 @@ public class MeltedButterItem extends Item {
         }
     }
 
-    private static final int MAX_USE_TIME = 40;
-
-    @Override
-    public int getMaxUseTime(ItemStack stack) {
-        return 40;
-    }
 
     @Override
     public UseAction getUseAction(ItemStack stack) {

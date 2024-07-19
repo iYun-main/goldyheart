@@ -41,12 +41,6 @@ public class GlobalBigBowlsItem extends Item {
         }
     }
 
-    private static final int MAX_USE_TIME = 60;
-
-    @Override
-    public int getMaxUseTime(ItemStack stack) {
-        return 60;
-    }
 
     @Override
     public UseAction getUseAction(ItemStack stack) {

@@ -45,16 +45,10 @@ public class GlobalJamItem extends Item {
         }
     }
 
-    private static final int MAX_USE_TIME = 50;
-
-        @Override
-        public int getMaxUseTime(ItemStack stack) {
-            return 50;
-        }
 
         @Override
         public UseAction getUseAction(ItemStack stack) {
-            return UseAction.EAT;
+            return UseAction.DRINK;
         }
 
         @Override

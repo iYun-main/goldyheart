@@ -180,7 +180,7 @@ public class ModItems {
     public static final Item WORMBOWL = registerItem("worm_bowl", new Item(new FabricItemSettings().food(ModFoodComponents.WORMBOWL)));
     public static final Item DEBUG = registerItem("debug", new Item(new FabricItemSettings().food(ModFoodComponents.DEBUG)));
     public static final Item PEARLSTEW = registerItem("pearl_stew", new Item(new FabricItemSettings().food(ModFoodComponents.PEARLSTEW)));
-    public static final Item BUTTERCORN = registerItem("buttered_corn", new Item(new FabricItemSettings().food(ModFoodComponents.BUTTERCORN)));
+    public static final Item BUTTERCORN = registerItem("buttered_corn", new GlobalMashStickItem(new FabricItemSettings().food(ModFoodComponents.BUTTERCORN)));
     public static final Item POPCORN = registerItem("popcorn", new Item(new FabricItemSettings().food(ModFoodComponents.POPCORN)));
     public static final Item GRILLEDCORN = registerItem("grilled_corn", new Item(new FabricItemSettings().food(ModFoodComponents.GRILLEDCORN)));
     public static final Item BOILEDSNIFFEGG = registerItem("boiled_sniffer_egg", new Item(new FabricItemSettings().food(ModFoodComponents.BOILEDSNIFF)));

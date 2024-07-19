@@ -11,13 +11,6 @@ public class CoffeeItem extends Item {
     }
 
 
-    private static final int MAX_USE_TIME = 30;
-
-    @Override
-    public int getMaxUseTime(ItemStack stack) {
-        return 30;
-    }
-
     @Override
     public UseAction getUseAction(ItemStack stack) {
         return UseAction.DRINK;
