@@ -207,7 +207,6 @@
   "item.goldyheart.strawberry_smoothie": "Strawberry Smoothie",
   "item.goldyheart.melon_donut": "Melon Donut",
   "item.goldyheart.ruhbarb_seeds": "Ruhbarb Seeds",
-
   "item.goldyheart.mana_crystal": "Mana Crystal Shards",
   "item.goldyheart.mana_crystal_2": "Mana Crystal",
   "item.goldyheart.mana_crystal_3": "Large Mana Crystal",
@@ -239,7 +238,6 @@
   "item.goldyheart.dungeon_loot_18": "Loot Text here",
   "item.goldyheart.dungeon_loot_19": "Loot Text here",
   "item.goldyheart.dungeon_loot_20": "Loot Text here",
-
   "item.goldyheart.blacksmith_pick_sigl_wooden": "Blacksmith Stencil Pickaxe Head",
   "item.goldyheart.blacksmith_axe_sigl_wooden": "Blacksmith Stencil Axe Head",
   "item.goldyheart.blacksmith_hoe_sigl_wooden": "Blacksmith Stencil Hoe Head",
@@ -251,7 +249,7 @@
   "item.goldyheart.diamond_knive": "Diamond Knife",
   "item.goldyheart.netherite_knive": "Netherite Knife",
   "item.goldyheart.sand_bread": "Sand Bread",
-
+  "item.goldyheart.ancient_seeds": "Ancient Seeds",
   "block.goldyheart.dirt_slab": "Dirt Slab",
   "block.goldyheart.soul_sand_slab": "Soul Sand Slab",
   "block.goldyheart.soul_soil_slab": "Soul Soil Slab",
@@ -317,7 +315,6 @@
   "block.goldyheart.glass_trapdoor": "Glass Trapdoor",
   "block.goldyheart.stone_trapdoor": "Stone Trapdoor",
   "block.goldyheart.cobblestone_trapdoor": "Cobblestone Trapdoor",
-
   "block.goldyheart.oak_wood_a": "Oak Wood Texture Render",
   "block.goldyheart.oak_wood_as": "Stripped Oak Wood Texture Render",
   "block.goldyheart.oak_slab": "Oak Wood Slab",
@@ -442,7 +439,6 @@
   "block.goldyheart.ancient_wood_a": "Ancient Wood Texture Render",
   "block.goldyheart.old_wood_a": "Old Wood Texture Render",
   "block.goldyheart.old_wood_as": "Stripped Old Wood Texture Render",
-
   "block.goldyheart.bog_slab": "Bog Slab",
   "block.goldyheart.bog_stairs": "Bog Stair",
   "block.goldyheart.bog_planks": "Bog Planks",
@@ -458,13 +454,11 @@
   "block.goldyheart.potted_old_rose": "Potted Old Rose",
   "block.goldyheart.potted_tiny_lilly": "Potted Tiny Lilly",
   "block.goldyheart.potted_astrophyllia": "Potted Astrophyllia",
-
   "tooltip.goldyheart.blacksmith.tooltip": "These arent obtainable and im too lazy to remove em they stay",
   "tooltip.goldyheart.knive.tooltip": "These do work however they stay until further fix solution",
-
-  "itemgroup.aafood": "Goldy Heart Foods",
-  "itemgroup.ablock": "Goldy Heart Blocks",
+  "itemgroup.aaaafood": "Goldy Heart Foods",
+  "itemgroup.aaablock": "Goldy Heart Blocks",
   "itemgroup.brpitem": "Goldy Heart RP Items",
-  "itemgroup.cfarming": "Goldy Heart Farming",
-  "itemgroup.dstori": "Goldy Heart Void Storage"
+  "itemgroup.aafarming": "Goldy Heart Farming",
+  "itemgroup.astori": "Goldy Heart Void Storage"
 }

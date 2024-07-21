@@ -177,8 +177,8 @@ public class ModItems {
     public static final Item BEETROOTCAKESLICE = registerItem("beetroot_cake_slice", new Item(new FabricItemSettings().food(ModFoodComponents.CAKESLICE)));
     public static final Item BEETROOTCAKE = registerItem("beetroot_cake", new Item(new FabricItemSettings().food(ModFoodComponents.GLOBALCAKES).maxCount(4)));
     public static final Item CORN = registerItem("corn", new Item(new FabricItemSettings().food(ModFoodComponents.CORN)));
-    public static final Item WORMBOWL = registerItem("worm_bowl", new Item(new FabricItemSettings().food(ModFoodComponents.WORMBOWL)));
-    public static final Item DEBUG = registerItem("debug", new Item(new FabricItemSettings().food(ModFoodComponents.DEBUG)));
+    //   public static final Item WORMBOWL = registerItem("worm_bowl", new Item(new FabricItemSettings().food(ModFoodComponents.WORMBOWL)));
+    //  public static final Item DEBUG = registerItem("debug", new Item(new FabricItemSettings().food(ModFoodComponents.DEBUG)));
     public static final Item PEARLSTEW = registerItem("pearl_stew", new Item(new FabricItemSettings().food(ModFoodComponents.PEARLSTEW)));
     public static final Item BUTTERCORN = registerItem("buttered_corn", new GlobalMashStickItem(new FabricItemSettings().food(ModFoodComponents.BUTTERCORN)));
     public static final Item POPCORN = registerItem("popcorn", new Item(new FabricItemSettings().food(ModFoodComponents.POPCORN)));
@@ -222,8 +222,8 @@ public class ModItems {
 
     // These are the RP items
 
-    public static final Item WORM = registerItem("worms", new Item(new FabricItemSettings().food(ModFoodComponents.WORMS)));
-    public static final Item CANOFWORMS = registerItem("canned_worms", new Item(new FabricItemSettings().food(ModFoodComponents.CANOFWORMS)));
+   // public static final Item WORM = registerItem("worms", new Item(new FabricItemSettings().food(ModFoodComponents.WORMS)));
+   // public static final Item CANOFWORMS = registerItem("canned_worms", new Item(new FabricItemSettings().food(ModFoodComponents.CANOFWORMS)));
     public static final Item MANACRYSTAL = registerItem("mana_crystal", new Item(new FabricItemSettings()));
     public static final Item MANACRYSTAL_2 = registerItem("mana_crystal_2", new Item(new FabricItemSettings()));
     public static final Item MANACRYSTAL_3 = registerItem("mana_crystal_3", new Item(new FabricItemSettings()));
@@ -235,35 +235,35 @@ public class ModItems {
     public static final Item MAGICCRYSTAL_6 = registerItem("rose_magic_crystal", new Item(new FabricItemSettings()));
     public static final Item MAGICCRYSTAL_7 = registerItem("blood_crystal", new Item(new FabricItemSettings()));
     public static final Item MAGICCRYSTAL_8 = registerItem("pure_crystal", new Item(new FabricItemSettings()));
-    public static final Item MECH_SCREW = registerItem("mech_screw", new Item(new FabricItemSettings()));
-    public static final Item MANA_EMBER = registerItem("mana_ember", new Item(new FabricItemSettings()));
-    public static final Item MERMAIDTAIL = registerItem("mermaids_tail", new Item(new FabricItemSettings().food(ModFoodComponents.MERTAIL)));
-    public static final Item VAMPIREWING = registerItem("vampire_wing", new Item(new FabricItemSettings()));
-    public static final Item DRAGONSCALE = registerItem("dragon_scale", new Item(new FabricItemSettings()));
-    public static final Item BEASTMANFUR = registerItem("beastman_fur", new Item(new FabricItemSettings()));
+   // public static final Item MECH_SCREW = registerItem("mech_screw", new Item(new FabricItemSettings()));
+   // public static final Item MANA_EMBER = registerItem("mana_ember", new Item(new FabricItemSettings()));
+   // public static final Item MERMAIDTAIL = registerItem("mermaids_tail", new Item(new FabricItemSettings().food(ModFoodComponents.MERTAIL)));
+   // public static final Item VAMPIREWING = registerItem("vampire_wing", new Item(new FabricItemSettings()));
+   // public static final Item DRAGONSCALE = registerItem("dragon_scale", new Item(new FabricItemSettings()));
+   // public static final Item BEASTMANFUR = registerItem("beastman_fur", new Item(new FabricItemSettings()));
 
     // Dungeon Loot stuff
 
-    public static final Item LOOT_1 = registerItem("dungeon_loot_1", new Item(new FabricItemSettings()));
-    public static final Item LOOT_2 = registerItem("dungeon_loot_2", new Item(new FabricItemSettings()));
-    public static final Item LOOT_3 = registerItem("dungeon_loot_3", new Item(new FabricItemSettings()));
-    public static final Item LOOT_4 = registerItem("dungeon_loot_4", new Item(new FabricItemSettings()));
-    public static final Item LOOT_5 = registerItem("dungeon_loot_5", new Item(new FabricItemSettings()));
-    public static final Item LOOT_6 = registerItem("dungeon_loot_6", new Item(new FabricItemSettings()));
-    public static final Item LOOT_7 = registerItem("dungeon_loot_7", new Item(new FabricItemSettings()));
-    public static final Item LOOT_8 = registerItem("dungeon_loot_8", new Item(new FabricItemSettings()));
-    public static final Item LOOT_9 = registerItem("dungeon_loot_9", new Item(new FabricItemSettings()));
-    public static final Item LOOT_10 = registerItem("dungeon_loot_10", new Item(new FabricItemSettings()));
-    public static final Item LOOT_11 = registerItem("dungeon_loot_11", new Item(new FabricItemSettings()));
-    public static final Item LOOT_12 = registerItem("dungeon_loot_12", new Item(new FabricItemSettings()));
-    public static final Item LOOT_13 = registerItem("dungeon_loot_13", new Item(new FabricItemSettings()));
-    public static final Item LOOT_14 = registerItem("dungeon_loot_14", new Item(new FabricItemSettings()));
-    public static final Item LOOT_15 = registerItem("dungeon_loot_15", new Item(new FabricItemSettings()));
-    public static final Item LOOT_16 = registerItem("dungeon_loot_16", new Item(new FabricItemSettings()));
-    public static final Item LOOT_17 = registerItem("dungeon_loot_17", new Item(new FabricItemSettings()));
-    public static final Item LOOT_18 = registerItem("dungeon_loot_18", new Item(new FabricItemSettings()));
-    public static final Item LOOT_19 = registerItem("dungeon_loot_19", new Item(new FabricItemSettings()));
-    public static final Item LOOT_20 = registerItem("dungeon_loot_20", new Item(new FabricItemSettings()));
+    // public static final Item LOOT_1 = registerItem("dungeon_loot_1", new Item(new FabricItemSettings()));
+    // public static final Item LOOT_2 = registerItem("dungeon_loot_2", new Item(new FabricItemSettings()));
+    //public static final Item LOOT_3 = registerItem("dungeon_loot_3", new Item(new FabricItemSettings()));
+    //public static final Item LOOT_4 = registerItem("dungeon_loot_4", new Item(new FabricItemSettings()));
+    //public static final Item LOOT_5 = registerItem("dungeon_loot_5", new Item(new FabricItemSettings()));
+    //public static final Item LOOT_6 = registerItem("dungeon_loot_6", new Item(new FabricItemSettings()));
+    //public static final Item LOOT_7 = registerItem("dungeon_loot_7", new Item(new FabricItemSettings()));
+    //public static final Item LOOT_8 = registerItem("dungeon_loot_8", new Item(new FabricItemSettings()));
+    //public static final Item LOOT_9 = registerItem("dungeon_loot_9", new Item(new FabricItemSettings()));
+    //public static final Item LOOT_10 = registerItem("dungeon_loot_10", new Item(new FabricItemSettings()));
+    //public static final Item LOOT_11 = registerItem("dungeon_loot_11", new Item(new FabricItemSettings()));
+    //public static final Item LOOT_12 = registerItem("dungeon_loot_12", new Item(new FabricItemSettings()));
+    //public static final Item LOOT_13 = registerItem("dungeon_loot_13", new Item(new FabricItemSettings()));
+    //public static final Item LOOT_14 = registerItem("dungeon_loot_14", new Item(new FabricItemSettings()));
+    //public static final Item LOOT_15 = registerItem("dungeon_loot_15", new Item(new FabricItemSettings()));
+    //public static final Item LOOT_16 = registerItem("dungeon_loot_16", new Item(new FabricItemSettings()));
+    //public static final Item LOOT_17 = registerItem("dungeon_loot_17", new Item(new FabricItemSettings()));
+    //public static final Item LOOT_18 = registerItem("dungeon_loot_18", new Item(new FabricItemSettings()));
+    //public static final Item LOOT_19 = registerItem("dungeon_loot_19", new Item(new FabricItemSettings()));
+    //public static final Item LOOT_20 = registerItem("dungeon_loot_20", new Item(new FabricItemSettings()));
 
 // the god forsaken tools
 

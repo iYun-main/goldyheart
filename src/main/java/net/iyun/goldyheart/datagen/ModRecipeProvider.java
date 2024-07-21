@@ -312,8 +312,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.ACA_WOOD_SLAB),conditionsFromItem(Blocks.ACACIA_WOOD))
                 .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.ACA_WOOD_SLAB)));
 
-        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ACA_WOOD_SLAB_S, Ingredient.ofItems(Blocks.ACACIA_WOOD))
-                .criterion(hasItem(ModBlocks.ACA_WOOD_SLAB_S),conditionsFromItem(Blocks.ACACIA_WOOD))
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ACA_WOOD_SLAB_S, Ingredient.ofItems(Blocks.STRIPPED_ACACIA_WOOD))
+                .criterion(hasItem(ModBlocks.ACA_WOOD_SLAB_S),conditionsFromItem(Blocks.STRIPPED_ACACIA_WOOD))
                 .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.ACA_WOOD_SLAB_S)));
 
         createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_OAK_WOOD_SLAB, Ingredient.ofItems(Blocks.DARK_OAK_WOOD))
@@ -728,12 +728,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.STRAWBERRY), conditionsFromItem(ModItems.CHOCOSTRAWBERRY))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.CHOCOSTRAWBERRY)));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.WORMBOWL,1)
-                .input(Items.BOWL,1)
-                .input(ModItems.WORM,3)
-                .criterion(hasItem(Items.COCOA_BEANS), conditionsFromItem(ModItems.WORMBOWL))
-                .criterion(hasItem(ModItems.STRAWBERRY), conditionsFromItem(ModItems.WORMBOWL))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.WORMBOWL)));
+        // ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.WORMBOWL,1)
+        //      .input(Items.BOWL,1)
+        //      .input(ModItems.WORM,3)
+        //      .criterion(hasItem(Items.COCOA_BEANS), conditionsFromItem(ModItems.WORMBOWL))
+        //      .criterion(hasItem(ModItems.STRAWBERRY), conditionsFromItem(ModItems.WORMBOWL))
+        //      .offerTo(exporter, new Identifier(getRecipeName(ModItems.WORMBOWL)));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.HOTCHOCOLATE,2)
                 .input(Items.MILK_BUCKET,1)
@@ -1154,7 +1154,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         itemslices(ModItems.CUTTOMATO, ModItems.TOMATO,exporter);
         itemslices(ModItems.CUTBREAD, Items.BREAD,exporter);
 
-        doughnuts(ModItems.APPLEDONUT, Items.BEDROCK, exporter);
+        doughnuts(ModItems.APPLEDONUT, ModItems.APPLEJAM, exporter);
         doughnuts(ModItems.BEETDONUT, ModItems.BEETJAM, exporter);
         doughnuts(ModItems.BLUEDONUT, ModItems.BLUEBERJAM, exporter);
         doughnuts(ModItems.STRAWDONUT, ModItems.STRAWJAM, exporter);
@@ -1201,6 +1201,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         toastjam(ModItems.TOASTWITHJAM, ModItems.TOAST2,exporter);
 
 
+        wines(ModItems.BEETWINE, Items.BEETROOT,exporter);
+        wines(ModItems.CHORUSWINE, Items.CHORUS_FRUIT,exporter);
+        wines(ModItems.MELONWINE, Items.MELON_SLICE,exporter);
+        wines(ModItems.SWEETWINE, Items.SWEET_BERRIES,exporter);
+        wines(ModItems.GLOWWINE, Items.GLOW_BERRIES,exporter);
+
     }
 
 
@@ -1236,6 +1242,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(itemConvertible,2)
                 .input(Items.GLASS_BOTTLE,1)
                 .input(ModItems.SALT,2)
+                .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
+                .offerTo(exporter, new Identifier(getRecipeName(output)));
+
+    }
+
+    private void wines(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, output,1)
+                .input(itemConvertible,4)
+                .input(Items.GLASS_BOTTLE,1)
                 .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
                 .offerTo(exporter, new Identifier(getRecipeName(output)));
 

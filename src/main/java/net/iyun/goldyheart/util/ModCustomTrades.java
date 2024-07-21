@@ -122,6 +122,21 @@ public class ModCustomTrades {
                     new ItemStack(ModItems.STRAWBERRY),
                     1,2,0.45f));
 
+                    //   factories.add((entity, random) -> new TradeOffer(
+                    // new ItemStack(Items.EMERALD, 10),
+                    //new ItemStack(ModItems.WORM),
+                    //1,2,0.45f));
+
+                    //  factories.add((entity, random) -> new TradeOffer(
+                    // new ItemStack(Items.EMERALD, 10),
+                    //new ItemStack(ModItems.WORMBOWL),
+                    //1,2,0.45f));
+
+                    //  factories.add((entity, random) -> new TradeOffer(
+                    //new ItemStack(Items.EMERALD, 10),
+                    //new ItemStack(ModItems.CANOFWORMS),
+                    //1,2,0.45f));
+
                 });
     }
 }

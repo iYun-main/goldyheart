@@ -13,8 +13,8 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
     public static final ItemGroup AGOLDYFOOD = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(Goldy_Heart.MOD_ID,"aafood"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.aafood"))
+            new Identifier(Goldy_Heart.MOD_ID,"aaaafood"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.aaaafood"))
                     .icon(() -> new ItemStack(ModItems.NETHERITEBERRY)).entries((displayContext, entries) -> {
                     entries.add(ModItems.ANCIENTFRUIT);
                     entries.add(ModItems.SALT);
@@ -186,9 +186,9 @@ public class ModItemGroups {
                     entries.add(ModItems.STRAWCOOKIE);
                     entries.add(ModItems.CHILLI);
                     entries.add(ModItems.CORN);
-                    entries.add(ModItems.WORM);
-                    entries.add(ModItems.CANOFWORMS);
-                    entries.add(ModItems.WORMBOWL);
+                        //     entries.add(ModItems.WORM);
+                        //   entries.add(ModItems.CANOFWORMS);
+                        //    entries.add(ModItems.WORMBOWL);
                     entries.add(ModItems.STRAWBERRY);
                     entries.add(ModItems.BLUEBERRY);
                     entries.add(ModItems.PEARLSTEW);
@@ -204,8 +204,8 @@ public class ModItemGroups {
                     }).build());
 
     public static final ItemGroup AGOLDYBLOCK = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(Goldy_Heart.MOD_ID,"ablock"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ablock"))
+            new Identifier(Goldy_Heart.MOD_ID,"aaablock"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.aaablock"))
                     .icon(() -> new ItemStack(ModItems.DIAMONDBERRY)).entries((displayContext, entries) -> {
                     entries.add(ModBlocks.DIRT_SLAB);
                     entries.add(ModBlocks.ROOTED_DIRT_SLAB);
@@ -380,46 +380,46 @@ public class ModItemGroups {
                     }).build());
 
 
-    public static final ItemGroup AGOLDYRP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(Goldy_Heart.MOD_ID,"brpitem"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.brpitem"))
-                  .icon(() -> new ItemStack(ModItems.COPPERBERRY)).entries((displayContext, entries) -> {
-                  entries.add(ModItems.MANACRYSTAL);
-                  entries.add(ModItems.MANACRYSTAL_2);
-                  entries.add(ModItems.MANACRYSTAL_3);
-                  entries.add(ModItems.WORM);
-                  entries.add(ModItems.WORMBOWL);
-                  entries.add(ModItems.CANOFWORMS);
-                  entries.add(ModItems.LEATHERWHIP);
-                  entries.add(ModItems.MERMAIDTAIL);
-                  entries.add(ModItems.MANA_EMBER);
-                  entries.add(ModItems.MECH_SCREW);
-                  entries.add(ModItems.RODWITHWORM);
-                  entries.add(ModItems.LOOT_1);
-                  entries.add(ModItems.LOOT_2);
-                  entries.add(ModItems.LOOT_3);
-                  entries.add(ModItems.LOOT_4);
-                  entries.add(ModItems.LOOT_5);
-                  entries.add(ModItems.LOOT_6);
-                  entries.add(ModItems.LOOT_7);
-                  entries.add(ModItems.LOOT_8);
-                  entries.add(ModItems.LOOT_9);
-                  entries.add(ModItems.LOOT_10);
-                  entries.add(ModItems.LOOT_11);
-                  entries.add(ModItems.LOOT_12);
-                  entries.add(ModItems.LOOT_13);
-                  entries.add(ModItems.LOOT_14);
-                  entries.add(ModItems.LOOT_15);
-                  entries.add(ModItems.LOOT_16);
-                  entries.add(ModItems.LOOT_17);
-                  entries.add(ModItems.LOOT_18);
-                  entries.add(ModItems.LOOT_19);
-                  entries.add(ModItems.LOOT_20);
-                  }).build());
+    //   public static final ItemGroup AGOLDYRP = Registry.register(Registries.ITEM_GROUP,
+    //      new Identifier(Goldy_Heart.MOD_ID,"brpitem"),
+    //      FabricItemGroup.builder().displayName(Text.translatable("itemgroup.brpitem"))
+    //            .icon(() -> new ItemStack(ModItems.COPPERBERRY)).entries((displayContext, entries) -> {
+    //            entries.add(ModItems.MANACRYSTAL);
+    //            entries.add(ModItems.MANACRYSTAL_2);
+    //            entries.add(ModItems.MANACRYSTAL_3);
+    //            entries.add(ModItems.WORM);
+    //            entries.add(ModItems.WORMBOWL);
+    //            entries.add(ModItems.CANOFWORMS);
+    //            entries.add(ModItems.LEATHERWHIP);
+    //            entries.add(ModItems.MERMAIDTAIL);
+    //            entries.add(ModItems.MANA_EMBER);
+    //            entries.add(ModItems.MECH_SCREW);
+    //            entries.add(ModItems.RODWITHWORM);
+    //            entries.add(ModItems.LOOT_1);
+    //            entries.add(ModItems.LOOT_2);
+    //            entries.add(ModItems.LOOT_3);
+    //            entries.add(ModItems.LOOT_4);
+    //            entries.add(ModItems.LOOT_5);
+    //            entries.add(ModItems.LOOT_6);
+    //            entries.add(ModItems.LOOT_7);
+    //            entries.add(ModItems.LOOT_8);
+    //            entries.add(ModItems.LOOT_9);
+    //            entries.add(ModItems.LOOT_10);
+    //            entries.add(ModItems.LOOT_11);
+    //            entries.add(ModItems.LOOT_12);
+    //            entries.add(ModItems.LOOT_13);
+    //            entries.add(ModItems.LOOT_14);
+    //            entries.add(ModItems.LOOT_15);
+    //            entries.add(ModItems.LOOT_16);
+    //            entries.add(ModItems.LOOT_17);
+    ////            entries.add(ModItems.LOOT_18);
+    //          entries.add(ModItems.LOOT_19);
+    //            entries.add(ModItems.LOOT_20);
+    //            }).build());
 
     public static final ItemGroup AGOLDYFARMING = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(Goldy_Heart.MOD_ID,"cfarming"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.cfarming"))
+            new Identifier(Goldy_Heart.MOD_ID,"aafarming"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.aafarming"))
                     .icon(() -> new ItemStack(ModItems.AMETHYSTBERRY)).entries((displayContext, entries) -> {
                     entries.add(ModItems.CUCUMBERSEEDS);
                     entries.add(ModItems.GRAPESEEDS);
@@ -440,8 +440,8 @@ public class ModItemGroups {
                     }).build());
 
     public static final ItemGroup AGOLDYVOIDSTORAGE = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(Goldy_Heart.MOD_ID,"dstori"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.dstori"))
+            new Identifier(Goldy_Heart.MOD_ID,"astori"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.astori"))
                     .icon(() -> new ItemStack(ModItems.LAPISBERRY)).entries((displayContext, entries) -> {
                     entries.add(ModItems.MAGICCRYSTAL);
                     entries.add(ModItems.MAGICCRYSTAL_2);
@@ -451,9 +451,9 @@ public class ModItemGroups {
                     entries.add(ModItems.MAGICCRYSTAL_6);
                     entries.add(ModItems.MAGICCRYSTAL_7);
                     entries.add(ModItems.MAGICCRYSTAL_8);
-                    entries.add(ModItems.BEASTMANFUR);
-                    entries.add(ModItems.VAMPIREWING);
-                    entries.add(ModItems.DRAGONSCALE);
+                        //      entries.add(ModItems.BEASTMANFUR);
+                        // entries.add(ModItems.VAMPIREWING);
+                        //  entries.add(ModItems.DRAGONSCALE);
                     entries.add(ModItems.STONE_KNIFE);
                     entries.add(ModItems.IRON_KNIFE);
                     entries.add(ModItems.GOLD_KNIFE);
