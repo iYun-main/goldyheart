@@ -1074,6 +1074,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.SALT), conditionsFromItem(ModItems.SNIFFEROMLETTE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.SNIFFEROMLETTE)));
 
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.BLAZERODNOODLES,1)
+                .input(Items.BOWL,1)
+                .input(Items.BLAZE_ROD,3)
+                .input(ModItems.DOUGH,1)
+                .input(ModItems.PARSLEY,1)
+                .input(ModItems.SALT,1)
+                .criterion(hasItem(Items.BOWL), conditionsFromItem(ModItems.BLAZERODNOODLES))
+                .criterion(hasItem(Items.BLAZE_ROD), conditionsFromItem(ModItems.BLAZERODNOODLES))
+                .criterion(hasItem(ModItems.DOUGH), conditionsFromItem(ModItems.BLAZERODNOODLES))
+                .criterion(hasItem(ModItems.PARSLEY), conditionsFromItem(ModItems.BLAZERODNOODLES))
+                .criterion(hasItem(ModItems.SALT), conditionsFromItem(ModItems.BLAZERODNOODLES))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.BLAZERODNOODLES)));
+
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.RAWCHICKENLEG,2)
                 .input(Items.CHICKEN,2)
                 .criterion(hasItem(Items.CHICKEN), conditionsFromItem(ModItems.RAWCHICKENLEG))
@@ -1207,6 +1220,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         wines(ModItems.SWEETWINE, Items.SWEET_BERRIES,exporter);
         wines(ModItems.GLOWWINE, Items.GLOW_BERRIES,exporter);
 
+        oreberries(ModItems.AMETHYSTBERRY, Items.AMETHYST_SHARD,exporter);
+        oreberries(ModItems.COALBERRY, Items.COAL,exporter);
+        oreberries(ModItems.DIAMONDBERRY, Items.DIAMOND,exporter);
+        oreberries(ModItems.COPPERBERRY, Items.COPPER_BLOCK,exporter);
+        oreberries2(ModItems.NETHERITEBERRY, Items.NETHERITE_SCRAP,exporter);
+        oreberries(ModItems.NETHERQUARTZBERRY, Items.QUARTZ,exporter);
+        oreberries(ModItems.LAPISBERRY, Items.LAPIS_LAZULI,exporter);
+        oreberries(ModItems.EMERALDBERRY, Items.EMERALD,exporter);
+        oreberries(ModItems.IRONBERRY, Items.IRON_INGOT,exporter);
+        oreberries(ModItems.GOLDBERRY, Items.GOLD_INGOT,exporter);
+        oreberries(ModItems.REDSTONEBERRY, Items.REDSTONE_BLOCK,exporter);
+
     }
 
 
@@ -1335,6 +1360,28 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(itemConvertible,4)
                 .input(Items.GLASS_BOTTLE)
                 .input(Items.SUGAR,2)
+                .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
+                .offerTo(exporter, new Identifier(getRecipeName(output)));
+
+    }
+
+    private void oreberries(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, output)
+                .pattern("WWW")
+                .pattern("WXW")
+                .pattern("WWW")
+                .input('X',Items.SWEET_BERRIES)
+                .input('W',itemConvertible)
+                .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
+                .offerTo(exporter, new Identifier(getRecipeName(output)));
+
+    }
+
+    private void oreberries2(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, output)
+                .pattern("WXW")
+                .input('X',Items.SWEET_BERRIES)
+                .input('W',itemConvertible)
                 .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
                 .offerTo(exporter, new Identifier(getRecipeName(output)));
 

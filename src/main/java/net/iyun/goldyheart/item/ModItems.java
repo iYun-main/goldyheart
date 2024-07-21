@@ -224,9 +224,9 @@ public class ModItems {
 
    // public static final Item WORM = registerItem("worms", new Item(new FabricItemSettings().food(ModFoodComponents.WORMS)));
    // public static final Item CANOFWORMS = registerItem("canned_worms", new Item(new FabricItemSettings().food(ModFoodComponents.CANOFWORMS)));
-    public static final Item MANACRYSTAL = registerItem("mana_crystal", new Item(new FabricItemSettings()));
-    public static final Item MANACRYSTAL_2 = registerItem("mana_crystal_2", new Item(new FabricItemSettings()));
-    public static final Item MANACRYSTAL_3 = registerItem("mana_crystal_3", new Item(new FabricItemSettings()));
+   // public static final Item MANACRYSTAL = registerItem("mana_crystal", new Item(new FabricItemSettings()));
+   // public static final Item MANACRYSTAL_2 = registerItem("mana_crystal_2", new Item(new FabricItemSettings()));
+   // public static final Item MANACRYSTAL_3 = registerItem("mana_crystal_3", new Item(new FabricItemSettings()));
     public static final Item MAGICCRYSTAL = registerItem("pink_magic_crystal", new Item(new FabricItemSettings()));
     public static final Item MAGICCRYSTAL_2 = registerItem("orange_magic_crystal", new Item(new FabricItemSettings()));
     public static final Item MAGICCRYSTAL_3 = registerItem("green_magic_crystal", new Item(new FabricItemSettings()));
@@ -283,8 +283,8 @@ public class ModItems {
     public static final Item NETHERITE_KNIFE = registerItem("netherite_knive",
             new KniveItem(ToolMaterials.NETHERITE, 3, 0f, new FabricItemSettings().maxCount(1).maxDamage(550)));
 
-    public static final Item LEATHERWHIP = registerItem("leather_whip",
-            new AxeItem(ModToolMaterial.LEATHER, -99,0.5f, new FabricItemSettings()));
+   // public static final Item LEATHERWHIP = registerItem("leather_whip",
+     //       new AxeItem(ModToolMaterial.LEATHER, -99,0.5f, new FabricItemSettings()));
 
 
     private static Item registerItem(String name, Item item){
