@@ -214,6 +214,7 @@ public class ModItems {
     public static final Item BLACKSMITHHOESIGLWOOD = registerItem("blacksmith_hoe_sigl_wooden", new BlacksmithItem(new FabricItemSettings()));
     public static final Item BLACKSMITHSWORDSIGLWOOD = registerItem("blacksmith_sword_sigl_wooden", new BlacksmithItem(new FabricItemSettings()));
     public static final Item BLACKSMITHSHOVELSIGLWOOD = registerItem("blacksmith_shovel_sigl_wooden", new BlacksmithItem(new FabricItemSettings()));
+    public static final Item ROPE = registerItem("rope", new RopeItem(new FabricItemSettings()));
 
 
     public static final Item RODWITHWORM = registerItem("rod_with_worm", new Item(new FabricItemSettings().maxCount(1).maxDamage(80)));
@@ -264,6 +265,7 @@ public class ModItems {
     //public static final Item LOOT_18 = registerItem("dungeon_loot_18", new Item(new FabricItemSettings()));
     //public static final Item LOOT_19 = registerItem("dungeon_loot_19", new Item(new FabricItemSettings()));
     //public static final Item LOOT_20 = registerItem("dungeon_loot_20", new Item(new FabricItemSettings()));
+    public static final Item VOID = registerItem("void", new VoidItem(new FabricItemSettings()));
 
 // the god forsaken tools
 

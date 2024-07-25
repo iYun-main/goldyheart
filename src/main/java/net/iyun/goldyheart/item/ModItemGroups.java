@@ -16,6 +16,7 @@ public class ModItemGroups {
             new Identifier(Goldy_Heart.MOD_ID,"aaaafood"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.aaaafood"))
                     .icon(() -> new ItemStack(ModItems.NETHERITEBERRY)).entries((displayContext, entries) -> {
+                    entries.add(ModItems.VOID);
                     entries.add(ModItems.ANCIENTFRUIT);
                     entries.add(ModItems.SALT);
                     entries.add(ModItems.BUCKETOFSALT);
@@ -207,6 +208,7 @@ public class ModItemGroups {
             new Identifier(Goldy_Heart.MOD_ID,"aaablock"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.aaablock"))
                     .icon(() -> new ItemStack(ModItems.DIAMONDBERRY)).entries((displayContext, entries) -> {
+                    entries.add(ModItems.VOID);
                     entries.add(ModBlocks.DIRT_SLAB);
                     entries.add(ModBlocks.ROOTED_DIRT_SLAB);
                     entries.add(ModBlocks.OBSIDIAN_SLAB);
@@ -421,6 +423,7 @@ public class ModItemGroups {
             new Identifier(Goldy_Heart.MOD_ID,"aafarming"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.aafarming"))
                     .icon(() -> new ItemStack(ModItems.AMETHYSTBERRY)).entries((displayContext, entries) -> {
+                    entries.add(ModItems.VOID);
                     entries.add(ModItems.CUCUMBERSEEDS);
                     entries.add(ModItems.GRAPESEEDS);
                     entries.add(ModItems.TOMATOSEEDS);
@@ -443,6 +446,8 @@ public class ModItemGroups {
             new Identifier(Goldy_Heart.MOD_ID,"astori"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.astori"))
                     .icon(() -> new ItemStack(ModItems.LAPISBERRY)).entries((displayContext, entries) -> {
+                    entries.add(ModItems.VOID);
+                    entries.add(ModItems.ROPE);
                     entries.add(ModItems.MAGICCRYSTAL);
                     entries.add(ModItems.MAGICCRYSTAL_2);
                     entries.add(ModItems.MAGICCRYSTAL_3);
