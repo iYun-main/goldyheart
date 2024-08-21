@@ -10,7 +10,7 @@
 	],
 	"contact": {
 		"homepage": "https://modrinth.com/project/goldy-heart",
-		"sources": "https://github.com/iYun-dev/goldyheart"
+		"sources": "https://github.com/iYun-main/goldyheart"
 	},
 	"license": "ARR",
 	"icon": "assets/goldyheart/icon.png",
@@ -30,7 +30,7 @@
 		"goldyheart.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.15.3",
+		"fabricloader": ">=0.15.11",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*"
