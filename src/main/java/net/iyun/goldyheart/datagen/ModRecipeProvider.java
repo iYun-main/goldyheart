@@ -108,6 +108,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Blocks.SMOOTH_BASALT),conditionsFromItem(ModBlocks.SMOOTH_BASALT_SLAB))
                 .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.SMOOTH_BASALT_SLAB)));
 
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_WOOL_SLAB, Ingredient.ofItems(Blocks.PINK_WOOL))
+                .criterion(hasItem(Blocks.PINK_WOOL),conditionsFromItem(ModBlocks.PINK_WOOL_SLAB))
+                .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.PINK_WOOL_SLAB)));
+
         createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COPPER_SLAB, Ingredient.ofItems(Blocks.COPPER_BLOCK))
                 .criterion(hasItem(Blocks.COPPER_BLOCK),conditionsFromItem(ModBlocks.COPPER_SLAB))
                 .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.COPPER_SLAB)));
@@ -546,6 +550,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_SPIRAL_WOOD_WALL, ModBlocks.DARK_SPIRAL_WOOD);
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_SPIRAL_WOOD_WALL_S, ModBlocks.STRIPPED_DARK_SPIRAL_WOOD);
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FANCY_WALL, ModBlocks.FANCY_PLANK);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.TUFF_WALL, Blocks.TUFF);
 
 //Plank Recipe
         offerPlanksRecipe(exporter, ModBlocks.ANCIENT_PLANKS, ModTags.Items.ANC,4);
@@ -564,7 +569,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.OLD_PLANKS),conditionsFromItem(ModBlocks.OLD_PRESSUREPLATE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.OLD_PRESSUREPLATE)));
 
-        createPressurePlateRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SPIRAL_PRESSUREPLATE,Ingredient.ofItems(ModBlocks.SPIRAL_PRESSUREPLATE))
+        createPressurePlateRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SPIRAL_PRESSUREPLATE,Ingredient.ofItems(ModBlocks.SPIRAL_PLANKS))
                 .criterion(hasItem(ModBlocks.SPIRAL_PLANKS),conditionsFromItem(ModBlocks.SPIRAL_PRESSUREPLATE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SPIRAL_PRESSUREPLATE)));
 

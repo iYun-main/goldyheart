@@ -4,7 +4,7 @@
   "cookingtime": 120,
   "experience": 0.35,
   "ingredient": {
-    "item": "goldyheart"
+    "item": "goldyheart:popcorn"
   },
   "result": "goldyheart:fried_egg"
 }
