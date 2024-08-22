@@ -799,6 +799,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.BAKED_POTATO), conditionsFromItem(ModItems.STEAKANDPOTATO))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.STEAKANDPOTATO)));
 
+
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.PIZZA,1)
                 .input(ModItems.DOUGH,1)
                 .input(ModItems.PARSLEY,1)
