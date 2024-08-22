@@ -523,7 +523,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.DARK_SPIRAL_TRAPDOOR), conditionsFromItem(ModBlocks.DARK_SPIRAL_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.DARK_SPIRAL_TRAPDOOR)));
 
-        createTrapdoorRecipe(Blocks.GLASS,Ingredient.ofItems(ModBlocks.GLASS_TRAPDOOR))
+        createTrapdoorRecipe(ModBlocks.GLASS_TRAPDOOR,Ingredient.ofItems(Blocks.GLASS_PANE))
                 .criterion(hasItem(ModBlocks.GLASS_TRAPDOOR), conditionsFromItem(Blocks.GLASS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.GLASS_TRAPDOOR)));
 
@@ -1003,7 +1003,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CROISSANT,1)
                 .input(ModItems.DOUGH,1)
                 .input(ModItems.SALT,1)
-                .input(ModItems.BUTTER,1)
+                .input(ModItems.BUTTER,2)
                 .input(Items.SUGAR,1)
                 .criterion(hasItem(ModItems.DOUGH), conditionsFromItem(ModItems.CROISSANT))
                 .criterion(hasItem(ModItems.SALT), conditionsFromItem(ModItems.CROISSANT))
@@ -1122,6 +1122,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         jams(ModItems.MELONJAM, Items.MELON_SLICE,exporter);
         jams(ModItems.STRAWJAM, ModItems.STRAWBERRY,exporter);
         jams(ModItems.BLUEBERJAM, ModItems.BLUEBERRY,exporter);
+        jams(ModItems.APPLEJAM, Items.APPLE,exporter);
 
         cookies(ModItems.SWEETCOOKIE, Items.SWEET_BERRIES, exporter);
         cookies(ModItems.CHORUSCOOKIE, Items.CHORUS_FRUIT, exporter);
@@ -1221,15 +1222,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         wines(ModItems.GLOWWINE, Items.GLOW_BERRIES,exporter);
 
         oreberries(ModItems.AMETHYSTBERRY, Items.AMETHYST_SHARD,exporter);
-        oreberries(ModItems.COALBERRY, Items.COAL,exporter);
+        oreberries(ModItems.COALBERRY, Items.COAL_BLOCK,exporter);
         oreberries(ModItems.DIAMONDBERRY, Items.DIAMOND,exporter);
         oreberries(ModItems.COPPERBERRY, Items.COPPER_BLOCK,exporter);
         oreberries2(ModItems.NETHERITEBERRY, Items.NETHERITE_SCRAP,exporter);
-        oreberries(ModItems.NETHERQUARTZBERRY, Items.QUARTZ,exporter);
-        oreberries(ModItems.LAPISBERRY, Items.LAPIS_LAZULI,exporter);
-        oreberries(ModItems.EMERALDBERRY, Items.EMERALD,exporter);
-        oreberries(ModItems.IRONBERRY, Items.IRON_INGOT,exporter);
-        oreberries(ModItems.GOLDBERRY, Items.GOLD_INGOT,exporter);
+        oreberries(ModItems.NETHERQUARTZBERRY, Items.QUARTZ_BLOCK,exporter);
+        oreberries(ModItems.LAPISBERRY, Items.LAPIS_BLOCK,exporter);
+        oreberries(ModItems.EMERALDBERRY, Items.EMERALD_BLOCK,exporter);
+        oreberries(ModItems.IRONBERRY, Items.IRON_BLOCK,exporter);
+        oreberries(ModItems.GOLDBERRY, Items.GOLD_BLOCK,exporter);
         oreberries(ModItems.REDSTONEBERRY, Items.REDSTONE_BLOCK,exporter);
 
     }

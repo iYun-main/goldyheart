@@ -60,7 +60,7 @@ public class ModFoodComponents {
     public static final FoodComponent CABBAGEMEATROLL = new FoodComponent.Builder().meat().hunger(5).saturationModifier(0.35f).build();
     public static final FoodComponent HOGLINSANDWICH = new FoodComponent.Builder().hunger(6).saturationModifier(0.40f).meat().build();
     public static final FoodComponent CHEESE = new FoodComponent.Builder().hunger(4).saturationModifier(0.5f).build();
-    public static final FoodComponent GLOBALPIE = new FoodComponent.Builder().hunger(5).saturationModifier(0.15f).build();
+    public static final FoodComponent GLOBALPIE = new FoodComponent.Builder().hunger(7).saturationModifier(0.3f).build();
     public static final FoodComponent CROISSANT = new FoodComponent.Builder().hunger(6).saturationModifier(0.3f).build();
     public static final FoodComponent DOUGHNUT = new FoodComponent.Builder().hunger(6).saturationModifier(0.25f).build();
     public static final FoodComponent NIGIRISUSHI = new FoodComponent.Builder().meat().hunger(6).saturationModifier(0.5f).build();
