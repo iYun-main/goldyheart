@@ -322,20 +322,20 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.STONE_TRAPDOOR);
         blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.COBBLESTONE_TRAPDOOR);
 
-        blockStateModelGenerator.registerCrop(ModBlocks.TOMATO_CROP, TomatoCropBlock.AGE, 0, 1, 2, 3, 4, 5);
-        blockStateModelGenerator.registerCrop(ModBlocks.CORN_CROP, CornCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
-        blockStateModelGenerator.registerCrop(ModBlocks.RUHBARB_CROP, RuhbarbCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
-        blockStateModelGenerator.registerCrop(ModBlocks.COFFEE_CROP, CoffeeCropBlock.AGE, 0, 1, 2, 3, 4, 5);
-        blockStateModelGenerator.registerCrop(ModBlocks.ONION_CROP, OnionCropBlock.AGE, 0, 1, 2, 3, 4, 5);
-        blockStateModelGenerator.registerCrop(ModBlocks.BELLPEPPER_CROP, BellCropBlock.AGE, 0, 1, 2, 3, 4, 5);
-        blockStateModelGenerator.registerCrop(ModBlocks.CUCUMBER_CROP, CucumberCropBlock.AGE, 0, 1, 2, 3, 4, 5);
-        blockStateModelGenerator.registerCrop(ModBlocks.LETTUCE_CROP, LettuceCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
-        blockStateModelGenerator.registerCrop(ModBlocks.RICE_CROP, RiceCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.TOMATO_CROP, BlockStateModelGenerator.TintType.NOT_TINTED, TomatoCropBlock.AGE, 0, 1, 2, 3, 4, 5);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.CORN_CROP, BlockStateModelGenerator.TintType.NOT_TINTED,CornCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.RUHBARB_CROP,BlockStateModelGenerator.TintType.NOT_TINTED, RuhbarbCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.COFFEE_CROP,BlockStateModelGenerator.TintType.NOT_TINTED, CoffeeCropBlock.AGE, 0, 1, 2, 3, 4, 5);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.ONION_CROP, BlockStateModelGenerator.TintType.NOT_TINTED,OnionCropBlock.AGE, 0, 1, 2, 3, 4, 5);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.BELLPEPPER_CROP,BlockStateModelGenerator.TintType.NOT_TINTED, BellCropBlock.AGE, 0, 1, 2, 3, 4, 5);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.CUCUMBER_CROP,BlockStateModelGenerator.TintType.NOT_TINTED, CucumberCropBlock.AGE, 0, 1, 2, 3, 4, 5);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.LETTUCE_CROP, BlockStateModelGenerator.TintType.NOT_TINTED,LettuceCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.RICE_CROP, BlockStateModelGenerator.TintType.NOT_TINTED,RiceCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
         blockStateModelGenerator.registerCrop(ModBlocks.GRAPE_CROP, GrapeCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
-        blockStateModelGenerator.registerCrop(ModBlocks.CHILLI_CROP, ChilliCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
-        blockStateModelGenerator.registerCrop(ModBlocks.PARSLEY_CROP, ParsleyCropBlock.AGE, 0, 1, 2, 3);
-        blockStateModelGenerator.registerCrop(ModBlocks.GARLIC_CROP, GarlicCropBlock.AGE, 0, 1, 2, 3);
-        blockStateModelGenerator.registerCrop(ModBlocks.ANCIENT_CROP, AncientCropBlock.AGE, 0,1,2,3,4,5,6,7);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.CHILLI_CROP, BlockStateModelGenerator.TintType.NOT_TINTED, ChilliCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.PARSLEY_CROP,BlockStateModelGenerator.TintType.NOT_TINTED, ParsleyCropBlock.AGE, 0, 1, 2, 3);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.GARLIC_CROP, BlockStateModelGenerator.TintType.NOT_TINTED, GarlicCropBlock.AGE, 0, 1, 2, 3);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.ANCIENT_CROP, BlockStateModelGenerator.TintType.NOT_TINTED,AncientCropBlock.AGE, 0,1,2,3,4,5,6,7);
 
 // THIS IS USED FOR THE BUSHES IDFK HOW BUT IT DOES
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.STRAWBER_BUSH,
