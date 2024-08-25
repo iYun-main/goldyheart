@@ -269,7 +269,6 @@ public class ModItems {
 
 // the god forsaken tools
 
-
     public static final Item STONE_KNIFE = registerItem("stone_knive",
             new KniveItem(ToolMaterials.STONE, 0, 0f, new FabricItemSettings().maxCount(1).maxDamage(100)));
 
@@ -292,7 +291,6 @@ public class ModItems {
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(Goldy_Heart.MOD_ID, name), item);
     }
-
 
     public static void registerModItems() {
         Goldy_Heart.LOGGER.info("Spawning Items for " + Goldy_Heart.MOD_ID);

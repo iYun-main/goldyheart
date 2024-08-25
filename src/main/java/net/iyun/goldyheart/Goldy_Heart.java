@@ -26,7 +26,6 @@ public class Goldy_Heart implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModCustomTrades.registerCustomTrades();
 
-
 		CompostingChanceRegistry.INSTANCE.add(ModItems.GRAPESEEDS,0.3f);
 		CompostingChanceRegistry.INSTANCE.add(ModItems.BELLPEPPER,0.1f);
 		CompostingChanceRegistry.INSTANCE.add(ModItems.RICE,0.1f);

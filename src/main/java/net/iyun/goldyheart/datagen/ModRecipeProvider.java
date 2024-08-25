@@ -531,13 +531,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.GLASS_TRAPDOOR), conditionsFromItem(Blocks.GLASS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.GLASS_TRAPDOOR)));
 
-        createTrapdoorRecipe(Blocks.STONE,Ingredient.ofItems(ModBlocks.STONE_TRAPDOOR))
-                .criterion(hasItem(ModBlocks.STONE_TRAPDOOR), conditionsFromItem(Blocks.STONE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.STONE_TRAPDOOR)));
-
-        createTrapdoorRecipe(Blocks.COBBLESTONE,Ingredient.ofItems(ModBlocks.COBBLESTONE_TRAPDOOR))
-                .criterion(hasItem(ModBlocks.COBBLESTONE_TRAPDOOR), conditionsFromItem(Blocks.COBBLESTONE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.COBBLESTONE_TRAPDOOR)));
 
 // Wall Recipe
 
@@ -1156,6 +1149,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         marshstick(ModItems.SLIGHTLYCOOKEDMARSHMELLOWSTICK, ModItems.SLIGHTLYCOOKEDMARSHMELLOW,exporter);
 
         seedsconversion(ModItems.LETTUCESEEDS, ModItems.LETTUCELEAF,exporter);
+        seedsconversion(ModItems.ANCIENTSEEDS, ModItems.ANCIENTFRUIT,exporter);
         seedsconversion(ModItems.BELLPEPPERSEEDS, ModItems.BELLPEPPERSLICE,exporter);
         seedsconversion(ModItems.CUCUMBERSEEDS, ModItems.CUCUMBERSLICE,exporter);
         seedsconversion(ModItems.TOMATOSEEDS, ModItems.CUTTOMATO,exporter);
@@ -1163,6 +1157,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         seedsconversion(ModItems.CHILLISEEDS, ModItems.CHILLI,exporter);
         seedsconversion(ModItems.GRAPESEEDS, ModItems.GRAPES,exporter);
         seedsconversion(ModItems.RUHBARBSEEDS, ModItems.RHUBARB,exporter);
+        seedsconversion(ModItems.CORNSEEDS, ModItems.CORN,exporter);
 
         itemslices(ModItems.BELLPEPPERSLICE, ModItems.BELLPEPPER,exporter);
         itemslices(ModItems.BUTTER, Items.MILK_BUCKET,exporter);
@@ -1219,6 +1214,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         toastjam(ModItems.TOASTWITHJAM, ModItems.TOAST2,exporter);
 
+
+        stairs(Blocks.STONE_STAIRS, Blocks.STONE, exporter);
+        stairs(Blocks.PURPUR_STAIRS, Blocks.PURPUR_BLOCK, exporter);
+        stairs(Blocks.QUARTZ_STAIRS, Blocks.QUARTZ_BLOCK, exporter);
+        stairs(Blocks.END_STONE_BRICK_STAIRS, Blocks.END_STONE_BRICKS, exporter);
+        stairs(Blocks.SANDSTONE_STAIRS, Blocks.SANDSTONE, exporter);
+        stairs(Blocks.RED_SANDSTONE_STAIRS, Blocks.RED_SANDSTONE, exporter);
+        stairs(Blocks.SMOOTH_SANDSTONE_STAIRS, Blocks.SMOOTH_SANDSTONE, exporter);
+
+        trapdoors(ModBlocks.COBBLESTONE_TRAPDOOR, Blocks.COBBLESTONE,exporter);
+        trapdoors(ModBlocks.STONE_TRAPDOOR, Blocks.STONE,exporter);
 
         wines(ModItems.BEETWINE, Items.BEETROOT,exporter);
         wines(ModItems.CHORUSWINE, Items.CHORUS_FRUIT,exporter);
@@ -1403,6 +1409,27 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     }
 
+    private void stairs(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output)
+                .pattern("X ")
+                .pattern("XX")
+                .input('X',itemConvertible)
+                .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
+                .offerTo(exporter, new Identifier(getRecipeName(output)));
+
+    }
+
+    private void trapdoors(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output)
+                .pattern("XAA")
+                .pattern("AAA")
+                .input('X',Items.STICK)
+                .input('A',itemConvertible)
+                .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
+                .offerTo(exporter, new Identifier(getRecipeName(output)));
+
+    }
+
     private void simplebowls(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, output)
                 .input(Items.BOWL)
@@ -1413,6 +1440,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(output)));
 
     }
+
     private void cakes(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, output)
                 .pattern("XXX")
