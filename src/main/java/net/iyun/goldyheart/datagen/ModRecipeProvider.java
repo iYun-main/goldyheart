@@ -1214,7 +1214,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         toastjam(ModItems.TOASTWITHJAM, ModItems.TOAST2,exporter);
 
-
         stairs(Blocks.STONE_STAIRS, Blocks.STONE, exporter);
         stairs(Blocks.PURPUR_STAIRS, Blocks.PURPUR_BLOCK, exporter);
         stairs(Blocks.QUARTZ_STAIRS, Blocks.QUARTZ_BLOCK, exporter);
@@ -1222,6 +1221,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         stairs(Blocks.SANDSTONE_STAIRS, Blocks.SANDSTONE, exporter);
         stairs(Blocks.RED_SANDSTONE_STAIRS, Blocks.RED_SANDSTONE, exporter);
         stairs(Blocks.SMOOTH_SANDSTONE_STAIRS, Blocks.SMOOTH_SANDSTONE, exporter);
+        stairs(Blocks.PRISMARINE_STAIRS, Blocks.PRISMARINE, exporter);
+        stairs(Blocks.BLACKSTONE_STAIRS, Blocks.BLACKSTONE, exporter);
+        stairs(Blocks.NETHER_BRICK_STAIRS, Blocks.NETHER_BRICKS, exporter);
+        stairs(Blocks.PRISMARINE_BRICK_STAIRS, Blocks.PRISMARINE_BRICKS, exporter);
+        stairs(Blocks.MUD_BRICK_STAIRS, Blocks.MUD_BRICKS, exporter);
+        stairs(Blocks.BRICK_STAIRS, Blocks.BRICKS, exporter);
+        stairs(Blocks.DEEPSLATE_TILE_STAIRS, Blocks.DEEPSLATE_TILES, exporter);
+        stairs(Blocks.POLISHED_DEEPSLATE_STAIRS, Blocks.POLISHED_DEEPSLATE, exporter);
+        stairs(Blocks.COBBLED_DEEPSLATE_STAIRS, Blocks.COBBLED_DEEPSLATE, exporter);
+        stairs(Blocks.ANDESITE_STAIRS, Blocks.ANDESITE, exporter);
 
         trapdoors(ModBlocks.COBBLESTONE_TRAPDOOR, Blocks.COBBLESTONE,exporter);
         trapdoors(ModBlocks.STONE_TRAPDOOR, Blocks.STONE,exporter);
