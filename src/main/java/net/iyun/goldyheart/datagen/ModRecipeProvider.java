@@ -1231,6 +1231,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         stairs(Blocks.POLISHED_DEEPSLATE_STAIRS, Blocks.POLISHED_DEEPSLATE, exporter);
         stairs(Blocks.COBBLED_DEEPSLATE_STAIRS, Blocks.COBBLED_DEEPSLATE, exporter);
         stairs(Blocks.ANDESITE_STAIRS, Blocks.ANDESITE, exporter);
+        stairs(Blocks.OAK_STAIRS, Blocks.OAK_PLANKS, exporter);
+        stairs(Blocks.DARK_OAK_STAIRS, Blocks.DARK_OAK_PLANKS, exporter);
+        stairs(Blocks.BIRCH_STAIRS, Blocks.BIRCH_PLANKS, exporter);
+        stairs(Blocks.SPRUCE_STAIRS, Blocks.SPRUCE_PLANKS, exporter);
+        stairs(Blocks.JUNGLE_STAIRS, Blocks.JUNGLE_PLANKS, exporter);
+        stairs(Blocks.ACACIA_STAIRS, Blocks.ACACIA_PLANKS, exporter);
+        stairs(Blocks.MANGROVE_STAIRS, Blocks.MANGROVE_PLANKS, exporter);
+        stairs(Blocks.CHERRY_STAIRS, Blocks.CHERRY_PLANKS, exporter);
+        stairs(Blocks.BAMBOO_MOSAIC_STAIRS, Blocks.BAMBOO_MOSAIC_STAIRS, exporter);
+        stairs(Blocks.BAMBOO_STAIRS, Blocks.BAMBOO_PLANKS, exporter);
+        stairs(Blocks.CRIMSON_STAIRS, Blocks.CRIMSON_PLANKS, exporter);
+        stairs(Blocks.WARPED_STAIRS, Blocks.WARPED_PLANKS, exporter);
 
         trapdoors(ModBlocks.COBBLESTONE_TRAPDOOR, Blocks.COBBLESTONE,exporter);
         trapdoors(ModBlocks.STONE_TRAPDOOR, Blocks.STONE,exporter);

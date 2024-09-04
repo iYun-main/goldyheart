@@ -208,7 +208,6 @@ public class ModItemGroups {
             new Identifier(Goldy_Heart.MOD_ID,"aaablock"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.aaablock"))
                     .icon(() -> new ItemStack(ModItems.DIAMONDBERRY)).entries((displayContext, entries) -> {
-                    entries.add(ModItems.VOID);
                     entries.add(ModBlocks.DIRT_SLAB);
                     entries.add(ModBlocks.ROOTED_DIRT_SLAB);
                     entries.add(ModBlocks.OBSIDIAN_SLAB);
@@ -423,7 +422,6 @@ public class ModItemGroups {
             new Identifier(Goldy_Heart.MOD_ID,"aafarming"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.aafarming"))
                     .icon(() -> new ItemStack(ModItems.AMETHYSTBERRY)).entries((displayContext, entries) -> {
-                    entries.add(ModItems.VOID);
                     entries.add(ModItems.CUCUMBERSEEDS);
                     entries.add(ModItems.GRAPESEEDS);
                     entries.add(ModItems.TOMATOSEEDS);
@@ -456,9 +454,9 @@ public class ModItemGroups {
                     entries.add(ModItems.MAGICCRYSTAL_6);
                     entries.add(ModItems.MAGICCRYSTAL_7);
                     entries.add(ModItems.MAGICCRYSTAL_8);
-                        //      entries.add(ModItems.BEASTMANFUR);
+                        // entries.add(ModItems.BEASTMANFUR);
                         // entries.add(ModItems.VAMPIREWING);
-                        //  entries.add(ModItems.DRAGONSCALE);
+                        // entries.add(ModItems.DRAGONSCALE);
                     entries.add(ModItems.STONE_KNIFE);
                     entries.add(ModItems.IRON_KNIFE);
                     entries.add(ModItems.GOLD_KNIFE);

@@ -99,7 +99,7 @@ public class ModFoodComponents {
     public static final FoodComponent BURNTMARSHMELLOWSTICK = new FoodComponent.Builder().hunger(1).saturationModifier(0.125f).statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 400, 0),1f).build();
     public static final FoodComponent DEBUG = new FoodComponent.Builder().hunger(-9999999).saturationModifier(1f).alwaysEdible().build();
     public static final FoodComponent BERRIES = new FoodComponent.Builder().hunger(2).saturationModifier(0.25f).build();
-    public static final FoodComponent WORMBOWL = new FoodComponent.Builder().hunger(5).meat().saturationModifier(0.2f).build();
+   // public static final FoodComponent WORMBOWL = new FoodComponent.Builder().hunger(5).meat().saturationModifier(0.2f).build();
     public static final FoodComponent PEARLSTEW = new FoodComponent.Builder().hunger(6).saturationModifier(0.2f).build();
     public static final FoodComponent BUTTERCORN = new FoodComponent.Builder().hunger(6).saturationModifier(0.25f).build();
     public static final FoodComponent POPCORN = new FoodComponent.Builder().hunger(5).saturationModifier(0.15f).build();
