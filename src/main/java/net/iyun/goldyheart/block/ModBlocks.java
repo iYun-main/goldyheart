@@ -682,6 +682,8 @@ public static final Block POTTED_ASTROPHYLLIA = Registry.register(Registries.BLO
         new FlowerPotBlock(ASTROPHYLLIA, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
 
 
+// public static final Block DIRT_VERTICAL_SLAB = verticalSlabBlock("vertical_dirt", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.DIRT)));
+
    // public static final Block TESTSIDE = registerBlock("sides",
     //        new Block(AbstractBlock.Settings.create()));
 
@@ -693,6 +695,11 @@ public static final Block POTTED_ASTROPHYLLIA = Registry.register(Registries.BLO
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(Goldy_Heart.MOD_ID, name), block);
     }
+
+  ///  private static Block verticalSlabBlock(String name, Block block) {
+   //     registerBlockItem(name, block);
+   //     return Registry.register(Registries.BLOCK, new Identifier(Goldy_Heart.MOD_ID, name), block);
+   // }
 
     public static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, new Identifier(Goldy_Heart.MOD_ID, name),
