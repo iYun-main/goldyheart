@@ -69,6 +69,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DEAD_BRAIN_CORAL_STAIRS);
         addDrop(ModBlocks.IRON_STAIRS);
         addDrop(ModBlocks.CALCITE_STAIRS);
+        addDrop(ModBlocks.TUFF_BUTTON);
         addDrop(ModBlocks.GOLD_STAIRS);
         addDrop(ModBlocks.RED_SAND_STAIR);
         addDrop(ModBlocks.WHITE_WOOL_SLAB, slabDrops(ModBlocks.WHITE_WOOL_SLAB));

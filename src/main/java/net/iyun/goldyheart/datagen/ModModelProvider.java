@@ -140,6 +140,7 @@ public class ModModelProvider extends FabricModelProvider {
         tuffPool.stairs(ModBlocks.TUFF_STAIRS);
         tuffPool.slab(ModBlocks.TUFF_SLAB);
         tuffPool.wall(ModBlocks.TUFF_WALL);
+        tuffPool.button(ModBlocks.TUFF_BUTTON);
 
         dirtPool.slab(ModBlocks.DIRT_SLAB);
         mossPool.slab(ModBlocks.MOSS_SLAB);
@@ -349,7 +350,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SALT, Models.GENERATED);
         itemModelGenerator.register(ModItems.BUCKETOFSALT, Models.GENERATED);
         itemModelGenerator.register(ModItems.CUTBREAD, Models.GENERATED);
-        // itemModelGenerator.register(ModItems.DEBUG, Models.GENERATED);
         itemModelGenerator.register(ModItems.TRUFFLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.PEPPER, Models.GENERATED);
         itemModelGenerator.register(ModItems.BUCKETOFPEPPER, Models.GENERATED);
@@ -389,13 +389,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.COFFEE, Models.GENERATED);
         itemModelGenerator.register(ModItems.CORN, Models.GENERATED);
         itemModelGenerator.register(ModItems.CUCUMBER, Models.GENERATED);
-      //  itemModelGenerator.register(ModItems.MANACRYSTAL, Models.GENERATED);
-       // itemModelGenerator.register(ModItems.MANACRYSTAL_2, Models.GENERATED);
-       // itemModelGenerator.register(ModItems.MANACRYSTAL_3, Models.GENERATED);
-       // itemModelGenerator.register(ModItems.LEATHERWHIP, Models.HANDHELD);
         itemModelGenerator.register(ModItems.GRAPES, Models.GENERATED);
-        // itemModelGenerator.register(ModItems.WORM, Models.GENERATED);
-        //   itemModelGenerator.register(ModItems.CANOFWORMS, Models.GENERATED);
         itemModelGenerator.register(ModItems.LETTUCE, Models.GENERATED);
         itemModelGenerator.register(ModItems.APPLEPIE, Models.GENERATED);
         itemModelGenerator.register(ModItems.TOAST, Models.GENERATED);
@@ -407,7 +401,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PEARLSTEW, Models.GENERATED);
         itemModelGenerator.register(ModItems.POPCORN, Models.GENERATED);
         itemModelGenerator.register(ModItems.BUTTERCORN, Models.GENERATED);
-        // itemModelGenerator.register(ModItems.WORMBOWL, Models.GENERATED);
         itemModelGenerator.register(ModItems.BOILEDSNIFFEGG, Models.GENERATED);
         itemModelGenerator.register(ModItems.SNIFFEROMLETTE, Models.GENERATED);
         itemModelGenerator.register(ModItems.APPLECAKE, Models.GENERATED);
@@ -452,9 +445,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.FRIEDCHICKEN, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAWCHICKENLEG, Models.GENERATED);
         itemModelGenerator.register(ModItems.PARSLEY, Models.GENERATED);
-        // itemModelGenerator.register(ModItems.MECH_SCREW, Models.GENERATED);
-        // itemModelGenerator.register(ModItems.MERMAIDTAIL, Models.GENERATED);
-        //  itemModelGenerator.register(ModItems.MANA_EMBER, Models.GENERATED);
         itemModelGenerator.register(ModItems.BLACKSMITHPICKSIGLWOOD, Models.GENERATED);
         itemModelGenerator.register(ModItems.BLACKSMITHAXESIGLWOOD, Models.GENERATED);
         itemModelGenerator.register(ModItems.BLACKSMITHHOESIGLWOOD, Models.GENERATED);
@@ -466,9 +456,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.FRIEDONIONRING, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHEESEPIE, Models.GENERATED);
         itemModelGenerator.register(ModItems.CUCUMBERSLICE, Models.GENERATED);
-        //     itemModelGenerator.register(ModItems.VAMPIREWING, Models.GENERATED);
-        // itemModelGenerator.register(ModItems.BEASTMANFUR, Models.GENERATED);
-        // itemModelGenerator.register(ModItems.DRAGONSCALE, Models.GENERATED);
         itemModelGenerator.register(ModItems.STONE_KNIFE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.GOLD_KNIFE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.IRON_KNIFE, Models.HANDHELD);
@@ -558,28 +545,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ROPE, Models.GENERATED);
         itemModelGenerator.register(ModItems.DIAMOND_KNIFE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.NETHERITE_KNIFE, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.RODWITHWORM, Models.HANDHELD_ROD);
 
-// Dungoen Loot textures should generate here  :)
-        //  itemModelGenerator.register(ModItems.LOOT_1, Models.GENERATED);
-        // itemModelGenerator.register(ModItems.LOOT_2, Models.GENERATED);
-        // itemModelGenerator.register(ModItems.LOOT_3, Models.GENERATED);
-        // itemModelGenerator.register(ModItems.LOOT_4, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.LOOT_5, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.LOOT_6, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.LOOT_7, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.LOOT_8, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.LOOT_9, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.LOOT_10, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.LOOT_11, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.LOOT_12, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.LOOT_13, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.LOOT_14, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.LOOT_15, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.LOOT_16, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.LOOT_17, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.LOOT_18, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.LOOT_19, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.LOOT_20, Models.GENERATED);
     }
 }

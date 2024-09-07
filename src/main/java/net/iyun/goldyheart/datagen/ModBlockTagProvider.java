@@ -28,6 +28,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
             .add(ModBlocks.DEAD_BRAIN_CORAL_SLAB)
             .add(ModBlocks.STONE_TRAPDOOR)
+            .add(ModBlocks.TUFF_BUTTON)
             .add(ModBlocks.COBBLESTONE_TRAPDOOR)
             .add(ModBlocks.GLASS_TRAPDOOR)
             .add(ModBlocks.DEAD_BRAIN_CORAL_SLAB)

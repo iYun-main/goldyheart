@@ -510,6 +510,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         createDoorRecipe(ModBlocks.DARK_SPIRAL_DOOR,Ingredient.ofItems(ModBlocks.DARK_SPIRAL_PLANKS))
                 .criterion(hasItem(ModBlocks.DARK_SPIRAL_PLANKS),conditionsFromItem(ModBlocks.DARK_SPIRAL_DOOR))
                 .offerTo(exporter,new Identifier(getRecipeName(ModBlocks.DARK_SPIRAL_DOOR)));
+
 //Trap Door Recipe
         createTrapdoorRecipe(ModBlocks.ANCIENT_TRAPDOOR,Ingredient.ofItems(ModBlocks.ANCIENT_PLANKS))
                 .criterion(hasItem(ModBlocks.ANCIENT_TRAPDOOR), conditionsFromItem(ModBlocks.ANCIENT_PLANKS))
@@ -574,33 +575,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.FANCY_PLANK),conditionsFromItem(ModBlocks.FANCY_PRESSUREPLATE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FANCY_PRESSUREPLATE)));
 
-
-// Button Recipe (currently looking for the simpler version)
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ANCIENT_BUTTON, 1)
-                .input(ModBlocks.ANCIENT_PLANKS,1)
-                .criterion(hasItem(ModBlocks.ANCIENT_PLANKS), conditionsFromItem(ModBlocks.ANCIENT_BUTTON))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ANCIENT_BUTTON)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OLD_BUTTON, 1)
-                .input(ModBlocks.OLD_PLANKS,1)
-                .criterion(hasItem(ModBlocks.OLD_PLANKS), conditionsFromItem(ModBlocks.OLD_BUTTON))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.OLD_BUTTON)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SPIRAL_BUTTON, 1)
-                .input(ModBlocks.SPIRAL_PLANKS,1)
-                .criterion(hasItem(ModBlocks.SPIRAL_PLANKS), conditionsFromItem(ModBlocks.SPIRAL_BUTTON))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SPIRAL_BUTTON)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_SPIRAL_BUTTON, 1)
-                .input(ModBlocks.DARK_SPIRAL_PLANKS,1)
-                .criterion(hasItem(ModBlocks.DARK_SPIRAL_PLANKS), conditionsFromItem(ModBlocks.DARK_SPIRAL_BUTTON))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.DARK_SPIRAL_BUTTON)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FANCY_BUTTON, 1)
-                .input(ModBlocks.FANCY_PLANK,1)
-                .criterion(hasItem(ModBlocks.FANCY_PLANK), conditionsFromItem(ModBlocks.FANCY_BUTTON))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FANCY_BUTTON)));
 
 //Food Crafting
 
@@ -725,13 +699,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.COCOA_BEANS), conditionsFromItem(ModItems.CHOCOSTRAWBERRY))
                 .criterion(hasItem(ModItems.STRAWBERRY), conditionsFromItem(ModItems.CHOCOSTRAWBERRY))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.CHOCOSTRAWBERRY)));
-
-        // ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.WORMBOWL,1)
-        //      .input(Items.BOWL,1)
-        //      .input(ModItems.WORM,3)
-        //      .criterion(hasItem(Items.COCOA_BEANS), conditionsFromItem(ModItems.WORMBOWL))
-        //      .criterion(hasItem(ModItems.STRAWBERRY), conditionsFromItem(ModItems.WORMBOWL))
-        //      .offerTo(exporter, new Identifier(getRecipeName(ModItems.WORMBOWL)));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.HOTCHOCOLATE,2)
                 .input(Items.MILK_BUCKET,1)
@@ -1265,6 +1232,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         oreberries(ModItems.GOLDBERRY, Items.GOLD_BLOCK,exporter);
         oreberries(ModItems.REDSTONEBERRY, Items.REDSTONE_BLOCK,exporter);
 
+        buttons(ModBlocks.ANCIENT_BUTTON, ModBlocks.ANCIENT_PLANKS,exporter);
+        buttons(ModBlocks.OLD_BUTTON, ModBlocks.OLD_PLANKS,exporter);
+        buttons(ModBlocks.SPIRAL_BUTTON, ModBlocks.SPIRAL_PLANKS,exporter);
+        buttons(ModBlocks.DARK_SPIRAL_BUTTON, ModBlocks.DARK_SPIRAL_PLANKS,exporter);
+        buttons(ModBlocks.FANCY_BUTTON, ModBlocks.FANCY_PLANK,exporter);
     }
 
 
@@ -1354,6 +1326,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     private void seedsconversion(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, output)
+                .input(itemConvertible,1)
+                .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
+                .offerTo(exporter, new Identifier(getRecipeName(output)));
+
+    }
+
+    private void buttons(ItemConvertible output, ItemConvertible itemConvertible, Consumer<RecipeJsonProvider> exporter) {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output)
                 .input(itemConvertible,1)
                 .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
                 .offerTo(exporter, new Identifier(getRecipeName(output)));

@@ -209,6 +209,9 @@ public static final Block AMETHYST_SLAB = registerBlock("amethyst_slab",
 public static final Block TUFF_SLAB = registerBlock("tuff_slab",
         new SlabBlock(FabricBlockSettings.copyOf(Blocks.TUFF).sounds(BlockSoundGroup.TUFF)));
 
+public static final Block TUFF_BUTTON = registerBlock("tuff_button",
+        new ButtonBlock(FabricBlockSettings.copyOf(Blocks.TUFF), BlockSetType.STONE, 20, true));
+
 public static final Block TUFF_WALL = registerBlock("tuff_wall",
         new WallBlock(FabricBlockSettings.copyOf(Blocks.TUFF).sounds(BlockSoundGroup.TUFF)));
 

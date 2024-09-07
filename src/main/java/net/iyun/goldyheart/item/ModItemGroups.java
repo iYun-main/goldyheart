@@ -266,6 +266,7 @@ public class ModItemGroups {
                     entries.add(ModBlocks.TUFF_SLAB);
                     entries.add(ModBlocks.TUFF_STAIRS);
                     entries.add(ModBlocks.TUFF_WALL);
+                    entries.add(ModBlocks.TUFF_BUTTON);
                     entries.add(ModBlocks.SOUL_SAND_SLAB);
                     entries.add(ModBlocks.COPPER_SLAB);
                     entries.add(ModBlocks.COPPER_STAIRS);
