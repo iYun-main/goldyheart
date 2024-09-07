@@ -39,8 +39,6 @@ public class WineItem extends Item {
         }
     }
 
-
-
     @Override
     public UseAction getUseAction(ItemStack stack) {
         return UseAction.DRINK;

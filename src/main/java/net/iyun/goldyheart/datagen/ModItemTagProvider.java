@@ -5,11 +5,8 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.fabricmc.fabric.api.tag.convention.v1.ConventionalItemTags;
 import net.iyun.goldyheart.block.ModBlocks;
 import net.iyun.goldyheart.item.ModItems;
-import net.iyun.goldyheart.util.ModTags;
-import net.minecraft.item.Item;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
-import net.minecraft.util.Identifier;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -387,6 +384,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         .add(ModItems.PARSLEYSEEDS.asItem())
         .add(ModItems.RUHBARBSEEDS.asItem())
         .add(ModItems.TOMATOSEEDS.asItem())
+        .add(ModItems.ANCIENTSEEDS.asItem())
         .add(ModItems.BELLPEPPERSEEDS.asItem());
     }
 }
