@@ -46,7 +46,7 @@ public class ModItems {
     public static final Item CANDIEDSPIDEREYE = registerItem("candied_spider_eye", new Item(new FabricItemSettings().food(ModFoodComponents.CANDIEDSPIDEREYE)));
     public static final Item CHILLI = registerItem("chilli", new Item(new FabricItemSettings().food(ModFoodComponents.CHILLI)));
     public static final Item CHILLISEEDS = registerItem("chilli_seeds", new AliasedBlockItem(ModBlocks.CHILLI_CROP, new FabricItemSettings()));
-    public static final Item RUHBARBSEEDS = registerItem("ruhbarb_seeds", new AliasedBlockItem(ModBlocks.RUHBARB_CROP, new FabricItemSettings()));
+    public static final Item RUHBARBSEEDS = registerItem("rhubarb_seeds", new AliasedBlockItem(ModBlocks.RUHBARB_CROP, new FabricItemSettings()));
     public static final Item ANCIENTSEEDS = registerItem("ancient_seeds", new AliasedBlockItem(ModBlocks.ANCIENT_CROP, new FabricItemSettings()));
     public static final Item STRAWBERRY = registerItem("strawberry", new AliasedBlockItem(ModBlocks.STRAWBER_BUSH, new FabricItemSettings().food(ModFoodComponents.BERRIES)));
     public static final Item BLUEBERRY = registerItem("blueberry", new AliasedBlockItem(ModBlocks.BLUEBER_BUSH, new FabricItemSettings().food(ModFoodComponents.BERRIES)));
@@ -60,12 +60,14 @@ public class ModItems {
     public static final Item BUTTEREDPOTATO = registerItem("buttered_potato", new Item(new FabricItemSettings().food(ModFoodComponents.BUTTEREDBAKEDPOTATO)));
     public static final Item TOMATOSEEDS = registerItem("tomato_seeds", new AliasedBlockItem(ModBlocks.TOMATO_CROP, new FabricItemSettings()));
     public static final Item COFFEEBEAN = registerItem("coffee_bean", new AliasedBlockItem(ModBlocks.COFFEE_CROP, new FabricItemSettings()));
+    public static final Item HOPSEEDS = registerItem("hops_seeds", new AliasedBlockItem(ModBlocks.HOP_CROP, new FabricItemSettings()));
     public static final Item ONION = registerItem("onion", new AliasedBlockItem(ModBlocks.ONION_CROP, new FabricItemSettings().food(ModFoodComponents.ONION)));
     public static final Item RICE = registerItem("rice", new AliasedBlockItem(ModBlocks.RICE_CROP, new FabricItemSettings().food(ModFoodComponents.RICE)));
+    public static final Item HOPS = registerItem("hops", new Item(new FabricItemSettings().food(ModFoodComponents.HOPS)));
     public static final Item GARLIC = registerItem("garlic", new AliasedBlockItem(ModBlocks.GARLIC_CROP, new FabricItemSettings().food(ModFoodComponents.GARLIC)));
     public static final Item TOMATO = registerItem("tomato", new Item(new FabricItemSettings().food(ModFoodComponents.TOMATO)));
     public static final Item ANCIENTFRUIT = registerItem("ancient_fruit", new Item(new FabricItemSettings().food(ModFoodComponents.TOMATO).food(ModFoodComponents.BERRIES)));
-    public static final Item RHUBARB = registerItem("ruhbarb", new Item(new FabricItemSettings().food(ModFoodComponents.RUHBARB)));
+    public static final Item RHUBARB = registerItem("rhubarb", new Item(new FabricItemSettings().food(ModFoodComponents.RUHBARB)));
     public static final Item RAWONIONRING = registerItem("raw_onion_ring", new Item(new FabricItemSettings().food(ModFoodComponents.RAWONIONRING)));
     public static final Item LETTUCELEAF = registerItem("lettuce_leaf", new Item(new FabricItemSettings().food(ModFoodComponents.LETTUCELEAF)));
     public static final Item ONIONSLICE = registerItem("onion_slice", new Item(new FabricItemSettings().food(ModFoodComponents.ONIONSLICE)));
@@ -121,6 +123,8 @@ public class ModItems {
     public static final Item MELONWINE = registerItem("melon_wine", new WineItem(new FabricItemSettings().food(ModFoodComponents.GLOBALWINES)));
     public static final Item GLOWWINE = registerItem("glow_berry_wine", new WineItem(new FabricItemSettings().food(ModFoodComponents.GLOBALWINES)));
     public static final Item BEETWINE = registerItem("beetroot_wine", new WineItem(new FabricItemSettings().food(ModFoodComponents.GLOBALWINES)));
+    public static final Item PUMKINWINE = registerItem("pumpkin_wine", new WineItem(new FabricItemSettings().food(ModFoodComponents.GLOBALWINES)));
+    public static final Item ANCIENTWINE = registerItem("ancient_wine", new WineItem(new FabricItemSettings().food(ModFoodComponents.GLOBALWINES)));
     public static final Item CHORUSWINE = registerItem("chorus_wine", new WineItem(new FabricItemSettings().food(ModFoodComponents.GLOBALWINES)));
     public static final Item NOODLES = registerItem("noodles", new GlobalBowlsItem(new FabricItemSettings().food(ModFoodComponents.NOODLES)));
     public static final Item PIZZA = registerItem("pizza", new Item(new FabricItemSettings().food(ModFoodComponents.PIZZA)));
@@ -151,6 +155,7 @@ public class ModItems {
     public static final Item SWEETBERRYSMOOTHIE = registerItem("sweet_berry_smoothie", new GlobalSmoothieItem(new FabricItemSettings().food(ModFoodComponents.GLOBALSMOOTHIES)));
     public static final Item WATERMELONSMOOTHIE = registerItem("watermelon_smoothie", new GlobalSmoothieItem(new FabricItemSettings().food(ModFoodComponents.GLOBALSMOOTHIES)));
     public static final Item BLUEBERSMOOTHIE = registerItem("blueberry_smoothie", new GlobalSmoothieItem(new FabricItemSettings().food(ModFoodComponents.GLOBALSMOOTHIES)));
+    public static final Item MAGMASMOOTHIE = registerItem("magma_smoothie", new GlobalSmoothieItem(new FabricItemSettings().food(ModFoodComponents.GLOBALSMOOTHIES)));
     public static final Item STRAWBERSMOOTHIE = registerItem("strawberry_smoothie", new GlobalSmoothieItem(new FabricItemSettings().food(ModFoodComponents.GLOBALSMOOTHIES)));
     public static final Item MELONJAM = registerItem("melon_jam", new GlobalJamItem(new FabricItemSettings().food(ModFoodComponents.GLOBALJAMS).recipeRemainder(Items.GLASS_BOTTLE)));
     public static final Item APPLEJAM = registerItem("apple_jam", new GlobalJamItem(new FabricItemSettings().food(ModFoodComponents.GLOBALJAMS).recipeRemainder(Items.GLASS_BOTTLE)));

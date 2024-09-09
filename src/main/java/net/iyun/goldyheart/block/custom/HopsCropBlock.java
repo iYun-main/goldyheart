@@ -10,18 +10,18 @@ import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
 
-public class RuhbarbCropBlock extends CropBlock {
+public class HopsCropBlock extends CropBlock {
 
-    public static final int MAX_AGE = 7;
-    public static final IntProperty AGE = Properties.AGE_7;
+    public static final int MAX_AGE = 4;
+    public static final IntProperty AGE = Properties.AGE_4;
 
-    public RuhbarbCropBlock(Settings settings) {
+    public HopsCropBlock(Settings settings) {
         super(settings);
     }
 
     @Override
     protected ItemConvertible getSeedsItem() {
-        return ModItems.RUHBARBSEEDS;
+        return ModItems.HOPSEEDS;
     }
 
     @Override

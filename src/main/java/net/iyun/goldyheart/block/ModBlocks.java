@@ -21,13 +21,16 @@ public class ModBlocks {
 public static final Block ANCIENT_CROP = Registry.register(Registries.BLOCK, new Identifier(Goldy_Heart.MOD_ID, "ancient_crop"),
         new AncientCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
 
+public static final Block HOP_CROP = Registry.register(Registries.BLOCK, new Identifier(Goldy_Heart.MOD_ID, "hops_crop"),
+        new HopsCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+
 public static final Block STRAWBER_BUSH = Registry.register(Registries.BLOCK, new Identifier(Goldy_Heart.MOD_ID, "strawber_bush"),
         new StrawberBushBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH)));
 
 public static final Block BLUEBER_BUSH = Registry.register(Registries.BLOCK, new Identifier(Goldy_Heart.MOD_ID, "blueber_bush"),
         new BlueberryBushBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH)));
 
-public static final Block RUHBARB_CROP = Registry.register(Registries.BLOCK, new Identifier(Goldy_Heart.MOD_ID, "ruhbarb_crop"),
+public static final Block RUHBARB_CROP = Registry.register(Registries.BLOCK, new Identifier(Goldy_Heart.MOD_ID, "rhubarb_crop"),
         new RuhbarbCropBlock(FabricBlockSettings.copyOf(Blocks.BEETROOTS)));
 
 public static final Block TOMATO_CROP = Registry.register(Registries.BLOCK, new Identifier(Goldy_Heart.MOD_ID, "tomato_crop"),

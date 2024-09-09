@@ -102,6 +102,8 @@ public class ModItemGroups {
                     entries.add(ModItems.CHORUSWINE);
                     entries.add(ModItems.MELONWINE);
                     entries.add(ModItems.SWEETWINE);
+                    entries.add(ModItems.PUMKINWINE);
+                    entries.add(ModItems.ANCIENTWINE);
                     entries.add(ModItems.WHISKEY);
                     entries.add(ModItems.BUTTEREDPOTATO);
                     entries.add(ModItems.MASHEDPOTATOES);
@@ -129,6 +131,7 @@ public class ModItemGroups {
                     entries.add(ModItems.SWEETBERRYSMOOTHIE);
                     entries.add(ModItems.WATERMELONSMOOTHIE);
                     entries.add(ModItems.GLOWBERRYSMOOTHIE);
+                    entries.add(ModItems.MAGMASMOOTHIE);
                     entries.add(ModItems.BLUEBERSMOOTHIE);
                     entries.add(ModItems.STRAWBERSMOOTHIE);
                     entries.add(ModItems.TOASTWITHBUTTER);
@@ -202,6 +205,7 @@ public class ModItemGroups {
                     entries.add(ModItems.CHOCOSTRAWBERRY);
                     entries.add(ModItems.RHUBARB);
                     entries.add(ModItems.SANDBREAD);
+                    entries.add(ModItems.HOPS);
                     }).build());
 
     public static final ItemGroup AGOLDYBLOCK = Registry.register(Registries.ITEM_GROUP,
@@ -439,6 +443,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BLUEBERRY);
                     entries.add(ModItems.RUHBARBSEEDS);
                     entries.add(ModItems.ANCIENTSEEDS);
+                    entries.add(ModItems.HOPSEEDS);
                     }).build());
 
     public static final ItemGroup AGOLDYVOIDSTORAGE = Registry.register(Registries.ITEM_GROUP,

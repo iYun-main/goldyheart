@@ -333,10 +333,11 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.LETTUCE_CROP, BlockStateModelGenerator.TintType.NOT_TINTED,LettuceCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.RICE_CROP, BlockStateModelGenerator.TintType.NOT_TINTED,RiceCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
         blockStateModelGenerator.registerCrop(ModBlocks.GRAPE_CROP, GrapeCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
+        blockStateModelGenerator.registerCrop(ModBlocks.HOP_CROP, HopsCropBlock.AGE, 0, 1, 2, 3, 4);
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.CHILLI_CROP, BlockStateModelGenerator.TintType.NOT_TINTED, ChilliCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.PARSLEY_CROP,BlockStateModelGenerator.TintType.NOT_TINTED, ParsleyCropBlock.AGE, 0, 1, 2, 3);
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.GARLIC_CROP, BlockStateModelGenerator.TintType.NOT_TINTED, GarlicCropBlock.AGE, 0, 1, 2, 3);
-        blockStateModelGenerator.registerCrop(ModBlocks.ANCIENT_CROP,AncientCropBlock.AGE, 0,1,2,3,4,5,6,7);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.ANCIENT_CROP,BlockStateModelGenerator.TintType.NOT_TINTED,AncientCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
 
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.STRAWBER_BUSH,
                 BlockStateModelGenerator.TintType.NOT_TINTED, StrawberBushBlock.AGE, 0, 1, 2, 3);
@@ -383,6 +384,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.COOKEDMARSHMELLOWSTICK, Models.GENERATED);
         itemModelGenerator.register(ModItems.BUTTER, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHILLI, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ANCIENTWINE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MAGMASMOOTHIE, Models.GENERATED);
         itemModelGenerator.register(ModItems.BUTTEREDPOTATO, Models.GENERATED);
         itemModelGenerator.register(ModItems.TOMATO, Models.GENERATED);
         itemModelGenerator.register(ModItems.CUTTOMATO, Models.GENERATED);
@@ -413,6 +416,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GLOWBERRYCAKE, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHOCOLATEPIE, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHEESE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PUMKINWINE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ANCIENTFRUIT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HOPS, Models.GENERATED);
         itemModelGenerator.register(ModItems.TOMATOSOUP, Models.GENERATED);
         itemModelGenerator.register(ModItems.PANCAKES, Models.GENERATED);
         itemModelGenerator.register(ModItems.CROISSANT, Models.GENERATED);
