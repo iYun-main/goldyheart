@@ -99,6 +99,7 @@ public class ModItems {
     public static final Item BLUEBERRYCAKE = registerItem("blueberry_cake", new Item(new FabricItemSettings().food(ModFoodComponents.GLOBALCAKES).maxCount(4)));
     public static final Item STRAWBERRYCAKE = registerItem("strawberry_cake", new Item(new FabricItemSettings().food(ModFoodComponents.GLOBALCAKES).maxCount(4)));
     public static final Item GLOWBERRYCAKE = registerItem("glow_berry_cake", new Item(new FabricItemSettings().food(ModFoodComponents.GLOBALCAKES).maxCount(4)));
+    public static final Item RHUBARBCAKE = registerItem("rhubarb_cake", new Item(new FabricItemSettings().food(ModFoodComponents.GLOBALCAKES).maxCount(4)));
     public static final Item CHOCOLATEPIE = registerItem("chocolate_pie", new Item(new FabricItemSettings().food(ModFoodComponents.GLOBALPIE)));
     public static final Item CHEESE = registerItem("cheese", new Item(new FabricItemSettings().food(ModFoodComponents.CHEESE)));
     public static final Item CHEESEPIE = registerItem("cheese_pie", new Item(new FabricItemSettings().food(ModFoodComponents.GLOBALPIE)));
@@ -126,6 +127,7 @@ public class ModItems {
     public static final Item PUMKINWINE = registerItem("pumpkin_wine", new WineItem(new FabricItemSettings().food(ModFoodComponents.GLOBALWINES)));
     public static final Item ANCIENTWINE = registerItem("ancient_wine", new WineItem(new FabricItemSettings().food(ModFoodComponents.GLOBALWINES)));
     public static final Item CHORUSWINE = registerItem("chorus_wine", new WineItem(new FabricItemSettings().food(ModFoodComponents.GLOBALWINES)));
+    public static final Item RHUBARBWINE = registerItem("rhubarb_wine", new WineItem(new FabricItemSettings().food(ModFoodComponents.GLOBALWINES)));
     public static final Item NOODLES = registerItem("noodles", new GlobalBowlsItem(new FabricItemSettings().food(ModFoodComponents.NOODLES)));
     public static final Item PIZZA = registerItem("pizza", new Item(new FabricItemSettings().food(ModFoodComponents.PIZZA)));
     public static final Item PIZZASLICE = registerItem("pizza_slice", new Item(new FabricItemSettings().food(ModFoodComponents.PIZZASLICE)));
@@ -157,6 +159,7 @@ public class ModItems {
     public static final Item BLUEBERSMOOTHIE = registerItem("blueberry_smoothie", new GlobalSmoothieItem(new FabricItemSettings().food(ModFoodComponents.GLOBALSMOOTHIES)));
     public static final Item MAGMASMOOTHIE = registerItem("magma_smoothie", new GlobalSmoothieItem(new FabricItemSettings().food(ModFoodComponents.GLOBALSMOOTHIES)));
     public static final Item STRAWBERSMOOTHIE = registerItem("strawberry_smoothie", new GlobalSmoothieItem(new FabricItemSettings().food(ModFoodComponents.GLOBALSMOOTHIES)));
+    public static final Item RHUBARBSMOOTHIE = registerItem("rhubarb_smoothie", new GlobalSmoothieItem(new FabricItemSettings().food(ModFoodComponents.GLOBALSMOOTHIES)));
     public static final Item MELONJAM = registerItem("melon_jam", new GlobalJamItem(new FabricItemSettings().food(ModFoodComponents.GLOBALJAMS).recipeRemainder(Items.GLASS_BOTTLE)));
     public static final Item APPLEJAM = registerItem("apple_jam", new GlobalJamItem(new FabricItemSettings().food(ModFoodComponents.GLOBALJAMS).recipeRemainder(Items.GLASS_BOTTLE)));
     public static final Item BLUEBERJAM = registerItem("blueberry_jam", new GlobalJamItem(new FabricItemSettings().food(ModFoodComponents.GLOBALJAMS).recipeRemainder(Items.GLASS_BOTTLE)));
@@ -180,6 +183,7 @@ public class ModItems {
     public static final Item BLUEBERRYCAKESLICE = registerItem("blueberry_cake_slice", new Item(new FabricItemSettings().food(ModFoodComponents.CAKESLICE)));
     public static final Item STRAWBERRYCAKESLICE = registerItem("strawberry_cake_slice", new Item(new FabricItemSettings().food(ModFoodComponents.CAKESLICE)));
     public static final Item BEETROOTCAKESLICE = registerItem("beetroot_cake_slice", new Item(new FabricItemSettings().food(ModFoodComponents.CAKESLICE)));
+    public static final Item RHUBARBCAKESLICE = registerItem("rhubarb_cake_slice", new Item(new FabricItemSettings().food(ModFoodComponents.CAKESLICE)));
     public static final Item BEETROOTCAKE = registerItem("beetroot_cake", new Item(new FabricItemSettings().food(ModFoodComponents.GLOBALCAKES).maxCount(4)));
     public static final Item CORN = registerItem("corn", new Item(new FabricItemSettings().food(ModFoodComponents.CORN)));
     //   public static final Item WORMBOWL = registerItem("worm_bowl", new Item(new FabricItemSettings().food(ModFoodComponents.WORMBOWL)));
@@ -203,6 +207,7 @@ public class ModItems {
     public static final Item SWEETMUFFIN = registerItem("sweet_berry_muffin", new Item(new FabricItemSettings().food(ModFoodComponents.GLOBALMUFFINS)));
     public static final Item CHOCOMUFFIN = registerItem("chocolate_muffin", new Item(new FabricItemSettings().food(ModFoodComponents.GLOBALMUFFINS)));
     public static final Item PUMPKINMUFFIN = registerItem("pumpkin_muffin", new Item(new FabricItemSettings().food(ModFoodComponents.GLOBALMUFFINS)));
+    public static final Item RHUBARBMUFFIN = registerItem("rhubarb_muffin", new Item(new FabricItemSettings().food(ModFoodComponents.GLOBALMUFFINS)));
     public static final Item PICKELS = registerItem("pickles", new GlobalPickleItem(new FabricItemSettings().food(ModFoodComponents.GLOBALPICKELS)));
     public static final Item PICKELTOMATO = registerItem("pickled_tomato", new GlobalPickleItem(new FabricItemSettings().food(ModFoodComponents.GLOBALPICKELS)));
     public static final Item PICKELSTRAW = registerItem("pickled_strawberries", new GlobalPickleItem(new FabricItemSettings().food(ModFoodComponents.GLOBALPICKELS)));

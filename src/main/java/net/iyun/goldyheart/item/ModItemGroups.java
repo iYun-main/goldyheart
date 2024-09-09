@@ -75,6 +75,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BEETROOTCAKE);
                     entries.add(ModItems.STRAWBERRYCAKE);
                     entries.add(ModItems.BLUEBERRYCAKE);
+                    entries.add(ModItems.RHUBARBCAKE);
                     entries.add(ModItems.MUFFIN);
                     entries.add(ModItems.APPLEMUFFIN);
                     entries.add(ModItems.BLUEMUFFIN);
@@ -85,6 +86,7 @@ public class ModItemGroups {
                     entries.add(ModItems.SWEETMUFFIN);
                     entries.add(ModItems.CHOCOMUFFIN);
                     entries.add(ModItems.PUMPKINMUFFIN);
+                    entries.add(ModItems.RHUBARBMUFFIN);
                     entries.add(ModItems.PICKELS);
                     entries.add(ModItems.PICKELTOMATO);
                     entries.add(ModItems.PICKELSTRAW);
@@ -104,6 +106,7 @@ public class ModItemGroups {
                     entries.add(ModItems.SWEETWINE);
                     entries.add(ModItems.PUMKINWINE);
                     entries.add(ModItems.ANCIENTWINE);
+                    entries.add(ModItems.RHUBARBWINE);
                     entries.add(ModItems.WHISKEY);
                     entries.add(ModItems.BUTTEREDPOTATO);
                     entries.add(ModItems.MASHEDPOTATOES);
@@ -134,6 +137,7 @@ public class ModItemGroups {
                     entries.add(ModItems.MAGMASMOOTHIE);
                     entries.add(ModItems.BLUEBERSMOOTHIE);
                     entries.add(ModItems.STRAWBERSMOOTHIE);
+                    entries.add(ModItems.RHUBARBSMOOTHIE);
                     entries.add(ModItems.TOASTWITHBUTTER);
                     entries.add(ModItems.TOASTWITHBACON);
                     entries.add(ModItems.TOASTWITHJAM);
@@ -172,6 +176,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BEETROOTCAKESLICE);
                     entries.add(ModItems.STRAWBERRYCAKESLICE);
                     entries.add(ModItems.BLUEBERRYCAKESLICE);
+                    entries.add(ModItems.RHUBARBCAKESLICE);
                     entries.add(ModItems.MELONJAM);
                     entries.add(ModItems.CARROTJAM);
                     entries.add(ModItems.CHORUSJAM);
