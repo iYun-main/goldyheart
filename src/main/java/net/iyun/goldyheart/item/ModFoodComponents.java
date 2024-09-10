@@ -9,13 +9,10 @@ public class ModFoodComponents {
     public static final FoodComponent BUTTER = new FoodComponent.Builder().statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 300), 0.5f).hunger(1).saturationModifier(0.5f).build();
     public static final FoodComponent HOPS = new FoodComponent.Builder().statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 700,5), 0.7f).hunger(1).saturationModifier(0.5f).build();
     public static final FoodComponent SALT = new FoodComponent.Builder().hunger(1).saturationModifier(0.1f).build();
-    public static final FoodComponent MERTAIL = new FoodComponent.Builder().meat().statusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING,600),1f).statusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE,600),1f).hunger(2).saturationModifier(0.1f).alwaysEdible().build();
     public static final FoodComponent SALTBUCKET = new FoodComponent.Builder().hunger(1).saturationModifier(0.1f).build();
     public static final FoodComponent CORN = new FoodComponent.Builder().hunger(4).saturationModifier(0.5f).build();
     public static final FoodComponent RUHBARB = new FoodComponent.Builder().hunger(3).saturationModifier(0.5f).build();
     public static final FoodComponent SANDBREAD = new FoodComponent.Builder().hunger(3).saturationModifier(-1.5f).build();
-    public static final FoodComponent WORMS = new FoodComponent.Builder().meat().hunger(3).saturationModifier(0.5f).build();
-    public static final FoodComponent CANOFWORMS = new FoodComponent.Builder().meat().hunger(4).saturationModifier(0.5f).build();
     public static final FoodComponent CUCUMBER = new FoodComponent.Builder().hunger(3).saturationModifier(0.25f).build();
     public static final FoodComponent CAKESLICE = new FoodComponent.Builder().hunger(4).saturationModifier(0.25f).build();
     public static final FoodComponent CUCUMBERSLICE = new FoodComponent.Builder().hunger(1).saturationModifier(0.25f).build();
@@ -100,7 +97,6 @@ public class ModFoodComponents {
     public static final FoodComponent BURNTMARSHMELLOWSTICK = new FoodComponent.Builder().hunger(1).saturationModifier(0.125f).statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 400, 0),1f).build();
     public static final FoodComponent DEBUG = new FoodComponent.Builder().hunger(-9999999).saturationModifier(1f).alwaysEdible().build();
     public static final FoodComponent BERRIES = new FoodComponent.Builder().hunger(2).saturationModifier(0.25f).build();
-   // public static final FoodComponent WORMBOWL = new FoodComponent.Builder().hunger(5).meat().saturationModifier(0.2f).build();
     public static final FoodComponent PEARLSTEW = new FoodComponent.Builder().hunger(6).saturationModifier(0.2f).build();
     public static final FoodComponent BUTTERCORN = new FoodComponent.Builder().hunger(6).saturationModifier(0.25f).build();
     public static final FoodComponent POPCORN = new FoodComponent.Builder().hunger(5).saturationModifier(0.15f).build();

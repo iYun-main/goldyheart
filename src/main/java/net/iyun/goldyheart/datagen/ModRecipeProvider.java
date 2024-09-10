@@ -575,7 +575,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.FANCY_PLANK),conditionsFromItem(ModBlocks.FANCY_PRESSUREPLATE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FANCY_PRESSUREPLATE)));
 
-
 //Food Crafting
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CANDIEDSPIDEREYE,2)
@@ -914,14 +913,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.SALT), conditionsFromItem(ModItems.CHEESE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.CHEESE)));
 
-
-// Nation food this should have a fucking config toggle so i dont have to forcefully remove the recipe
-
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.WHISKEY,1)
-                .input(ModItems.GRAPES,4)
+                .input(ModItems.HOPS,4)
                 .input(ModItems.SALT,2)
                 .input(Items.GLASS_BOTTLE,1)
-                .criterion(hasItem(ModItems.GRAPES), conditionsFromItem(ModItems.WHISKEY))
+                .criterion(hasItem(ModItems.HOPS), conditionsFromItem(ModItems.WHISKEY))
                 .criterion(hasItem(ModItems.SALT), conditionsFromItem(ModItems.WHISKEY))
                 .criterion(hasItem(Items.GLASS_BOTTLE), conditionsFromItem(ModItems.WHISKEY))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.WHISKEY)));
@@ -957,13 +953,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.CUTBREAD), conditionsFromItem(ModItems.HOGLINSANDWICH))
                 .criterion(hasItem(ModItems.COOKEDBACON), conditionsFromItem(ModItems.HOGLINSANDWICH))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.HOGLINSANDWICH)));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.WINE,1)
-                .input(ModItems.GRAPES,4)
-                .input(Items.GLASS_BOTTLE,1)
-                .criterion(hasItem(ModItems.GRAPES), conditionsFromItem(ModItems.WINE))
-                .criterion(hasItem(Items.GLASS_BOTTLE), conditionsFromItem(ModItems.WINE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.WINE)));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CROISSANT,1)
                 .input(ModItems.DOUGH,1)
@@ -1068,6 +1057,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         cakesslice(ModItems.CARROTCAKESLICE, ModItems.CARROTCAKE, exporter);
         cakesslice(ModItems.WATERMELONCAKESLICE, ModItems.MELONSCAKE, exporter);
         cakesslice(ModItems.CAKESLICE, Items.CAKE, exporter);
+        cakesslice(ModItems.RHUBARBCAKESLICE, Items.CAKE, exporter);
 
         cakes(ModItems.CARROTCAKE, Items.CARROT,exporter);
         cakes(ModItems.BEETROOTCAKE, Items.BEETROOT,exporter);
@@ -1078,6 +1068,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         cakes(ModItems.BLUEBERRYCAKE, ModItems.BLUEBERRY,exporter);
         cakes(ModItems.STRAWBERRYCAKE, ModItems.STRAWBERRY,exporter);
         cakes(ModItems.SWEETBERRYCAKE, Items.SWEET_BERRIES,exporter);
+        cakes(ModItems.RHUBARBCAKE, ModItems.RHUBARB,exporter);
 
         jams(ModItems.CARROTJAM, Items.CARROT,exporter);
         jams(ModItems.GLOWJAM, Items.GLOW_BERRIES,exporter);
@@ -1104,7 +1095,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         smoothies(ModItems.PUMPKINSMOOTHIE, Items.PUMPKIN,exporter);
         smoothies(ModItems.STRAWBERSMOOTHIE, ModItems.STRAWBERRY,exporter);
         smoothies(ModItems.BLUEBERSMOOTHIE, ModItems.BLUEBERRY,exporter);
+        smoothies(ModItems.RHUBARBSMOOTHIE, ModItems.RHUBARB,exporter);
         smoothies(ModItems.APPLESMOOTHIE, Items.APPLE,exporter);
+        smoothies(ModItems.MAGMASMOOTHIE, Items.MAGMA_CREAM,exporter);
 
         soups(ModItems.TOMATOSOUP, ModItems.CUTTOMATO,exporter);
         soups(ModItems.PUMPKINSOUP, Items.PUMPKIN,exporter);
@@ -1160,6 +1153,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         muffins(ModItems.PUMPKINMUFFIN, Items.PUMPKIN,exporter);
         muffins(ModItems.STRAWMUFFIN, ModItems.STRAWBERRY,exporter);
         muffins(ModItems.BLUEMUFFIN, ModItems.BLUEBERRY,exporter);
+        muffins(ModItems.RHUBARBMUFFIN, ModItems.RHUBARB,exporter);
 
 
         pickeljars(ModItems.PICKELS, ModItems.CUCUMBER,exporter);
@@ -1219,6 +1213,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         wines(ModItems.MELONWINE, Items.MELON_SLICE,exporter);
         wines(ModItems.SWEETWINE, Items.SWEET_BERRIES,exporter);
         wines(ModItems.GLOWWINE, Items.GLOW_BERRIES,exporter);
+        wines(ModItems.WINE, ModItems.GRAPES,exporter);
+        wines(ModItems.ANCIENTWINE, ModItems.ANCIENTFRUIT,exporter);
+        wines(ModItems.PUMKINWINE, Items.PUMPKIN,exporter);
+        wines(ModItems.RHUBARBWINE, ModItems.RHUBARB,exporter);
 
         oreberries(ModItems.AMETHYSTBERRY, Items.AMETHYST_SHARD,exporter);
         oreberries(ModItems.COALBERRY, Items.COAL_BLOCK,exporter);
@@ -1446,11 +1444,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, output)
                 .pattern("XXX")
                 .pattern("SES")
-                .pattern("HAH")
+                .pattern("HHH")
                 .input('X',Items.MILK_BUCKET)
                 .input('S',Items.SUGAR)
                 .input('E',Items.EGG)
-                .input('A',Items.WHEAT)
                 .input('H',itemConvertible)
                 .criterion(FabricRecipeProvider.hasItem(itemConvertible), FabricRecipeProvider.conditionsFromItem(itemConvertible))
                 .offerTo(exporter, new Identifier(getRecipeName(output)));
