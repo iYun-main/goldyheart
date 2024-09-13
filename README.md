@@ -15,4 +15,5 @@ https://github.com/iYun-main/goldyheart
 
 This mod was bound to a Minecraft Nation / Faction Server 
 it updating to the newest update was only gonna happen when the Server Owner of said server Updates to 1.21.X
-however ever since freeing ourselves of the Limiting Shakels of Despair from the Horrible Server Owner
+However we since then freed ourselves from the Shackels of Despair and Horrible Treatment of the Server Owner and its Former Staff. 
+The Mod will now follow its own Path and Update timeline 
