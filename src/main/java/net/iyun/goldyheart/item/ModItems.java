@@ -186,8 +186,7 @@ public class ModItems {
     public static final Item RHUBARBCAKESLICE = registerItem("rhubarb_cake_slice", new Item(new FabricItemSettings().food(ModFoodComponents.CAKESLICE)));
     public static final Item BEETROOTCAKE = registerItem("beetroot_cake", new Item(new FabricItemSettings().food(ModFoodComponents.GLOBALCAKES).maxCount(4)));
     public static final Item CORN = registerItem("corn", new Item(new FabricItemSettings().food(ModFoodComponents.CORN)));
-    //   public static final Item WORMBOWL = registerItem("worm_bowl", new Item(new FabricItemSettings().food(ModFoodComponents.WORMBOWL)));
-    //  public static final Item DEBUG = registerItem("debug", new Item(new FabricItemSettings().food(ModFoodComponents.DEBUG)));
+//  public static final Item DEBUG = registerItem("debug", new Item(new FabricItemSettings().food(ModFoodComponents.DEBUG)));
     public static final Item PEARLSTEW = registerItem("pearl_stew", new Item(new FabricItemSettings().food(ModFoodComponents.PEARLSTEW)));
     public static final Item BUTTERCORN = registerItem("buttered_corn", new GlobalMashStickItem(new FabricItemSettings().food(ModFoodComponents.BUTTERCORN)));
     public static final Item POPCORN = registerItem("popcorn", new Item(new FabricItemSettings().food(ModFoodComponents.POPCORN)));
@@ -257,8 +256,6 @@ public class ModItems {
 
     public static final Item NETHERITE_KNIFE = registerItem("netherite_knive",
             new KniveItem(ToolMaterials.NETHERITE, 3, 0f, new FabricItemSettings().maxCount(1).maxDamage(550)));
-
-
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(Goldy_Heart.MOD_ID, name), item);
