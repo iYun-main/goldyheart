@@ -29,7 +29,7 @@ public class GlobalBigBowlsItem extends Item {
             return new ItemStack(ModItems.BIGBOWL);
 
         } else {
-            if (user instanceof PlayerEntity playerEntity && !((PlayerEntity)user).getAbilities().creativeMode) {
+            if (user instanceof PlayerEntity playerEntity && !playerEntity.getAbilities().creativeMode) {
                 ItemStack itemStack = new ItemStack(ModItems.BIGBOWL);
                 if (!playerEntity.getInventory().insertStack(itemStack)) {
                     playerEntity.dropItem(itemStack, false);

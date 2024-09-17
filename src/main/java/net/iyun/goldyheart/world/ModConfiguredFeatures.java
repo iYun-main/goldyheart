@@ -79,7 +79,7 @@ public class ModConfiguredFeatures {
 
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registryKey(String name) {
-        return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(Goldy_Heart.MOD_ID, name));
+        return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, Identifier.of(Goldy_Heart.MOD_ID, name));
     }
 
     private static <FC extends FeatureConfig, F extends Feature<FC>> void register(Registerable<ConfiguredFeature<?, ?>> context,

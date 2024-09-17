@@ -28,7 +28,7 @@ public class TomatoSoupItem extends Item {
             return new ItemStack(Items.BOWL);
 
         } else {
-            if (user instanceof PlayerEntity playerEntity && !((PlayerEntity)user).getAbilities().creativeMode) {
+            if (user instanceof PlayerEntity playerEntity && !playerEntity.getAbilities().creativeMode) {
                 ItemStack itemStack = new ItemStack(Items.BOWL);
                 if (!playerEntity.getInventory().insertStack(itemStack)) {
                     playerEntity.dropItem(itemStack, false);

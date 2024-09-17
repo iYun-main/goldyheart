@@ -8,11 +8,14 @@ import net.iyun.goldyheart.item.ModItems;
 import net.minecraft.item.Items;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.predicate.StatePredicate;
+import net.minecraft.registry.RegistryWrapper;
+
+import java.util.concurrent.CompletableFuture;
 
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
-    public  ModLootTableProvider(FabricDataOutput dataOutput) {
-        super(dataOutput);
+    public ModLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+        super(dataOutput, registryLookup);
     }
 
     @Override
@@ -68,7 +71,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DEAD_BRAIN_CORAL_STAIRS);
         addDrop(ModBlocks.IRON_STAIRS);
         addDrop(ModBlocks.CALCITE_STAIRS);
-        addDrop(ModBlocks.TUFF_BUTTON);
+        //   addDrop(ModBlocks.TUFF_BUTTON);
         addDrop(ModBlocks.GOLD_STAIRS);
         addDrop(ModBlocks.RED_SAND_STAIR);
         addDrop(ModBlocks.WHITE_WOOL_SLAB, slabDrops(ModBlocks.WHITE_WOOL_SLAB));
@@ -94,87 +97,87 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.GOLD_SLAB, slabDrops(ModBlocks.GOLD_SLAB));
         addDrop(ModBlocks.IRON_SLAB, slabDrops(ModBlocks.IRON_SLAB));
 
-        addDrop(ModBlocks.ANCIENT_BUTTON);
+        //   addDrop(ModBlocks.ANCIENT_BUTTON);
         addDrop(ModBlocks.ANCIENT_STAIRS);
         addDrop(ModBlocks.ANCIENT_FENCE);
-        addDrop(ModBlocks.ANCIENT_FENCE_GATE);
-        addDrop(ModBlocks.ANCIENT_PRESSUREPLATE);
-        addDrop(ModBlocks.ANCIENT_TRAPDOOR);
+        //  addDrop(ModBlocks.ANCIENT_FENCE_GATE);
+        //  addDrop(ModBlocks.ANCIENT_PRESSUREPLATE);
+        //  addDrop(ModBlocks.ANCIENT_TRAPDOOR);
         addDrop(ModBlocks.ANCIENT_WOOD_WALL);
         addDrop(ModBlocks.ANCIENT_WOOD_WALL_S);
         addDrop(ModBlocks.ANCIENT_PLANKS);
-        addDrop(ModBlocks.ANCIENT_SAPLING);
+        // addDrop(ModBlocks.ANCIENT_SAPLING);
         addDrop(ModBlocks.ANCIENT_LOG);
         addDrop(ModBlocks.ANCIENT_WOOD);
         addDrop(ModBlocks.STRIPPED_ANCIENT_LOG);
         addDrop(ModBlocks.STRIPPED_ANCIENT_WOOD);
-        addDrop(ModBlocks.ANCIENT_DOOR, doorDrops(ModBlocks.ANCIENT_DOOR));
+        //  addDrop(ModBlocks.ANCIENT_DOOR, doorDrops(ModBlocks.ANCIENT_DOOR));
         addDrop(ModBlocks.ANCIENT_WOOD_SLAB, slabDrops(ModBlocks.ANCIENT_WOOD_SLAB));
-        addDrop(ModBlocks.ANCIENT_LEAVES,leavesDrops(ModBlocks.ANCIENT_LEAVES, ModBlocks.ANCIENT_SAPLING, 0.025f));
+        // addDrop(ModBlocks.ANCIENT_LEAVES,leavesDrops(ModBlocks.ANCIENT_LEAVES, ModBlocks.ANCIENT_SAPLING, 0.025f));
         addDrop(ModBlocks.ANCIENT_SLAB, slabDrops(ModBlocks.ANCIENT_SLAB));
         addDrop(ModBlocks.ANCIENT_WOOD_SLAB_S, slabDrops(ModBlocks.ANCIENT_WOOD_SLAB_S));
 
-        addDrop(ModBlocks.OLD_BUTTON);
+        //  addDrop(ModBlocks.OLD_BUTTON);
         addDrop(ModBlocks.OLD_STAIRS);
         addDrop(ModBlocks.OLD_FENCE);
-        addDrop(ModBlocks.OLD_FENCE_GATE);
-        addDrop(ModBlocks.OLD_PRESSUREPLATE);
-        addDrop(ModBlocks.OLD_TRAPDOOR);
+        //  addDrop(ModBlocks.OLD_FENCE_GATE);
+        //  addDrop(ModBlocks.OLD_PRESSUREPLATE);
+        //  addDrop(ModBlocks.OLD_TRAPDOOR);
         addDrop(ModBlocks.OLD_WOOD_WALL);
         addDrop(ModBlocks.OLD_WOOD_WALL_S);
         addDrop(ModBlocks.OLD_PLANKS);
-        addDrop(ModBlocks.OLD_SAPLING);
+        //  addDrop(ModBlocks.OLD_SAPLING);
         addDrop(ModBlocks.OLD_LOG);
         addDrop(ModBlocks.OLD_WOOD);
         addDrop(ModBlocks.STRIPPED_OLD_LOG);
         addDrop(ModBlocks.STRIPPED_OLD_WOOD);
-        addDrop(ModBlocks.OLD_DOOR, doorDrops(ModBlocks.OLD_DOOR));
+        // addDrop(ModBlocks.OLD_DOOR, doorDrops(ModBlocks.OLD_DOOR));
         addDrop(ModBlocks.OLD_WOOD_SLAB, slabDrops(ModBlocks.OLD_WOOD_SLAB));
-        addDrop(ModBlocks.OLD_LEAVES,leavesDrops(ModBlocks.OLD_LEAVES, ModBlocks.OLD_SAPLING, 0.0025f));
+        //  addDrop(ModBlocks.OLD_LEAVES,leavesDrops(ModBlocks.OLD_LEAVES, ModBlocks.OLD_SAPLING, 0.0025f));
         addDrop(ModBlocks.OLD_SLAB, slabDrops(ModBlocks.OLD_SLAB));
         addDrop(ModBlocks.OLD_WOOD_SLAB_S, slabDrops(ModBlocks.OLD_WOOD_SLAB_S));
 
-        addDrop(ModBlocks.FANCY_PRESSUREPLATE);
-        addDrop(ModBlocks.GLASS_TRAPDOOR);
-        addDrop(ModBlocks.STONE_TRAPDOOR);
-        addDrop(ModBlocks.COBBLESTONE_TRAPDOOR);
-        addDrop(ModBlocks.FANCY_BUTTON);
+        //   addDrop(ModBlocks.FANCY_PRESSUREPLATE);
+        //   addDrop(ModBlocks.GLASS_TRAPDOOR);
+        //   addDrop(ModBlocks.STONE_TRAPDOOR);
+        //  addDrop(ModBlocks.COBBLESTONE_TRAPDOOR);
+        //  addDrop(ModBlocks.FANCY_BUTTON);
         addDrop(ModBlocks.FANCY_FENCE);
-        addDrop(ModBlocks.FANCY_FENCE_GATE);
+        //  addDrop(ModBlocks.FANCY_FENCE_GATE);
         addDrop(ModBlocks.FANCY_PLANK);
         addDrop(ModBlocks.FANCY_WALL);
         addDrop(ModBlocks.FANCY_STAIRS);
         addDrop(ModBlocks.FANCY_SLAB, slabDrops(ModBlocks.FANCY_SLAB));
 
-        addDrop(ModBlocks.SPIRAL_BUTTON);
+        //   addDrop(ModBlocks.SPIRAL_BUTTON);
         addDrop(ModBlocks.SPIRAL_STAIRS);
         addDrop(ModBlocks.TUFF_WALL);
         addDrop(ModBlocks.SPIRAL_FENCE);
-        addDrop(ModBlocks.SPIRAL_FENCE_GATE);
-        addDrop(ModBlocks.SPIRAL_PRESSUREPLATE);
-        addDrop(ModBlocks.SPIRAL_TRAPDOOR);
+        //  addDrop(ModBlocks.SPIRAL_FENCE_GATE);
+        //  addDrop(ModBlocks.SPIRAL_PRESSUREPLATE);
+        //  addDrop(ModBlocks.SPIRAL_TRAPDOOR);
         addDrop(ModBlocks.SPIRAL_PLANKS);
         addDrop(ModBlocks.SPIRAL_WOOD_WALL);
         addDrop(ModBlocks.SPIRAL_WOOD_WALL_S);
-        addDrop(ModBlocks.SPIRAL_SAPLING);
+        // addDrop(ModBlocks.SPIRAL_SAPLING);
         addDrop(ModBlocks.SPIRAL_LOG);
         addDrop(ModBlocks.SPIRAL_WOOD);
         addDrop(ModBlocks.STRIPPED_SPIRAL_LOG);
         addDrop(ModBlocks.STRIPPED_SPIRAL_WOOD);
-        addDrop(ModBlocks.SPIRAL_DOOR, doorDrops(ModBlocks.SPIRAL_DOOR));
+        // addDrop(ModBlocks.SPIRAL_DOOR, doorDrops(ModBlocks.SPIRAL_DOOR));
         addDrop(ModBlocks.SPIRAL_WOOD_SLAB, slabDrops(ModBlocks.SPIRAL_WOOD_SLAB));
-        addDrop(ModBlocks.SPIRAL_LEAVES,leavesDrops(ModBlocks.SPIRAL_LEAVES, ModBlocks.SPIRAL_SAPLING, 0.0025f));
+        //  addDrop(ModBlocks.SPIRAL_LEAVES,leavesDrops(ModBlocks.SPIRAL_LEAVES, ModBlocks.SPIRAL_SAPLING, 0.0025f));
         addDrop(ModBlocks.SPIRAL_SLAB, slabDrops(ModBlocks.SPIRAL_SLAB));
         addDrop(ModBlocks.SPIRAL_WOOD_SLAB_S, slabDrops(ModBlocks.SPIRAL_WOOD_SLAB_S));
 
-        addDrop(ModBlocks.DARK_SPIRAL_BUTTON);
+        //  addDrop(ModBlocks.DARK_SPIRAL_BUTTON);
         addDrop(ModBlocks.DARK_SPIRAL_STAIRS);
         addDrop(ModBlocks.DARK_SPIRAL_FENCE);
-        addDrop(ModBlocks.DARK_SPIRAL_FENCE_GATE);
-        addDrop(ModBlocks.DARK_SPIRAL_PRESSUREPLATE);
-        addDrop(ModBlocks.DARK_SPIRAL_TRAPDOOR);
+        //  addDrop(ModBlocks.DARK_SPIRAL_FENCE_GATE);
+        //  addDrop(ModBlocks.DARK_SPIRAL_PRESSUREPLATE);
+        //  addDrop(ModBlocks.DARK_SPIRAL_TRAPDOOR);
         addDrop(ModBlocks.DARK_SPIRAL_PLANKS);
-        addDrop(ModBlocks.DARK_SPIRAL_SAPLING);
+        //   addDrop(ModBlocks.DARK_SPIRAL_SAPLING);
         addDrop(ModBlocks.DARK_SPIRAL_LOG);
         addDrop(ModBlocks.DARK_SPIRAL_WOOD_WALL);
         addDrop(ModBlocks.DARK_SPIRAL_WOOD_WALL_S);
@@ -182,9 +185,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DARK_SPIRAL_WOOD);
         addDrop(ModBlocks.STRIPPED_DARK_SPIRAL_WOOD);
         addDrop(ModBlocks.STRIPPED_DARK_SPIRAL_LOG);
-        addDrop(ModBlocks.DARK_SPIRAL_LEAVES,leavesDrops(ModBlocks.DARK_SPIRAL_LEAVES, ModBlocks.DARK_SPIRAL_SAPLING, 0.0025f));
+        // addDrop(ModBlocks.DARK_SPIRAL_LEAVES,leavesDrops(ModBlocks.DARK_SPIRAL_LEAVES, ModBlocks.DARK_SPIRAL_SAPLING, 0.0025f));
         addDrop(ModBlocks.STRIPPED_SPIRAL_WOOD);
-        addDrop(ModBlocks.DARK_SPIRAL_DOOR, doorDrops(ModBlocks.DARK_SPIRAL_DOOR));
+        //  addDrop(ModBlocks.DARK_SPIRAL_DOOR, doorDrops(ModBlocks.DARK_SPIRAL_DOOR));
         addDrop(ModBlocks.DARK_SPIRAL_WOOD_SLAB, slabDrops(ModBlocks.DARK_SPIRAL_WOOD_SLAB));
         addDrop(ModBlocks.DARK_SPIRAL_SLAB, slabDrops(ModBlocks.DARK_SPIRAL_SLAB));
         addDrop(ModBlocks.DARK_SPIRAL_WOOD_SLAB_S, slabDrops(ModBlocks.DARK_SPIRAL_WOOD_SLAB_S));
@@ -194,8 +197,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.STRIPPED_WEATHERED_LOG);
         addDrop(ModBlocks.STRIPPED_WEATHERED_WOOD);
         addDrop(ModBlocks.WEATHERED_PLANK_STAIRS);
-        addDrop(ModBlocks.WEATHERED_LEAVES,leavesDrops(ModBlocks.WEATHERED_LEAVES, ModBlocks.WEATHERED_SAPLING, 0.0025f));
-        addDrop(ModBlocks.WEATHERED_SAPLING);
+        //  addDrop(ModBlocks.WEATHERED_LEAVES,leavesDrops(ModBlocks.WEATHERED_LEAVES, ModBlocks.WEATHERED_SAPLING, 0.0025f));
+        // addDrop(ModBlocks.WEATHERED_SAPLING);
         addDrop(ModBlocks.WEATHERED_PLANK_SLABS, slabDrops(ModBlocks.WEATHERED_PLANK_SLABS));
 
         addDrop(ModBlocks.STRAWBER_BUSH);

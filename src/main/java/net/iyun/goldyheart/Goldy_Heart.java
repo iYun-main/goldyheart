@@ -9,7 +9,7 @@ import net.iyun.goldyheart.block.ModBlocks;
 import net.iyun.goldyheart.item.ModItemGroups;
 import net.iyun.goldyheart.item.ModItems;
 import net.iyun.goldyheart.util.ModCustomTrades;
-import net.iyun.goldyheart.util.ModLootTableModifiers;
+//import net.iyun.goldyheart.util.ModLootTableModifiers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,7 +21,7 @@ public class Goldy_Heart implements ModInitializer {
 	public void onInitialize() {
 
 		ModItemGroups.registerItemGroups();
-		ModLootTableModifiers.modifyLootTables();
+		//ModLootTableModifiers.modifyLootTables();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModCustomTrades.registerCustomTrades();
@@ -86,9 +86,9 @@ public class Goldy_Heart implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.FANCY_SLAB,5,5);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.FANCY_WALL,5,20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.FANCY_FENCE,5,20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.FANCY_FENCE_GATE,5,5);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.FANCY_BUTTON,5,20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.FANCY_PRESSUREPLATE,5,20);
+		//	FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.FANCY_FENCE_GATE,5,5);
+		//	FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.FANCY_BUTTON,5,20);
+		//	FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.FANCY_PRESSUREPLATE,5,20);
 
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.WEATHERED_WOOD,5,5);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_WEATHERED_WOOD,5,5);
@@ -111,12 +111,12 @@ public class Goldy_Heart implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ANCIENT_WOOD_WALL_S,5,20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ANCIENT_WOOD_SLAB_S,5,20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ANCIENT_WOOD_SLAB,5,20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ANCIENT_DOOR,5,20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ANCIENT_TRAPDOOR,5,20);
+		//	FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ANCIENT_DOOR,5,20);
+		//	FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ANCIENT_TRAPDOOR,5,20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ANCIENT_FENCE,5,20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ANCIENT_FENCE_GATE,5,20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ANCIENT_BUTTON,5,20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ANCIENT_PRESSUREPLATE,5,20);
+		//	FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ANCIENT_FENCE_GATE,5,20);
+		//	FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ANCIENT_BUTTON,5,20);
+		//	FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ANCIENT_PRESSUREPLATE,5,20);
 
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.OLD_WOOD,5,5);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_OLD_WOOD,5,5);
@@ -130,12 +130,12 @@ public class Goldy_Heart implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.OLD_WOOD_WALL_S,5,20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.OLD_WOOD_SLAB_S,5,20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.OLD_WOOD_SLAB,5,20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.OLD_DOOR,5,20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.OLD_TRAPDOOR,5,20);
+		//	FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.OLD_DOOR,5,20);
+		//	FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.OLD_TRAPDOOR,5,20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.OLD_FENCE,5,20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.OLD_FENCE_GATE,5,20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.OLD_BUTTON,5,20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.OLD_PRESSUREPLATE,5,20);
+		//	FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.OLD_FENCE_GATE,5,20);
+		//	FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.OLD_BUTTON,5,20);
+		//	FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.OLD_PRESSUREPLATE,5,20);
 
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SPIRAL_WOOD,5,5);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_SPIRAL_WOOD,5,5);
@@ -149,12 +149,12 @@ public class Goldy_Heart implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SPIRAL_WOOD_WALL_S,5,20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SPIRAL_WOOD_SLAB_S,5,20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SPIRAL_WOOD_SLAB,5,20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SPIRAL_DOOR,5,20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SPIRAL_TRAPDOOR,5,20);
+		//	FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SPIRAL_DOOR,5,20);
+		//	FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SPIRAL_TRAPDOOR,5,20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SPIRAL_FENCE,5,20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SPIRAL_FENCE_GATE,5,20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SPIRAL_BUTTON,5,20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SPIRAL_PRESSUREPLATE,5,20);
+		//	FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SPIRAL_FENCE_GATE,5,20);
+		//	FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SPIRAL_BUTTON,5,20);
+		//	FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SPIRAL_PRESSUREPLATE,5,20);
 
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DARK_SPIRAL_WOOD,5,5);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_DARK_SPIRAL_WOOD,5,5);
@@ -168,12 +168,12 @@ public class Goldy_Heart implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DARK_SPIRAL_WOOD_WALL_S,5,20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DARK_SPIRAL_WOOD_SLAB_S,5,20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DARK_SPIRAL_WOOD_SLAB,5,20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DARK_SPIRAL_DOOR,5,20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DARK_SPIRAL_TRAPDOOR,5,20);
+		//	FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DARK_SPIRAL_DOOR,5,20);
+		//FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DARK_SPIRAL_TRAPDOOR,5,20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DARK_SPIRAL_FENCE,5,20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DARK_SPIRAL_FENCE_GATE,5,20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DARK_SPIRAL_BUTTON,5,20);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DARK_SPIRAL_PRESSUREPLATE,5,20);
+		//	FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DARK_SPIRAL_FENCE_GATE,5,20);
+		//	FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DARK_SPIRAL_BUTTON,5,20);
+		//	FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DARK_SPIRAL_PRESSUREPLATE,5,20);
 
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.WHITE_WOOL_SLAB,6,40);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.RED_WOOL_SLAB,6,40);

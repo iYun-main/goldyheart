@@ -30,7 +30,7 @@ public class GlobalJamItem extends Item {
         if (stack.isEmpty()) {
             return new ItemStack(Items.GLASS_BOTTLE);
         } else {
-            if (user instanceof PlayerEntity playerEntity && !((PlayerEntity)user).getAbilities().creativeMode) {
+            if (user instanceof PlayerEntity playerEntity && !playerEntity.getAbilities().creativeMode) {
                 ItemStack itemStack = new ItemStack(Items.GLASS_BOTTLE);
                 if (!playerEntity.getInventory().insertStack(itemStack)) {
                     playerEntity.dropItem(itemStack, false);

@@ -4,7 +4,6 @@ import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
-import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
@@ -21,7 +20,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 
-public class KniveItem extends ToolItem implements Vanishable {
+public class KniveItem extends ToolItem {
     public final float attackDamage;
     public final Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;
 
@@ -29,8 +28,8 @@ public class KniveItem extends ToolItem implements Vanishable {
         super(toolMaterial, settings);
         this.attackDamage = (float)attackDamage + toolMaterial.getAttackDamage();
         ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
-        builder.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(ATTACK_DAMAGE_MODIFIER_ID, "Weapon modifier", this.attackDamage, EntityAttributeModifier.Operation.ADDITION));
-        builder.put(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(ATTACK_SPEED_MODIFIER_ID, "Weapon modifier", attackSpeed, EntityAttributeModifier.Operation.ADDITION));
+     //   builder.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(ATTACK_DAMAGE_MODIFIER_ID, "Weapon modifier", this.attackDamage, EntityAttributeModifier.Operation.ADDITION));
+       // builder.put(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(ATTACK_SPEED_MODIFIER_ID, "Weapon modifier", attackSpeed, EntityAttributeModifier.Operation.ADDITION));
         this.attributeModifiers = builder.build();
     }
 
@@ -51,18 +50,18 @@ public class KniveItem extends ToolItem implements Vanishable {
     }
 
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        stack.damage(2, attacker, (e) -> {
-            e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND);
-        });
+       // stack.damage(2, attacker, (e) -> {
+         //   e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND);
+       // });
         return true;
     }
 
     public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
-        if (state.getHardness(world, pos) != 0.0F) {
-            stack.damage(3, miner, (e) -> {
-                e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND);
-            });
-        }
+     //   if (state.getHardness(world, pos) != 0.0F) {
+       //     stack.damage(3, miner, (e) -> {
+         //       e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND);
+       //     });
+       // }
 
         return true;
     }
@@ -71,15 +70,14 @@ public class KniveItem extends ToolItem implements Vanishable {
         return state.isOf(Blocks.COBWEB);
     }
 
-    public Multimap<EntityAttribute, EntityAttributeModifier> getAttributeModifiers(EquipmentSlot slot) {
-        return slot == EquipmentSlot.MAINHAND ? this.attributeModifiers : super.getAttributeModifiers(slot);
+  //  public Multimap<EntityAttribute, EntityAttributeModifier> getAttributeModifiers(EquipmentSlot slot) {
+      //  return slot == EquipmentSlot.MAINHAND ? this.attributeModifiers : super.getAttributeModifiers(slot);
 
 
     }
 
-    @Override
-    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("tooltip.goldyheart.knive.tooltip"));
-        super.appendTooltip(stack, world, tooltip, context);
-    }
-}
+
+  //  public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+    //    tooltip.add(Text.translatable("tooltip.goldyheart.knive.tooltip"));
+  //      super.appendTooltip(stack, world, tooltip, context);
+//}

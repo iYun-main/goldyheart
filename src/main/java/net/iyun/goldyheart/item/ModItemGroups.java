@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
     public static final ItemGroup AGOLDYFOOD = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(Goldy_Heart.MOD_ID,"aaaafood"),
+            Identifier.of(Goldy_Heart.MOD_ID,"aaaafood"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.aaaafood"))
                     .icon(() -> new ItemStack(ModItems.NETHERITEBERRY)).entries((displayContext, entries) -> {
                     entries.add(ModItems.VOID);
@@ -214,7 +214,7 @@ public class ModItemGroups {
                     }).build());
 
     public static final ItemGroup AGOLDYBLOCK = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(Goldy_Heart.MOD_ID,"aaablock"),
+            Identifier.of(Goldy_Heart.MOD_ID,"aaablock"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.aaablock"))
                     .icon(() -> new ItemStack(ModItems.DIAMONDBERRY)).entries((displayContext, entries) -> {
                     entries.add(ModBlocks.DIRT_SLAB);
@@ -249,7 +249,7 @@ public class ModItemGroups {
                     entries.add(ModBlocks.STRIPPED_WEATHERED_WOOD);
                     entries.add(ModBlocks.WEATHERED_PLANKS);
                     entries.add(ModBlocks.WEATHERED_LEAVES);
-                    entries.add(ModBlocks.WEATHERED_SAPLING);
+                        //   entries.add(ModBlocks.WEATHERED_SAPLING);
                     entries.add(ModBlocks.WEATHERED_PLANK_SLABS);
                     entries.add(ModBlocks.WEATHERED_PLANK_STAIRS);
                     entries.add(ModBlocks.GRASS_SLAB);
@@ -275,7 +275,7 @@ public class ModItemGroups {
                     entries.add(ModBlocks.TUFF_SLAB);
                     entries.add(ModBlocks.TUFF_STAIRS);
                     entries.add(ModBlocks.TUFF_WALL);
-                    entries.add(ModBlocks.TUFF_BUTTON);
+                        //     entries.add(ModBlocks.TUFF_BUTTON);
                     entries.add(ModBlocks.SOUL_SAND_SLAB);
                     entries.add(ModBlocks.COPPER_SLAB);
                     entries.add(ModBlocks.COPPER_STAIRS);
@@ -301,31 +301,31 @@ public class ModItemGroups {
                     entries.add(ModBlocks.SPRUCE_WOOD_SLAB_S);
                     entries.add(ModBlocks.MANGROVE_WOOD_SLAB);
                     entries.add(ModBlocks.MANGROVE_WOOD_SLAB_S);
-                    entries.add(ModBlocks.ANCIENT_BUTTON);
+                        //  entries.add(ModBlocks.ANCIENT_BUTTON);
                     entries.add(ModBlocks.ANCIENT_LOG);
                     entries.add(ModBlocks.STRIPPED_ANCIENT_LOG);
                     entries.add(ModBlocks.STRIPPED_ANCIENT_WOOD);
                     entries.add(ModBlocks.ANCIENT_WOOD);
                     entries.add(ModBlocks.ANCIENT_SLAB);
-                    entries.add(ModBlocks.ANCIENT_SAPLING);
+                        //  entries.add(ModBlocks.ANCIENT_SAPLING);
                     entries.add(ModBlocks.ANCIENT_FENCE);
-                    entries.add(ModBlocks.ANCIENT_FENCE_GATE);
+                        //    entries.add(ModBlocks.ANCIENT_FENCE_GATE);
                     entries.add(ModBlocks.ANCIENT_PLANKS);
-                    entries.add(ModBlocks.ANCIENT_PRESSUREPLATE);
+                        //  entries.add(ModBlocks.ANCIENT_PRESSUREPLATE);
                     entries.add(ModBlocks.ANCIENT_STAIRS);
-                    entries.add(ModBlocks.ANCIENT_TRAPDOOR);
-                    entries.add(ModBlocks.ANCIENT_DOOR);
+                        //     entries.add(ModBlocks.ANCIENT_TRAPDOOR);
+                        //    entries.add(ModBlocks.ANCIENT_DOOR);
                     entries.add(ModBlocks.ANCIENT_WOOD_WALL_S);
                     entries.add(ModBlocks.ANCIENT_WOOD_WALL);
                     entries.add(ModBlocks.ANCIENT_WOOD_SLAB);
                     entries.add(ModBlocks.ANCIENT_WOOD_SLAB_S);
                     entries.add(ModBlocks.ANCIENT_LEAVES);
-                    entries.add(ModBlocks.OLD_BUTTON);
+                        //  entries.add(ModBlocks.OLD_BUTTON);
                     entries.add(ModBlocks.OLD_LOG);
                     entries.add(ModBlocks.STRIPPED_OLD_LOG);
                     entries.add(ModBlocks.STRIPPED_OLD_WOOD);
                     entries.add(ModBlocks.OLD_WOOD);
-                    entries.add(ModBlocks.OLD_PRESSUREPLATE);
+                        //  entries.add(ModBlocks.OLD_PRESSUREPLATE);
                     entries.add(ModBlocks.OLD_PLANKS);
                     entries.add(ModBlocks.OLD_STAIRS);
                     entries.add(ModBlocks.OLD_SLAB);
@@ -334,14 +334,14 @@ public class ModItemGroups {
                     entries.add(ModBlocks.OLD_WOOD_WALL);
                     entries.add(ModBlocks.OLD_WOOD_WALL_S);
                     entries.add(ModBlocks.OLD_FENCE);
-                    entries.add(ModBlocks.OLD_FENCE_GATE);
+                        //   entries.add(ModBlocks.OLD_FENCE_GATE);
                     entries.add(ModBlocks.OLD_LEAVES);
-                    entries.add(ModBlocks.OLD_SAPLING);
-                    entries.add(ModBlocks.OLD_DOOR);
-                    entries.add(ModBlocks.OLD_TRAPDOOR);
-                    entries.add(ModBlocks.DARK_SPIRAL_BUTTON);
-                    entries.add(ModBlocks.DARK_SPIRAL_PRESSUREPLATE);
-                    entries.add(ModBlocks.DARK_SPIRAL_DOOR);
+                        //    entries.add(ModBlocks.OLD_SAPLING);
+                        //   entries.add(ModBlocks.OLD_DOOR);
+                        //    entries.add(ModBlocks.OLD_TRAPDOOR);
+                        //    entries.add(ModBlocks.DARK_SPIRAL_BUTTON);
+                        //    entries.add(ModBlocks.DARK_SPIRAL_PRESSUREPLATE);
+                        //  entries.add(ModBlocks.DARK_SPIRAL_DOOR);
                     entries.add(ModBlocks.STRIPPED_DARK_SPIRAL_WOOD);
                     entries.add(ModBlocks.STRIPPED_DARK_SPIRAL_LOG);
                     entries.add(ModBlocks.DARK_SPIRAL_LOG);
@@ -354,15 +354,15 @@ public class ModItemGroups {
                     entries.add(ModBlocks.DARK_SPIRAL_STAIRS);
                     entries.add(ModBlocks.DARK_SPIRAL_PLANKS);
                     entries.add(ModBlocks.DARK_SPIRAL_FENCE);
-                    entries.add(ModBlocks.DARK_SPIRAL_FENCE_GATE);
-                    entries.add(ModBlocks.DARK_SPIRAL_SAPLING);
-                    entries.add(ModBlocks.SPIRAL_BUTTON);
-                    entries.add(ModBlocks.SPIRAL_DOOR);
-                    entries.add(ModBlocks.SPIRAL_TRAPDOOR);
-                    entries.add(ModBlocks.SPIRAL_SAPLING);
+                        //    entries.add(ModBlocks.DARK_SPIRAL_FENCE_GATE);
+                        //     entries.add(ModBlocks.DARK_SPIRAL_SAPLING);
+                        //     entries.add(ModBlocks.SPIRAL_BUTTON);
+                        //     entries.add(ModBlocks.SPIRAL_DOOR);
+                        //     entries.add(ModBlocks.SPIRAL_TRAPDOOR);
+                        //   entries.add(ModBlocks.SPIRAL_SAPLING);
                     entries.add(ModBlocks.SPIRAL_STAIRS);
                     entries.add(ModBlocks.SPIRAL_SLAB);
-                    entries.add(ModBlocks.SPIRAL_PRESSUREPLATE);
+                        //   entries.add(ModBlocks.SPIRAL_PRESSUREPLATE);
                     entries.add(ModBlocks.SPIRAL_WOOD_WALL);
                     entries.add(ModBlocks.SPIRAL_LOG);
                     entries.add(ModBlocks.SPIRAL_LEAVES);
@@ -373,18 +373,18 @@ public class ModItemGroups {
                     entries.add(ModBlocks.SPIRAL_WOOD_SLAB);
                     entries.add(ModBlocks.SPIRAL_WOOD_SLAB_S);
                     entries.add(ModBlocks.SPIRAL_FENCE);
-                    entries.add(ModBlocks.SPIRAL_FENCE_GATE);
+                        //    entries.add(ModBlocks.SPIRAL_FENCE_GATE);
                     entries.add(ModBlocks.FANCY_PLANK);
                     entries.add(ModBlocks.FANCY_SLAB);
                     entries.add(ModBlocks.FANCY_STAIRS);
-                    entries.add(ModBlocks.FANCY_BUTTON);
+                        //   entries.add(ModBlocks.FANCY_BUTTON);
                     entries.add(ModBlocks.FANCY_FENCE);
-                    entries.add(ModBlocks.FANCY_FENCE_GATE);
-                    entries.add(ModBlocks.FANCY_PRESSUREPLATE);
+                        //     entries.add(ModBlocks.FANCY_FENCE_GATE);
+                        //     entries.add(ModBlocks.FANCY_PRESSUREPLATE);
                     entries.add(ModBlocks.FANCY_WALL);
-                    entries.add(ModBlocks.GLASS_TRAPDOOR);
-                    entries.add(ModBlocks.COBBLESTONE_TRAPDOOR);
-                    entries.add(ModBlocks.STONE_TRAPDOOR);
+                        //  entries.add(ModBlocks.GLASS_TRAPDOOR);
+                        //   entries.add(ModBlocks.COBBLESTONE_TRAPDOOR);
+                  //  entries.add(ModBlocks.STONE_TRAPDOOR);
                     entries.add(ModBlocks.OLD_ROSE);
                     entries.add(ModBlocks.TINY_LILLY);
                     entries.add(ModBlocks.ASTROPHYLLIA);
@@ -429,7 +429,7 @@ public class ModItemGroups {
     //            }).build());
 
     public static final ItemGroup AGOLDYFARMING = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(Goldy_Heart.MOD_ID,"aafarming"),
+            Identifier.of(Goldy_Heart.MOD_ID,"aafarming"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.aafarming"))
                     .icon(() -> new ItemStack(ModItems.AMETHYSTBERRY)).entries((displayContext, entries) -> {
                     entries.add(ModItems.CUCUMBERSEEDS);
@@ -452,7 +452,7 @@ public class ModItemGroups {
                     }).build());
 
     public static final ItemGroup AGOLDYVOIDSTORAGE = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(Goldy_Heart.MOD_ID,"astori"),
+            Identifier.of(Goldy_Heart.MOD_ID,"astori"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.astori"))
                     .icon(() -> new ItemStack(ModItems.LAPISBERRY)).entries((displayContext, entries) -> {
                     entries.add(ModItems.VOID);

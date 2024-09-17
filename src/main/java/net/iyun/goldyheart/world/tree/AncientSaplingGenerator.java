@@ -1,15 +1,18 @@
 package net.iyun.goldyheart.world.tree;
 
 import net.iyun.goldyheart.world.ModConfiguredFeatures;
-import net.minecraft.block.sapling.SaplingGenerator;
+import net.minecraft.block.SaplingBlock;
+import net.minecraft.block.SaplingGenerator;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
-import org.jetbrains.annotations.Nullable;
 
-public class AncientSaplingGenerator extends SaplingGenerator {
-    @Nullable
-    @Override
+
+public class AncientSaplingGenerator extends SaplingBlock {
+    public AncientSaplingGenerator(SaplingGenerator generator, Settings settings) {
+        super(generator, settings);
+    }
+
     protected RegistryKey<ConfiguredFeature<?, ?>> getTreeFeature(Random random, boolean bees) {
         return ModConfiguredFeatures.ANC_KEY;
     }

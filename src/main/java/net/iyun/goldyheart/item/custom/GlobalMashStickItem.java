@@ -28,7 +28,7 @@ public class GlobalMashStickItem extends Item {
         if (stack.isEmpty()) {
             return new ItemStack(Items.STICK);
         } else {
-            if (user instanceof PlayerEntity playerEntity && !((PlayerEntity)user).getAbilities().creativeMode) {
+            if (user instanceof PlayerEntity playerEntity && !playerEntity.getAbilities().creativeMode) {
                 ItemStack itemStack = new ItemStack(Items.STICK);
                 if (!playerEntity.getInventory().insertStack(itemStack)) {
                     playerEntity.dropItem(itemStack, false);
