@@ -16,7 +16,7 @@ public class ModItemGroups {
             Identifier.of(Goldy_Heart.MOD_ID,"aaaafood"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.aaaafood"))
                     .icon(() -> new ItemStack(ModItems.NETHERITEBERRY)).entries((displayContext, entries) -> {
-                    entries.add(ModItems.VOID);
+               //     entries.add(ModItems.VOID);
                     entries.add(ModItems.ANCIENTFRUIT);
                     entries.add(ModItems.SALT);
                     entries.add(ModItems.BUCKETOFSALT);
@@ -301,7 +301,7 @@ public class ModItemGroups {
                     entries.add(ModBlocks.SPRUCE_WOOD_SLAB_S);
                     entries.add(ModBlocks.MANGROVE_WOOD_SLAB);
                     entries.add(ModBlocks.MANGROVE_WOOD_SLAB_S);
-                        //  entries.add(ModBlocks.ANCIENT_BUTTON);
+                    entries.add(ModBlocks.ANCIENT_BUTTON);
                     entries.add(ModBlocks.ANCIENT_LOG);
                     entries.add(ModBlocks.STRIPPED_ANCIENT_LOG);
                     entries.add(ModBlocks.STRIPPED_ANCIENT_WOOD);
@@ -311,9 +311,9 @@ public class ModItemGroups {
                     entries.add(ModBlocks.ANCIENT_FENCE);
                         //    entries.add(ModBlocks.ANCIENT_FENCE_GATE);
                     entries.add(ModBlocks.ANCIENT_PLANKS);
-                        //  entries.add(ModBlocks.ANCIENT_PRESSUREPLATE);
+                    entries.add(ModBlocks.ANCIENT_PRESSUREPLATE);
                     entries.add(ModBlocks.ANCIENT_STAIRS);
-                        //     entries.add(ModBlocks.ANCIENT_TRAPDOOR);
+                    entries.add(ModBlocks.ANCIENT_TRAPDOOR);
                         //    entries.add(ModBlocks.ANCIENT_DOOR);
                     entries.add(ModBlocks.ANCIENT_WOOD_WALL_S);
                     entries.add(ModBlocks.ANCIENT_WOOD_WALL);
@@ -382,9 +382,9 @@ public class ModItemGroups {
                         //     entries.add(ModBlocks.FANCY_FENCE_GATE);
                         //     entries.add(ModBlocks.FANCY_PRESSUREPLATE);
                     entries.add(ModBlocks.FANCY_WALL);
-                        //  entries.add(ModBlocks.GLASS_TRAPDOOR);
-                        //   entries.add(ModBlocks.COBBLESTONE_TRAPDOOR);
-                  //  entries.add(ModBlocks.STONE_TRAPDOOR);
+                    entries.add(ModBlocks.GLASS_TRAPDOOR);
+                    entries.add(ModBlocks.COBBLESTONE_TRAPDOOR);
+                    entries.add(ModBlocks.STONE_TRAPDOOR);
                     entries.add(ModBlocks.OLD_ROSE);
                     entries.add(ModBlocks.TINY_LILLY);
                     entries.add(ModBlocks.ASTROPHYLLIA);
@@ -455,8 +455,8 @@ public class ModItemGroups {
             Identifier.of(Goldy_Heart.MOD_ID,"astori"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.astori"))
                     .icon(() -> new ItemStack(ModItems.LAPISBERRY)).entries((displayContext, entries) -> {
-                    entries.add(ModItems.VOID);
-                    entries.add(ModItems.ROPE);
+                  //  entries.add(ModItems.VOID);
+                  //  entries.add(ModItems.ROPE);
                     entries.add(ModItems.MAGICCRYSTAL);
                     entries.add(ModItems.MAGICCRYSTAL_2);
                     entries.add(ModItems.MAGICCRYSTAL_3);

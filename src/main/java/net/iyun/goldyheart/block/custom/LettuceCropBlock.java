@@ -1,6 +1,7 @@
 package net.iyun.goldyheart.block.custom;
 
 import net.iyun.goldyheart.item.ModItems;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CropBlock;
@@ -13,7 +14,7 @@ public class LettuceCropBlock extends CropBlock {
     public static final int MAX_AGE = 7;
     public static final IntProperty AGE = Properties.AGE_7;
 
-    public LettuceCropBlock(Settings settings) {
+    public LettuceCropBlock(AbstractBlock.Settings settings) {
         super(settings);
     }
 

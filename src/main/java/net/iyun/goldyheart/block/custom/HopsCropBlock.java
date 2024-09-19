@@ -2,6 +2,7 @@ package net.iyun.goldyheart.block.custom;
 
 
 import net.iyun.goldyheart.item.ModItems;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CropBlock;
@@ -15,7 +16,7 @@ public class HopsCropBlock extends CropBlock {
     public static final int MAX_AGE = 4;
     public static final IntProperty AGE = Properties.AGE_4;
 
-    public HopsCropBlock(Settings settings) {
+    public HopsCropBlock(AbstractBlock.Settings settings) {
         super(settings);
     }
 

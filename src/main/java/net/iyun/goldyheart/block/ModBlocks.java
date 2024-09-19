@@ -2,6 +2,7 @@ package net.iyun.goldyheart.block;
 
 import net.iyun.goldyheart.Goldy_Heart;
 import net.iyun.goldyheart.block.custom.*;
+import net.iyun.goldyheart.world.tree.AncientSaplingGenerator;
 import net.minecraft.block.*;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
@@ -16,67 +17,67 @@ public class ModBlocks {
     //Blocks that will render but not obtainable in the Creative Inv
 
 public static final Block ANCIENT_CROP = Registry.register(Registries.BLOCK, Identifier.of(Goldy_Heart.MOD_ID, "ancient_crop"),
-        new AncientCropBlock(AbstractBlock.Settings.create()));
+        new AncientCropBlock(AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.CROP)));
 
 public static final Block HOP_CROP = Registry.register(Registries.BLOCK, Identifier.of(Goldy_Heart.MOD_ID, "hops_crop"),
-        new HopsCropBlock(AbstractBlock.Settings.create()));
+        new HopsCropBlock(AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.CROP)));
 
 public static final Block STRAWBER_BUSH = Registry.register(Registries.BLOCK, Identifier.of(Goldy_Heart.MOD_ID, "strawber_bush"),
-        new StrawberBushBlock(AbstractBlock.Settings.create()));
+        new StrawberBushBlock(AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)));
 
 public static final Block BLUEBER_BUSH = Registry.register(Registries.BLOCK, Identifier.of(Goldy_Heart.MOD_ID, "blueber_bush"),
-        new BlueberryBushBlock(AbstractBlock.Settings.create()));
+        new BlueberryBushBlock(AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)));
 
 public static final Block RUHBARB_CROP = Registry.register(Registries.BLOCK, Identifier.of(Goldy_Heart.MOD_ID, "rhubarb_crop"),
-        new RuhbarbCropBlock(AbstractBlock.Settings.create()));
+        new RuhbarbCropBlock(AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.CROP)));
 
 public static final Block TOMATO_CROP = Registry.register(Registries.BLOCK, Identifier.of(Goldy_Heart.MOD_ID, "tomato_crop"),
-        new TomatoCropBlock(AbstractBlock.Settings.create()));
+        new TomatoCropBlock(AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.CROP)));
 
 public static final Block CHILLI_CROP = Registry.register(Registries.BLOCK, Identifier.of(Goldy_Heart.MOD_ID, "chilli_crop"),
-        new ChilliCropBlock(AbstractBlock.Settings.create()));
+        new ChilliCropBlock(AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.CROP)));
 
 public static final Block COFFEE_CROP = Registry.register(Registries.BLOCK, Identifier.of(Goldy_Heart.MOD_ID, "coffee_crop"),
-        new CoffeeCropBlock(AbstractBlock.Settings.create()));
+        new CoffeeCropBlock(AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.CROP)));
 
 public static final Block CORN_CROP = Registry.register(Registries.BLOCK, Identifier.of(Goldy_Heart.MOD_ID, "corn_crop"),
-        new CornCropBlock(AbstractBlock.Settings.create()));
+        new CornCropBlock(AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.CROP)));
 
 public static final Block CUCUMBER_CROP = Registry.register(Registries.BLOCK, Identifier.of(Goldy_Heart.MOD_ID, "cucumber_crop"),
-        new CucumberCropBlock(AbstractBlock.Settings.create()));
+        new CucumberCropBlock(AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.CROP)));
 
 public static final Block GRAPE_CROP = Registry.register(Registries.BLOCK, Identifier.of(Goldy_Heart.MOD_ID, "grape_crop"),
-        new GrapeCropBlock(AbstractBlock.Settings.create()));
+        new GrapeCropBlock(AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.CROP)));
 
 public static final Block LETTUCE_CROP = Registry.register(Registries.BLOCK, Identifier.of(Goldy_Heart.MOD_ID, "lettuce_crop"),
-        new LettuceCropBlock(AbstractBlock.Settings.create()));
+        new LettuceCropBlock(AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.CROP)));
 
 public static final Block PARSLEY_CROP = Registry.register(Registries.BLOCK, Identifier.of(Goldy_Heart.MOD_ID, "parsley_crop"),
-        new ParsleyCropBlock(AbstractBlock.Settings.create()));
+        new ParsleyCropBlock(AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.CROP)));
 
 public static final Block ONION_CROP = Registry.register(Registries.BLOCK, Identifier.of(Goldy_Heart.MOD_ID, "onion_crop"),
-        new OnionCropBlock(AbstractBlock.Settings.create()));
+        new OnionCropBlock(AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.CROP)));
 
 public static final Block RICE_CROP = Registry.register(Registries.BLOCK, Identifier.of(Goldy_Heart.MOD_ID, "rice_crop"),
-        new RiceCropBlock(AbstractBlock.Settings.create()));
+        new RiceCropBlock(AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.CROP)));
 
 public static final Block GARLIC_CROP = Registry.register(Registries.BLOCK, Identifier.of(Goldy_Heart.MOD_ID, "garlic_crop"),
-        new GarlicCropBlock(AbstractBlock.Settings.create()));
+        new GarlicCropBlock(AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.CROP)));
 
 public static final Block BELLPEPPER_CROP = Registry.register(Registries.BLOCK, Identifier.of(Goldy_Heart.MOD_ID, "bellpepper_crop"),
-        new BellCropBlock(AbstractBlock.Settings.create()));
+        new BellCropBlock(AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.CROP)));
 
 
 //Blocks Texture Render Workaround
 
-//public static final Block GLASS_TRAPDOOR = registerBlock("glass_trapdoor",
-  //      new TrapdoorBlock(AbstractBlock.Settings.create(Blocks.GLASS), BlockSetType.POLISHED_BLACKSTONE));
+public static final Block GLASS_TRAPDOOR = registerBlock("glass_trapdoor",
+        new TrapdoorBlock(BlockSetType.POLISHED_BLACKSTONE, AbstractBlock.Settings.create()));
 
-//public static final Block STONE_TRAPDOOR = registerBlock("stone_trapdoor",
-  //      new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.STONE), BlockSetType.STONE));
+public static final Block STONE_TRAPDOOR = registerBlock("stone_trapdoor",
+        new TrapdoorBlock(BlockSetType.STONE, AbstractBlock.Settings.create()));
 
-//public static final Block COBBLESTONE_TRAPDOOR = registerBlock("cobblestone_trapdoor",
-  //      new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE), BlockSetType.STONE));
+public static final Block COBBLESTONE_TRAPDOOR = registerBlock("cobblestone_trapdoor",
+        new TrapdoorBlock(BlockSetType.STONE, AbstractBlock.Settings.create()));
 
 public static final Block MANGROVE_WOOD_ALLSIDE = registerBlock("mangrove_wood_a",
         new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOD)));
@@ -571,8 +572,8 @@ public static final Block DARK_SPIRAL_FENCE = registerBlock("dark_spiral_fence",
 //public static final Block DARK_SPIRAL_DOOR = registerBlock("dark_spiral_door",
   //      new DoorBlock(FabricBlockSettings.copyOf(ModBlocks.DARK_SPIRAL_PLANKS), BlockSetType.CHERRY));
 
-//public static final Block DARK_SPIRAL_TRAPDOOR = registerBlock("dark_spiral_trapdoor",
-  //      new TrapdoorBlock(FabricBlockSettings.copyOf(ModBlocks.DARK_SPIRAL_PLANKS), BlockSetType.CHERRY));
+public static final Block DARK_SPIRAL_TRAPDOOR = registerBlock("dark_spiral_trapdoor",
+        new TrapdoorBlock(BlockSetType.CHERRY, AbstractBlock.Settings.create()));
 
 public static final Block DARK_SPIRAL_STAIRS =registerBlock("dark_spiral_stairs",
         new StairsBlock(ModBlocks.DARK_SPIRAL_PLANKS.getDefaultState(), AbstractBlock.Settings.create()));
@@ -593,7 +594,7 @@ public static final Block STRIPPED_ANCIENT_WOOD = registerBlock("stripped_ancien
          new PillarBlock(AbstractBlock.Settings.create()));
 
 //public static final Block ANCIENT_SAPLING = registerBlock("ancient_sapling",
-  //       new SaplingBlock(new AncientSaplingGenerator(), AbstractBlock.Settings.create()));
+       // new SaplingBlock(new AncientSaplingGenerator(), AbstractBlock.Settings.create()));
 
 public static final Block ANCIENT_LEAVES = registerBlock("ancient_leaves",
          new LeavesBlock(AbstractBlock.Settings.create().nonOpaque()));
@@ -619,11 +620,11 @@ public static final Block ANCIENT_WOOD_SLAB = registerBlock("ancient_wood_slab",
 public static final Block ANCIENT_WOOD_SLAB_S = registerBlock("stripped_ancient_wood_slab",
          new SlabBlock(AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOD)));
 
-//public static final Block ANCIENT_BUTTON = registerBlock("ancient_button",
-  //       new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD), BlockSetType.OAK, 12, true));
+public static final Block ANCIENT_BUTTON = registerBlock("ancient_button",
+         new ButtonBlock(BlockSetType.OAK, 12, AbstractBlock.Settings.create().noCollision()));
 
-//public static final Block ANCIENT_PRESSUREPLATE = registerBlock("ancient_pressureplate",
-  //       new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK));
+public static final Block ANCIENT_PRESSUREPLATE = registerBlock("ancient_pressureplate",
+         new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.create()));
 
 public static final Block ANCIENT_FENCE = registerBlock("ancient_fence",
          new FenceBlock(AbstractBlock.Settings.create()));
@@ -634,8 +635,8 @@ public static final Block ANCIENT_FENCE = registerBlock("ancient_fence",
 //public static final Block ANCIENT_DOOR = registerBlock("ancient_door",
   //       new DoorBlock(FabricBlockSettings.copyOf(ModBlocks.ANCIENT_PLANKS), BlockSetType.CHERRY));
 
-//public static final Block ANCIENT_TRAPDOOR = registerBlock("ancient_trapdoor",
-  //       new TrapdoorBlock(FabricBlockSettings.copyOf(ModBlocks.ANCIENT_PLANKS), BlockSetType.CHERRY));
+public static final Block ANCIENT_TRAPDOOR = registerBlock("ancient_trapdoor",
+         new TrapdoorBlock(BlockSetType.CHERRY, AbstractBlock.Settings.create()));
 
 public static final Block ANCIENT_STAIRS =registerBlock("ancient_stairs",
          new StairsBlock(ModBlocks.ANCIENT_PLANKS.getDefaultState(), AbstractBlock.Settings.create()));

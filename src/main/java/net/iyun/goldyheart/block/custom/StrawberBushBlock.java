@@ -88,7 +88,7 @@ public class StrawberBushBlock extends PlantBlock implements Fertilizable {
             double d = Math.abs(entity.getX() - entity.lastRenderX);
             double e = Math.abs(entity.getZ() - entity.lastRenderZ);
             if (d >= (double)0.003f || e >= (double)0.003f) {
-                entity.damage(world.getDamageSources().sweetBerryBush(), 1.0f);
+                return;
             }
         }
     }

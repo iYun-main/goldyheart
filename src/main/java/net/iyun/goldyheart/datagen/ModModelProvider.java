@@ -190,8 +190,8 @@ public class ModModelProvider extends FabricModelProvider {
         weatheredPool.stairs(ModBlocks.WEATHERED_PLANK_STAIRS);
 
         ancientPool.slab(ModBlocks.ANCIENT_SLAB);
-        //   ancientPool.button(ModBlocks.ANCIENT_BUTTON);
-        //   ancientPool.pressurePlate(ModBlocks.ANCIENT_PRESSUREPLATE);
+        ancientPool.button(ModBlocks.ANCIENT_BUTTON);
+        ancientPool.pressurePlate(ModBlocks.ANCIENT_PRESSUREPLATE);
         ancientPool.fence(ModBlocks.ANCIENT_FENCE);
         //   ancientPool.fenceGate(ModBlocks.ANCIENT_FENCE_GATE);
         ancientPool.stairs(ModBlocks.ANCIENT_STAIRS);
@@ -200,7 +200,7 @@ public class ModModelProvider extends FabricModelProvider {
         ancientwoodPool.slab(ModBlocks.ANCIENT_WOOD_SLAB);
         ancientwoodsPool.slab(ModBlocks.ANCIENT_WOOD_SLAB_S);
         blockStateModelGenerator.registerLog(ModBlocks.ANCIENT_LOG).log(ModBlocks.ANCIENT_LOG).wood(ModBlocks.ANCIENT_WOOD);
-        //   blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.ANCIENT_TRAPDOOR);
+        blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.ANCIENT_TRAPDOOR);
         //   blockStateModelGenerator.registerDoor(ModBlocks.ANCIENT_DOOR);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_ANCIENT_LOG).log(ModBlocks.STRIPPED_ANCIENT_LOG).wood(ModBlocks.STRIPPED_ANCIENT_WOOD);
         //  blockStateModelGenerator.registerTintableCross(ModBlocks.ANCIENT_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
@@ -319,9 +319,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WEATHERED_LEAVES);
         // blockStateModelGenerator.registerTintableCross(ModBlocks.WEATHERED_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
-        //  blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.GLASS_TRAPDOOR);
-        //  blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.STONE_TRAPDOOR);
-        //  blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.COBBLESTONE_TRAPDOOR);
+        blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.GLASS_TRAPDOOR);
+        blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.STONE_TRAPDOOR);
+        blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.COBBLESTONE_TRAPDOOR);
 
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.TOMATO_CROP, BlockStateModelGenerator.TintType.NOT_TINTED, TomatoCropBlock.AGE, 0, 1, 2, 3, 4, 5);
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.CORN_CROP, BlockStateModelGenerator.TintType.NOT_TINTED,CornCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
@@ -552,8 +552,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RHUBARB, Models.GENERATED);
         itemModelGenerator.register(ModItems.MELONCOOKIE, Models.GENERATED);
         itemModelGenerator.register(ModItems.SANDBREAD, Models.GENERATED);
-        itemModelGenerator.register(ModItems.VOID, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ROPE, Models.GENERATED);
+   //     itemModelGenerator.register(ModItems.VOID, Models.GENERATED);
+     //   itemModelGenerator.register(ModItems.ROPE, Models.GENERATED);
         itemModelGenerator.register(ModItems.DIAMOND_KNIFE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.NETHERITE_KNIFE, Models.HANDHELD);
 

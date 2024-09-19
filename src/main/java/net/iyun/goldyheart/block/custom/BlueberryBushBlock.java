@@ -34,7 +34,7 @@ public class BlueberryBushBlock extends PlantBlock implements Fertilizable {
     public static final float field_31260 = 0.003f;
     public static final int MAX_AGE = 3;
     public static final IntProperty AGE = Properties.AGE_3;
-    private static final VoxelShape SMALL_SHAPE = Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 8.0, 13.0);
+    private static final VoxelShape SMALL_SHAPE = Block.createCuboidShape(3.0, 0.0, 3.0, 11.0, 6.0, 11.0);
     private static final VoxelShape LARGE_SHAPE = Block.createCuboidShape(1.0, 0.0, 1.0, 15.0, 16.0, 15.0);
 
     public BlueberryBushBlock(Settings settings) {
@@ -45,6 +45,22 @@ public class BlueberryBushBlock extends PlantBlock implements Fertilizable {
     @Override
     protected MapCodec<? extends PlantBlock> getCodec() {
         return null;
+    }
+
+    public ItemStack getPickStack(BlockView world, BlockPos pos, BlockState state) {
+        return new ItemStack(ModItems.BLUEBERRY);
+    }
+
+    @Override
+    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        if (state.get(AGE) == 0) {
+            return SMALL_SHAPE;
+        }
+
+        if (state.get(AGE) < 3) {
+            return LARGE_SHAPE;
+        }
+        return super.getOutlineShape(state, world, pos, context);
     }
 
     @Override
@@ -72,7 +88,7 @@ public class BlueberryBushBlock extends PlantBlock implements Fertilizable {
             double d = Math.abs(entity.getX() - entity.lastRenderX);
             double e = Math.abs(entity.getZ() - entity.lastRenderZ);
             if (d >= (double)0.003f || e >= (double)0.003f) {
-                entity.damage(world.getDamageSources().sweetBerryBush(), 1.0f);
+               return;
             }
         }
     }
@@ -95,7 +111,7 @@ public class BlueberryBushBlock extends PlantBlock implements Fertilizable {
         boolean bl2 = bl = i == 3;
         if (i > 1) {
             int j = 1 + world.random.nextInt(2);
-            BlueberryBushBlock.dropStack(world, pos, new ItemStack(ModItems.BLUEBERRY, j + (bl ? 1 : 0)));
+            StrawberBushBlock.dropStack(world, pos, new ItemStack(ModItems.BLUEBERRY, j + (bl ? 1 : 0)));
             world.playSound(null, pos, SoundEvents.BLOCK_SWEET_BERRY_BUSH_PICK_BERRIES, SoundCategory.BLOCKS, 1.0f, 0.8f + world.random.nextFloat() * 0.4f);
             BlockState blockState = (BlockState)state.with(AGE, 1);
             world.setBlockState(pos, blockState, Block.NOTIFY_LISTENERS);
