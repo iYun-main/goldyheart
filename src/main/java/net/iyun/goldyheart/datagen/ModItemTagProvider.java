@@ -159,23 +159,23 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.MANGROVE_WOOD_SLAB.asItem())
                 .add(ModBlocks.MANGROVE_WOOD_SLAB_S.asItem());
 
-        getOrCreateTagBuilder(ItemTags.TRAPDOORS);
-              //  .add(ModBlocks.STONE_TRAPDOOR.asItem())
-             //   .add(ModBlocks.COBBLESTONE_TRAPDOOR.asItem())
-             //   .add(ModBlocks.GLASS_TRAPDOOR.asItem());
+        getOrCreateTagBuilder(ItemTags.TRAPDOORS)
+                .add(ModBlocks.STONE_TRAPDOOR.asItem())
+                .add(ModBlocks.COBBLESTONE_TRAPDOOR.asItem())
+                .add(ModBlocks.GLASS_TRAPDOOR.asItem());
 
-        getOrCreateTagBuilder(ItemTags.DOORS);
-              //  .add(ModBlocks.OLD_DOOR.asItem())
-        //    .add(ModBlocks.ANCIENT_DOOR.asItem())
-        //    .add(ModBlocks.SPIRAL_DOOR.asItem())
-        //      .add(ModBlocks.DARK_SPIRAL_DOOR.asItem());
+        getOrCreateTagBuilder(ItemTags.DOORS)
+                .add(ModBlocks.OLD_DOOR.asItem())
+            .add(ModBlocks.ANCIENT_DOOR.asItem())
+            .add(ModBlocks.SPIRAL_DOOR.asItem())
+              .add(ModBlocks.DARK_SPIRAL_DOOR.asItem());
 
-        getOrCreateTagBuilder(ItemTags.BUTTONS);
-                //    .add(ModBlocks.OLD_BUTTON.asItem())
-                //     .add(ModBlocks.ANCIENT_BUTTON.asItem())
-                //     .add(ModBlocks.SPIRAL_BUTTON.asItem())
-        //   .add(ModBlocks.FANCY_BUTTON.asItem())
-        //     .add(ModBlocks.DARK_SPIRAL_BUTTON.asItem());
+        getOrCreateTagBuilder(ItemTags.BUTTONS)
+                    .add(ModBlocks.OLD_BUTTON.asItem())
+                     .add(ModBlocks.ANCIENT_BUTTON.asItem())
+                     .add(ModBlocks.SPIRAL_BUTTON.asItem())
+           .add(ModBlocks.FANCY_BUTTON.asItem())
+             .add(ModBlocks.DARK_SPIRAL_BUTTON.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOOL)
                 .add(ModBlocks.WHITE_WOOL_SLAB.asItem())
@@ -366,9 +366,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         .add(ModItems.STRAWCOOKIE.asItem())
         .add(ModItems.CHILLI.asItem())
         .add(ModItems.CORN.asItem())
-        //     entries.add(ModItems.WORM);
-        //   entries.add(ModItems.CANOFWORMS);
-        //    entries.add(ModItems.WORMBOWL);
         .add(ModItems.STRAWBERRY.asItem())
         .add(ModItems.BLUEBERRY.asItem())
         .add(ModItems.PEARLSTEW.asItem())

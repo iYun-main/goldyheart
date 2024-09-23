@@ -211,8 +211,8 @@ public static final Block AMETHYST_SLAB = registerBlock("amethyst_slab",
 public static final Block TUFF_SLAB = registerBlock("tuff_slab",
         new SlabBlock(AbstractBlock.Settings.create().sounds(BlockSoundGroup.TUFF)));
 
-//public static final Block TUFF_BUTTON = registerBlock("tuff_button",
-  //      new ButtonBlock(AbstractBlock.Settings.create(), BlockSetType.STONE, 20, true));
+public static final Block TUFF_BUTTON = registerBlock("tuff_button",
+    new ButtonBlock(BlockSetType.STONE, 12, AbstractBlock.Settings.create().noCollision()));
 
 public static final Block TUFF_WALL = registerBlock("tuff_wall",
         new WallBlock(AbstractBlock.Settings.create().sounds(BlockSoundGroup.TUFF)));
@@ -431,23 +431,23 @@ public static final Block OLD_WOOD_SLAB = registerBlock("old_wood_slab",
 public static final Block OLD_WOOD_SLAB_S = registerBlock("stripped_old_wood_slab",
             new SlabBlock(AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOD)));
 
-//public static final Block OLD_BUTTON = registerBlock("old_button",
-  //          new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD), BlockSetType.OAK, 20, true));
+public static final Block OLD_BUTTON = registerBlock("old_button",
+            new ButtonBlock(BlockSetType.OAK, 12, AbstractBlock.Settings.create().noCollision()));
 
-//public static final Block OLD_PRESSUREPLATE = registerBlock("old_pressureplate",
-  //          new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK));
+public static final Block OLD_PRESSUREPLATE = registerBlock("old_pressureplate",
+            new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.create()));
 
 public static final Block OLD_FENCE = registerBlock("old_fence",
             new FenceBlock(AbstractBlock.Settings.create()));
 
-//public static final Block OLD_FENCE_GATE = registerBlock("old_fence_gate",
-  //          new FenceGateBlock(AbstractBlock.Settings.create(), WoodType.ACACIA));
+public static final Block OLD_FENCE_GATE = registerBlock("old_fence_gate",
+      new FenceGateBlock(WoodType.ACACIA, AbstractBlock.Settings.create()));
 
-//public static final Block OLD_DOOR = registerBlock("old_door",
-  //          new DoorBlock(AbstractBlock.Settings.create().nonOpaque(), BlockSetType.CHERRY));
+public static final Block OLD_DOOR = registerBlock("old_door",
+          new DoorBlock(BlockSetType.CHERRY, AbstractBlock.Settings.create()));
 
-//public static final Block OLD_TRAPDOOR = registerBlock("old_trapdoor",
-  //          new TrapdoorBlock(FabricBlockSettings.copyOf(ModBlocks.OLD_PLANKS).nonOpaque(), BlockSetType.CHERRY));
+public static final Block OLD_TRAPDOOR = registerBlock("old_trapdoor",
+          new TrapdoorBlock(BlockSetType.CHERRY, AbstractBlock.Settings.create().nonOpaque()));
 
 public static final Block OLD_STAIRS =registerBlock("old_stairs",
             new StairsBlock(ModBlocks.OLD_PLANKS.getDefaultState(), AbstractBlock.Settings.create()));
@@ -494,23 +494,23 @@ public static final Block SPIRAL_WOOD_SLAB = registerBlock("spiral_wood_slab",
 public static final Block SPIRAL_WOOD_SLAB_S = registerBlock("stripped_spiral_wood_slab",
             new SlabBlock(AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOD)));
 
-//public static final Block SPIRAL_BUTTON = registerBlock("spiral_button",
-  //          new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD), BlockSetType.OAK, 20, true));
+public static final Block SPIRAL_BUTTON = registerBlock("spiral_button",
+         new ButtonBlock(BlockSetType.OAK, 12, AbstractBlock.Settings.create().noCollision()));
 
-//public static final Block SPIRAL_PRESSUREPLATE = registerBlock("spiral_pressureplate",
-  //          new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK));
+public static final Block SPIRAL_PRESSUREPLATE = registerBlock("spiral_pressureplate",
+          new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.create()));
 
 public static final Block SPIRAL_FENCE = registerBlock("spiral_fence",
             new FenceBlock(AbstractBlock.Settings.create()));
 
-//public static final Block SPIRAL_FENCE_GATE = registerBlock("spiral_fence_gate",
-  //          new FenceGateBlock(AbstractBlock.Settings.create(), WoodType.ACACIA));
+public static final Block SPIRAL_FENCE_GATE = registerBlock("spiral_fence_gate",
+          new FenceGateBlock(WoodType.ACACIA, AbstractBlock.Settings.create()));
 
-//public static final Block SPIRAL_DOOR = registerBlock("spiral_door",
-  //          new DoorBlock(FabricBlockSettings.copyOf(ModBlocks.SPIRAL_PLANKS).nonOpaque(), BlockSetType.CHERRY));
+public static final Block SPIRAL_DOOR = registerBlock("spiral_door",
+          new DoorBlock(BlockSetType.CHERRY, AbstractBlock.Settings.create().nonOpaque()));
 
-//public static final Block SPIRAL_TRAPDOOR = registerBlock("spiral_trapdoor",
-  //          new TrapdoorBlock(FabricBlockSettings.copyOf(ModBlocks.SPIRAL_PLANKS).nonOpaque(), BlockSetType.CHERRY));
+public static final Block SPIRAL_TRAPDOOR = registerBlock("spiral_trapdoor",
+            new TrapdoorBlock(BlockSetType.CHERRY, AbstractBlock.Settings.create().nonOpaque()));
 
 public static final Block SPIRAL_STAIRS =registerBlock("spiral_stairs",
             new StairsBlock(ModBlocks.SPIRAL_PLANKS.getDefaultState(), AbstractBlock.Settings.create()));
@@ -557,20 +557,20 @@ public static final Block DARK_SPIRAL_WOOD_SLAB = registerBlock("dark_spiral_woo
 public static final Block DARK_SPIRAL_WOOD_SLAB_S = registerBlock("stripped_dark_spiral_wood_slab",
             new SlabBlock(AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOD)));
 
-//public static final Block DARK_SPIRAL_BUTTON = registerBlock("dark_spiral_button",
-  //          new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD), BlockSetType.OAK, 20, true));
+public static final Block DARK_SPIRAL_BUTTON = registerBlock("dark_spiral_button",
+   new ButtonBlock(BlockSetType.OAK, 12, AbstractBlock.Settings.create().noCollision()));
 
-//public static final Block DARK_SPIRAL_PRESSUREPLATE = registerBlock("dark_spiral_pressureplate",
-  //          new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK));
+public static final Block DARK_SPIRAL_PRESSUREPLATE = registerBlock("dark_spiral_pressureplate",
+         new PressurePlateBlock(BlockSetType.OAK,AbstractBlock.Settings.create()));
 
 public static final Block DARK_SPIRAL_FENCE = registerBlock("dark_spiral_fence",
         new FenceBlock(AbstractBlock.Settings.create()));
 
-//public static final Block DARK_SPIRAL_FENCE_GATE = registerBlock("dark_spiral_fence_gate",
-  //      new FenceGateBlock(FabricBlockSettings.copyOf(ModBlocks.DARK_SPIRAL_PLANKS), WoodType.ACACIA));
+public static final Block DARK_SPIRAL_FENCE_GATE = registerBlock("dark_spiral_fence_gate",
+        new FenceGateBlock(WoodType.ACACIA, AbstractBlock.Settings.create()));
 
-//public static final Block DARK_SPIRAL_DOOR = registerBlock("dark_spiral_door",
-  //      new DoorBlock(FabricBlockSettings.copyOf(ModBlocks.DARK_SPIRAL_PLANKS), BlockSetType.CHERRY));
+public static final Block DARK_SPIRAL_DOOR = registerBlock("dark_spiral_door",
+     new DoorBlock(BlockSetType.CHERRY, AbstractBlock.Settings.create()));
 
 public static final Block DARK_SPIRAL_TRAPDOOR = registerBlock("dark_spiral_trapdoor",
         new TrapdoorBlock(BlockSetType.CHERRY, AbstractBlock.Settings.create()));
@@ -594,7 +594,7 @@ public static final Block STRIPPED_ANCIENT_WOOD = registerBlock("stripped_ancien
          new PillarBlock(AbstractBlock.Settings.create()));
 
 //public static final Block ANCIENT_SAPLING = registerBlock("ancient_sapling",
-       // new SaplingBlock(new AncientSaplingGenerator(), AbstractBlock.Settings.create()));
+  //      new SaplingBlock(SaplingGenerator.OAK, AbstractBlock.Settings.create().noCollision()));
 
 public static final Block ANCIENT_LEAVES = registerBlock("ancient_leaves",
          new LeavesBlock(AbstractBlock.Settings.create().nonOpaque()));
@@ -629,11 +629,11 @@ public static final Block ANCIENT_PRESSUREPLATE = registerBlock("ancient_pressur
 public static final Block ANCIENT_FENCE = registerBlock("ancient_fence",
          new FenceBlock(AbstractBlock.Settings.create()));
 
-//public static final Block ANCIENT_FENCE_GATE = registerBlock("ancient_fence_gate",
-  //       new FenceGateBlock(FabricBlockSettings.copyOf(ModBlocks.ANCIENT_PLANKS), WoodType.ACACIA));
+public static final Block ANCIENT_FENCE_GATE = registerBlock("ancient_fence_gate",
+        new FenceGateBlock(WoodType.ACACIA, AbstractBlock.Settings.create()));
 
-//public static final Block ANCIENT_DOOR = registerBlock("ancient_door",
-  //       new DoorBlock(FabricBlockSettings.copyOf(ModBlocks.ANCIENT_PLANKS), BlockSetType.CHERRY));
+public static final Block ANCIENT_DOOR = registerBlock("ancient_door",
+         new DoorBlock(BlockSetType.CHERRY, AbstractBlock.Settings.create()));
 
 public static final Block ANCIENT_TRAPDOOR = registerBlock("ancient_trapdoor",
          new TrapdoorBlock(BlockSetType.CHERRY, AbstractBlock.Settings.create()));
@@ -656,17 +656,17 @@ public static final Block FANCY_STAIRS = registerBlock("fancy_stair",
 public static final Block FANCY_FENCE = registerBlock("fancy_fence",
          new FenceBlock(AbstractBlock.Settings.create()));
 
-//public static final Block FANCY_FENCE_GATE = registerBlock("fancy_fence_gate",
-  //       new FenceGateBlock(FabricBlockSettings.copyOf(ModBlocks.FANCY_PLANK), WoodType.OAK));
+public static final Block FANCY_FENCE_GATE = registerBlock("fancy_fence_gate",
+        new FenceGateBlock(WoodType.ACACIA, AbstractBlock.Settings.create()));
 
 public static final Block FANCY_WALL = registerBlock("fancy_wall",
          new WallBlock(AbstractBlock.Settings.create()));
 
-//public static final Block FANCY_BUTTON = registerBlock("fancy_button",
-  //       new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD), BlockSetType.OAK, 18, true));
+public static final Block FANCY_BUTTON = registerBlock("fancy_button",
+         new ButtonBlock(BlockSetType.OAK, 18, AbstractBlock.Settings.create().noCollision()));
 
-//public static final Block FANCY_PRESSUREPLATE = registerBlock("fancy_pressureplate",
-  //      new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK));
+public static final Block FANCY_PRESSUREPLATE = registerBlock("fancy_pressureplate",
+     new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.create()));
 
 public static final Block OLD_ROSE = registerBlock("old_rose",
         new FlowerBlock(StatusEffects.HEALTH_BOOST, 10, AbstractBlock.Settings.create().nonOpaque().noCollision()));

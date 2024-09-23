@@ -12,8 +12,8 @@ public class AncientSaplingGenerator extends SaplingBlock {
     public AncientSaplingGenerator(SaplingGenerator generator, Settings settings) {
         super(generator, settings);
     }
-
     protected RegistryKey<ConfiguredFeature<?, ?>> getTreeFeature(Random random, boolean bees) {
         return ModConfiguredFeatures.ANC_KEY;
     }
+
 }
