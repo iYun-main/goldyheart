@@ -332,7 +332,7 @@ public class ModItemGroups {
                     entries.add(ModBlocks.OLD_FENCE);
                     entries.add(ModBlocks.OLD_FENCE_GATE);
                     entries.add(ModBlocks.OLD_LEAVES);
-                        //    entries.add(ModBlocks.OLD_SAPLING);
+                    entries.add(ModBlocks.OLD_SAPLING);
                     entries.add(ModBlocks.OLD_DOOR);
                     entries.add(ModBlocks.OLD_TRAPDOOR);
                     entries.add(ModBlocks.DARK_SPIRAL_BUTTON);
