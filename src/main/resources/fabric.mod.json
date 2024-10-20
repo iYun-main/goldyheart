@@ -10,7 +10,8 @@
 	],
 	"contact": {
 		"homepage": "https://modrinth.com/project/goldy-heart",
-		"sources": "https://github.com/iYun-main/goldyheart"
+		"sources": "https://github.com/iYun-main/goldyheart",
+		"issues": "https://discord.com/invite/U6dvJN7w5g"
 	},
 	"license": "ARR",
 	"icon": "assets/goldyheart/icon.png",
