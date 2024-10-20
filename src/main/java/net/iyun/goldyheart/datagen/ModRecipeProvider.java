@@ -553,6 +553,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerPlanksRecipe(exporter, ModBlocks.DARK_SPIRAL_PLANKS, ModTags.Items.SPID,4);
         offerPlanksRecipe(exporter, ModBlocks.WEATHERED_PLANKS, ModTags.Items.BOG,4);
 
+
 // Pressure Plate Recipe
 
         createPressurePlateRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ANCIENT_PRESSUREPLATE,Ingredient.ofItems(ModBlocks.ANCIENT_PLANKS))

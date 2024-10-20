@@ -393,17 +393,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         .add(ModItems.BELLPEPPERSEEDS.asItem());
 
 
-        getOrCreateTagBuilder(ModTags.Items.ANC);
-
-        getOrCreateTagBuilder(ModTags.Items.SPI);
-
-        getOrCreateTagBuilder(ModTags.Items.SPID);
-
-        getOrCreateTagBuilder(ModTags.Items.BOG);
-
-        getOrCreateTagBuilder(ModTags.Items.OLD);
-
-
         getOrCreateTagBuilder(ModTags.Items.JAM)
                 .add(ModItems.BEETJAM)
                 .add(ModItems.BLUEBERJAM)

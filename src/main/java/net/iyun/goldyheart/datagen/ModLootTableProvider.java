@@ -126,14 +126,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.OLD_WOOD_WALL);
         addDrop(ModBlocks.OLD_WOOD_WALL_S);
         addDrop(ModBlocks.OLD_PLANKS);
-        //  addDrop(ModBlocks.OLD_SAPLING);
+        addDrop(ModBlocks.OLD_SAPLING);
         addDrop(ModBlocks.OLD_LOG);
         addDrop(ModBlocks.OLD_WOOD);
         addDrop(ModBlocks.STRIPPED_OLD_LOG);
         addDrop(ModBlocks.STRIPPED_OLD_WOOD);
         addDrop(ModBlocks.OLD_DOOR, doorDrops(ModBlocks.OLD_DOOR));
         addDrop(ModBlocks.OLD_WOOD_SLAB, slabDrops(ModBlocks.OLD_WOOD_SLAB));
-        //  addDrop(ModBlocks.OLD_LEAVES,leavesDrops(ModBlocks.OLD_LEAVES, ModBlocks.OLD_SAPLING, 0.0025f));
+        addDrop(ModBlocks.OLD_LEAVES,leavesDrops(ModBlocks.OLD_LEAVES, ModBlocks.OLD_SAPLING, 0.0025f));
         addDrop(ModBlocks.OLD_SLAB, slabDrops(ModBlocks.OLD_SLAB));
         addDrop(ModBlocks.OLD_WOOD_SLAB_S, slabDrops(ModBlocks.OLD_WOOD_SLAB_S));
 
@@ -159,14 +159,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SPIRAL_PLANKS);
         addDrop(ModBlocks.SPIRAL_WOOD_WALL);
         addDrop(ModBlocks.SPIRAL_WOOD_WALL_S);
-        // addDrop(ModBlocks.SPIRAL_SAPLING);
+        addDrop(ModBlocks.SPIRAL_SAPLING);
         addDrop(ModBlocks.SPIRAL_LOG);
         addDrop(ModBlocks.SPIRAL_WOOD);
         addDrop(ModBlocks.STRIPPED_SPIRAL_LOG);
         addDrop(ModBlocks.STRIPPED_SPIRAL_WOOD);
         addDrop(ModBlocks.SPIRAL_DOOR, doorDrops(ModBlocks.SPIRAL_DOOR));
         addDrop(ModBlocks.SPIRAL_WOOD_SLAB, slabDrops(ModBlocks.SPIRAL_WOOD_SLAB));
-        //  addDrop(ModBlocks.SPIRAL_LEAVES,leavesDrops(ModBlocks.SPIRAL_LEAVES, ModBlocks.SPIRAL_SAPLING, 0.0025f));
+         addDrop(ModBlocks.SPIRAL_LEAVES,leavesDrops(ModBlocks.SPIRAL_LEAVES, ModBlocks.SPIRAL_SAPLING, 0.0025f));
         addDrop(ModBlocks.SPIRAL_SLAB, slabDrops(ModBlocks.SPIRAL_SLAB));
         addDrop(ModBlocks.SPIRAL_WOOD_SLAB_S, slabDrops(ModBlocks.SPIRAL_WOOD_SLAB_S));
 
@@ -177,7 +177,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
           addDrop(ModBlocks.DARK_SPIRAL_PRESSUREPLATE);
           addDrop(ModBlocks.DARK_SPIRAL_TRAPDOOR);
         addDrop(ModBlocks.DARK_SPIRAL_PLANKS);
-        //   addDrop(ModBlocks.DARK_SPIRAL_SAPLING);
+         addDrop(ModBlocks.DARK_SPIRAL_SAPLING);
         addDrop(ModBlocks.DARK_SPIRAL_LOG);
         addDrop(ModBlocks.DARK_SPIRAL_WOOD_WALL);
         addDrop(ModBlocks.DARK_SPIRAL_WOOD_WALL_S);
@@ -185,7 +185,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DARK_SPIRAL_WOOD);
         addDrop(ModBlocks.STRIPPED_DARK_SPIRAL_WOOD);
         addDrop(ModBlocks.STRIPPED_DARK_SPIRAL_LOG);
-        // addDrop(ModBlocks.DARK_SPIRAL_LEAVES,leavesDrops(ModBlocks.DARK_SPIRAL_LEAVES, ModBlocks.DARK_SPIRAL_SAPLING, 0.0025f));
+        addDrop(ModBlocks.DARK_SPIRAL_LEAVES,leavesDrops(ModBlocks.DARK_SPIRAL_LEAVES, ModBlocks.DARK_SPIRAL_SAPLING, 0.0025f));
         addDrop(ModBlocks.STRIPPED_SPIRAL_WOOD);
         addDrop(ModBlocks.DARK_SPIRAL_DOOR, doorDrops(ModBlocks.DARK_SPIRAL_DOOR));
         addDrop(ModBlocks.DARK_SPIRAL_WOOD_SLAB, slabDrops(ModBlocks.DARK_SPIRAL_WOOD_SLAB));
@@ -197,8 +197,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.STRIPPED_WEATHERED_LOG);
         addDrop(ModBlocks.STRIPPED_WEATHERED_WOOD);
         addDrop(ModBlocks.WEATHERED_PLANK_STAIRS);
-        //  addDrop(ModBlocks.WEATHERED_LEAVES,leavesDrops(ModBlocks.WEATHERED_LEAVES, ModBlocks.WEATHERED_SAPLING, 0.0025f));
-        // addDrop(ModBlocks.WEATHERED_SAPLING);
+         addDrop(ModBlocks.WEATHERED_LEAVES,leavesDrops(ModBlocks.WEATHERED_LEAVES, ModBlocks.WEATHERED_SAPLING, 0.0025f));
+         addDrop(ModBlocks.WEATHERED_SAPLING);
         addDrop(ModBlocks.WEATHERED_PLANK_SLABS, slabDrops(ModBlocks.WEATHERED_PLANK_SLABS));
 
         addDrop(ModBlocks.STRAWBER_BUSH);

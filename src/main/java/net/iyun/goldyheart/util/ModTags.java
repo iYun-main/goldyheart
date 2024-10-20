@@ -13,7 +13,6 @@ public class ModTags {
 
     public static class Blocks {
 
-
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(Goldy_Heart.MOD_ID, name));
         }

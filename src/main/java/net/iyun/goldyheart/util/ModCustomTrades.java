@@ -61,27 +61,27 @@ public class ModCustomTrades {
                 factories ->{
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 10),
-                    new ItemStack(ModBlocks.ACA_WOOD_ALLSIDE),
+                    new ItemStack(ModBlocks.OLD_SAPLING),
                     1,2,0.45f));
 
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 10),
-                    new ItemStack(ModBlocks.ACA_WOOD_ALLSIDE),
+                    new ItemStack(ModBlocks.SPIRAL_SAPLING),
                     1,2,0.45f));
 
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 10),
-                    new ItemStack(ModBlocks.ACA_WOOD_ALLSIDE),
+                    new ItemStack(ModBlocks.DARK_SPIRAL_SAPLING),
                     1,2,0.45f));
 
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 10),
-                    new ItemStack(ModBlocks.ACA_WOOD_ALLSIDE),
+                    new ItemStack(ModBlocks.WEATHERED_SAPLING),
                     1,2,0.45f));
 
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 10),
-                    new ItemStack(ModBlocks.ACA_WOOD_ALLSIDE),
+                    new ItemStack(ModBlocks.ANCIENT_SAPLING),
                     1,2,0.45f));
 
             factories.add((entity, random) -> new TradeOffer(
@@ -115,13 +115,18 @@ public class ModCustomTrades {
                    1,2,0.45f));
 
             factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 10),
-                    new ItemStack(ModItems.BLUEBERRY),
+                    new TradedItem(Items.EMERALD, 40),
+                    new ItemStack(ModItems.ANCIENTSEEDS),
                     1,2,0.45f));
 
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 10),
-                    new ItemStack(ModItems.STRAWBERRY),
+                    new ItemStack(ModItems.HOPSEEDS),
+                            1,2,0.45f));
+
+            factories.add((entity, random) -> new TradeOffer(
+                    new TradedItem(Items.EMERALD, 10),
+                    new ItemStack(ModItems.BLUEBERRY),
                     1,2,0.45f));
 
                     //   factories.add((entity, random) -> new TradeOffer(

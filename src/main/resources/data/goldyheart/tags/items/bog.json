@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "goldyheart:bog_log",
+    "goldyheart:stripped_bog_log",
+    "goldyheart:stripped_bog_wood",
+    "goldyheart:bog_wood"
+  ]
+}
